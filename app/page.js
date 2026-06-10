@@ -7,11 +7,16 @@ const SCRIPT = "\nconst tabs=[...document.querySelectorAll('.tab')];\nconst pane
 
 export default function WorkWithUs() {
   useEffect(() => {
-    // run the page script once after mount
-    const s = document.createElement("script");
-    s.textContent = SCRIPT;
-    document.body.appendChild(s);
-    return () => { try { document.body.removeChild(s); } catch (e) {} };
+    // run the page script after the markup has painted
+    const t = setTimeout(() => {
+      try {
+        const fn = new Function(SCRIPT);
+        fn();
+      } catch (e) {
+        console.error("Page script error:", e);
+      }
+    }, 0);
+    return () => clearTimeout(t);
   }, []);
 
   return <div dangerouslySetInnerHTML={{ __html: MARKUP }} />;
