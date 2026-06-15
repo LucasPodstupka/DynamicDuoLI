@@ -49,21 +49,50 @@ function mapListing(raw) {
     }
   }
 
+  const adv = raw.advanced && typeof raw.advanced === "object" ? raw.advanced : {};
+
+  // Lot size: prefer explicit sqft, fall back to acres.
+  let lotSqft = null;
+  if (adv.lotSizeSquareFeet != null) lotSqft = Number(adv.lotSizeSquareFeet) || null;
+  let acres = raw.acres != null ? Number(raw.acres) || null : null;
+
+  const num = (v) => (v != null && v !== "" ? Number(v) || null : null);
+  const firstOf = (v) => (Array.isArray(v) ? v[0] : v) || null;
+
   return {
     id: raw.listingID || raw.detailsURL || raw.address,
     photos,
     listPrice: raw.price != null ? Number(raw.price) : null,
     soldPrice: raw.soldPrice != null ? Number(raw.soldPrice) : null,
     address: raw.address || "",
-    city: raw.cityName || (raw.advanced && raw.advanced.city) || "",
+    city: raw.cityName || adv.city || "",
     state: raw.state || "",
     zip: raw.zipcode || "",
+    county: (raw.countyName || "").replace(/\s+County$/i, "") || null,
     beds: raw.bedrooms != null ? Number(raw.bedrooms) : null,
     baths: raw.totalBaths != null ? Number(raw.totalBaths) : null,
+    fullBaths: num(raw.fullBaths),
+    halfBaths: num(raw.halfBaths),
     sqft,
+    lotSqft,
+    acres,
     dom,
     status: (raw.propStatus || "").toLowerCase(),
     url: raw.fullDetailsURL || null,
+    // ---- detail-view fields ----
+    propType: raw.propSubType || raw.propType || null,
+    yearBuilt: num(raw.yearBuilt),
+    description: raw.remarksConcat || null,
+    subdivision: raw.subdivision || null,
+    taxes: num(raw.taxAnnualAmount),
+    schoolDistrict: firstOf(adv.schoolDistrict),
+    heating: Array.isArray(adv.heating) ? adv.heating : null,
+    cooling: Array.isArray(adv.cooling) ? adv.cooling : null,
+    appliances: Array.isArray(adv.appliances) ? adv.appliances : null,
+    interior: Array.isArray(adv.interiorOrRoomFeatures) ? adv.interiorOrRoomFeatures : null,
+    waterfront: adv.waterfrontYN === "yes" || null,
+    pool: adv.poolPrivateYN === "yes" || null,
+    garage: adv.garageYN === "yes" ? num(adv.garageSpaces) || true : null,
   };
 }
 
