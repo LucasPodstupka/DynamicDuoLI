@@ -92,7 +92,15 @@ img{display:block;max-width:100%}
 .team-band-head{margin-bottom:30px}
 .team-band-head .team-band-sub{color:var(--muted);font-size:17px;max-width:50ch;margin-top:14px;line-height:1.55}
 .team{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.agent{margin:0;position:relative}
+.agent{margin:0;position:relative;display:block;text-decoration:none;color:inherit;cursor:pointer}
+.agent-zillow{position:absolute;left:0;right:0;bottom:0;z-index:3;display:flex;align-items:center;justify-content:center;gap:7px;
+  padding:13px 14px;background:var(--brass);color:var(--navy);
+  font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:11.5px;
+  transform:translateY(100%);transition:transform .35s var(--ease)}
+.agent-zillow-arr{transition:transform .3s var(--ease)}
+.agent:hover .agent-zillow{transform:translateY(0)}
+.agent:hover .agent-zillow-arr{transform:translateX(4px)}
+.agent:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
 .agent-photo{position:relative;aspect-ratio:4/5;border-radius:3px;overflow:hidden;background:var(--bg-2);
   border:1px solid var(--line-2);box-shadow:0 24px 50px -34px rgba(26,31,36,.5)}
 .agent-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;transition:transform 1s var(--ease),opacity .55s var(--ease);will-change:transform}
@@ -107,7 +115,8 @@ img{display:block;max-width:100%}
 .agent-jeff:hover .agent-photo img{transform:scale(calc(var(--jeff-zoom) * 1.04))}
 .agent-photo::after{content:"";position:absolute;inset:0;
   background:linear-gradient(180deg,transparent 50%,rgba(23,35,51,.92));pointer-events:none}
-.agent figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 18px 17px;z-index:2;display:flex;flex-direction:column}
+.agent figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 18px 17px;z-index:2;display:flex;flex-direction:column;transition:transform .35s var(--ease)}
+.agent:hover figcaption{transform:translateY(-44px)}
 .agent-name{font-family:'Oswald',sans-serif;font-weight:600;font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:#fff}
 .agent-role{font-size:10px;color:var(--brass-bright);letter-spacing:.05em;margin-top:5px;line-height:1.4;font-weight:600;text-transform:uppercase}
 
@@ -258,8 +267,8 @@ textarea.ctrl{resize:vertical;min-height:88px}
 }
 @media(max-width:620px){
   .wrap{padding:0 20px}
-  .team{grid-template-columns:1fr;gap:16px}
-  .agent-photo{aspect-ratio:16/12}
+  .team{grid-template-columns:1fr;gap:18px}
+  .agent-photo{aspect-ratio:4/5}
   .benefits{grid-template-columns:1fr}
   .stats{grid-template-columns:1fr 1fr}
   .fields{grid-template-columns:1fr}
@@ -272,4 +281,11 @@ textarea.ctrl{resize:vertical;min-height:88px}
   .footer-inner{flex-direction:column;align-items:flex-start}
   .footer-note{text-align:left}
   .topcta{display:none}
+}
+/* Touch devices have no hover: show color photo + Zillow cue by default,
+   since the hover reveal would otherwise never appear. */
+@media(hover:none){
+  .agent-photo .ph-color{opacity:1}
+  .agent-zillow{transform:translateY(0)}
+  .agent figcaption{transform:translateY(-44px)}
 }
