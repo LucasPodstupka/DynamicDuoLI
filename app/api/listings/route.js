@@ -1,135 +1,139 @@
-// Server-side IDX Broker proxy. Holds the API key (env var) and never exposes it
-// to the browser. Normalizes listings into a clean shape for the UI.
-// Set IDX_ACCESS_KEY in Vercel: Project → Settings → Environment Variables.
+/* =====================================================================
+   LISTINGS API  —  /api/listings
+   ---------------------------------------------------------------------
+   Fetches the team's IDXBroker featured + sold/pending listings, maps
+   them into the shape the homepage Listings section expects, and splits
+   them into { active, pending, sold }.
 
-export const revalidate = 0;
+   The IDXBroker API key MUST be set as a Vercel environment variable
+   named  IDX_API_KEY  (Project → Settings → Environment Variables).
+   It is read here on the server only and never sent to the browser.
 
-const IDX_BASE = "https://api.idxbroker.com/clients";
-const CACHE_MS = 30 * 60 * 1000;
+   Endpoints used (IDXBroker Partners API):
+     GET clients/featured          -> the team's own active/pending listings
+     GET clients/soldpending       -> the team's sold + pending listings
+   ===================================================================== */
 
-let _cache = { ts: 0, data: null };
+export const runtime = "nodejs";
+// Re-fetch from IDXBroker at most once every 10 minutes (ISR-style cache).
+export const revalidate = 600;
 
-async function idxGet(path) {
-  const key = process.env.IDX_ACCESS_KEY;
-  if (!key) return { error: "no_key", listings: [] };
-  try {
-    const res = await fetch(`${IDX_BASE}/${path}`, {
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        accesskey: key,
-        outputtype: "json",
-      },
-      cache: "no-store",
-    });
-    if (!res.ok) return { error: `status_${res.status}`, listings: [] };
-    const json = await res.json();
-    return { listings: json };
-  } catch (e) {
-    return { error: String(e), listings: [] };
-  }
-}
+const IDX_BASE = "https://api.idxbroker.com";
 
-const num = (v) => {
-  if (v == null) return null;
-  const n = Number(String(v).replace(/[^0-9.]/g, ""));
-  return isFinite(n) && n > 0 ? n : null;
-};
-
-function collectPhotos(p) {
+/* ---- map one raw IDXBroker listing object to our card shape ---- */
+function mapListing(raw) {
+  // Photos: IDXBroker returns an `image` object keyed "0","1",... plus a
+  // numeric `totalCount`. Pull the .url off each numbered entry, in order.
   let photos = [];
-  const img = p.image || p.images || p.photos;
-  if (Array.isArray(img)) photos = img.map((x) => (typeof x === "string" ? x : x?.url || x?.URL)).filter(Boolean);
-  else if (img && typeof img === "object") {
-    photos = Object.values(img)
-      .map((x) => (typeof x === "string" ? x : x?.url || x?.URL))
-      .filter((u) => typeof u === "string" && /^https?:/.test(u));
-  }
-  if (!photos.length && p.imageURL) photos = [p.imageURL];
-  return photos;
-}
-
-function normalize(raw, statusFallback) {
-  if (!raw || typeof raw !== "object") return [];
-  let items = Array.isArray(raw) ? raw : Object.values(raw);
-  // drop non-object entries (IDX sometimes includes a count/legend key)
-  items = items.filter((p) => p && typeof p === "object");
-  return items
-    .map((p) => {
-      const address =
-        p.address ||
-        [p.streetNumber || p.streetNum, p.streetName].filter(Boolean).join(" ").trim() ||
-        p.fullAddress ||
-        p.streetName ||
-        "";
-      return {
-        id: p.listingID || p.idxID || p.listingId || address || Math.random().toString(36).slice(2),
-        address,
-        city: p.cityName || p.city || "",
-        state: p.state || p.stateAbrv || "",
-        zip: p.zipcode || p.zip || "",
-        listPrice: num(p.listingPrice ?? p.price ?? p.currentPrice ?? p.listPrice),
-        soldPrice: num(p.soldPrice ?? p.salePrice ?? p.closePrice),
-        beds: num(p.bedrooms ?? p.totalBedrooms ?? p.beds ?? p.beds),
-        baths: num(p.totalBaths ?? p.bathrooms ?? p.baths ?? p.bathsTotal),
-        sqft: num(p.sqFt ?? p.squareFeet ?? p.sqft ?? p.livingArea),
-        dom: num(p.daysOnMarket ?? p.dom ?? p.daysOnMkt),
-        status: (p.propStatus || p.status || statusFallback || "").toString(),
-        photos: collectPhotos(p),
-        detailUrl: p.fullDetailsURL || p.detailsURL || p.url || "",
-      };
-    })
-    // keep anything that has at least an address or a price
-    .filter((x) => x.address || x.listPrice);
-}
-
-export async function GET(request) {
-  const debug = new URL(request.url).searchParams.get("debug");
-
-  const year = "interval=8760";
-  const [featured, soldpending, historical] = await Promise.all([
-    idxGet(`featured?${year}`),
-    idxGet(`soldpending?${year}`),
-    idxGet(`historical?${year}`),
-  ]);
-
-  if (debug) {
-    // Return raw shapes so we can see exact field names. Trim to first item each.
-    const sample = (r) => {
-      const v = r.listings;
-      if (!v || typeof v !== "object") return { error: r.error || null, sample: v };
-      const items = Array.isArray(v) ? v : Object.values(v);
-      return { error: r.error || null, count: items.length, firstItem: items.find((x) => x && typeof x === "object") || null };
-    };
-    return Response.json({
-      featured: sample(featured),
-      soldpending: sample(soldpending),
-      historical: sample(historical),
-    });
+  if (raw.image && typeof raw.image === "object") {
+    photos = Object.keys(raw.image)
+      .filter((k) => /^\d+$/.test(k))
+      .sort((a, b) => Number(a) - Number(b))
+      .map((k) => raw.image[k] && raw.image[k].url)
+      .filter(Boolean);
   }
 
-  if (_cache.data && Date.now() - _cache.ts < CACHE_MS) {
-    return Response.json(_cache.data, { headers: { "x-cache": "HIT" } });
+  // sqft arrives as a formatted string like "2,160" — strip commas to a number.
+  const sqft =
+    raw.sqFt != null && String(raw.sqFt).trim() !== ""
+      ? Number(String(raw.sqFt).replace(/[^0-9.]/g, "")) || null
+      : null;
+
+  // Days on market, when we can compute it from onMarketDate.
+  let dom = null;
+  const onMarket = raw.advanced && raw.advanced.onMarketDate;
+  if (onMarket) {
+    const start = new Date(onMarket).getTime();
+    if (!Number.isNaN(start)) {
+      dom = Math.max(0, Math.round((Date.now() - start) / 86400000));
+    }
   }
 
-  const active = normalize(featured.listings, "Active");
-  const sp = normalize(soldpending.listings, "");
-  const pending = sp.filter((x) => /pend|contract|contingent/i.test(x.status));
-  let sold = sp.filter((x) => /sold|closed/i.test(x.status));
-  const hist = normalize(historical.listings, "Sold");
-  if (hist.length) sold = [...sold, ...hist];
-
-  const data = {
-    active,
-    pending,
-    sold,
-    meta: {
-      featuredError: featured.error || null,
-      soldpendingError: soldpending.error || null,
-      historicalError: historical.error || null,
-      counts: { active: active.length, pending: pending.length, sold: sold.length },
-      cachedAt: new Date().toISOString(),
-    },
+  return {
+    id: raw.listingID || raw.detailsURL || raw.address,
+    photos,
+    listPrice: raw.price != null ? Number(raw.price) : null,
+    soldPrice: raw.soldPrice != null ? Number(raw.soldPrice) : null,
+    address: raw.address || "",
+    city: raw.cityName || (raw.advanced && raw.advanced.city) || "",
+    state: raw.state || "",
+    zip: raw.zipcode || "",
+    beds: raw.bedrooms != null ? Number(raw.bedrooms) : null,
+    baths: raw.totalBaths != null ? Number(raw.totalBaths) : null,
+    sqft,
+    dom,
+    status: (raw.propStatus || "").toLowerCase(),
+    url: raw.fullDetailsURL || null,
   };
-  _cache = { ts: Date.now(), data };
-  return Response.json(data, { headers: { "x-cache": "MISS" } });
+}
+
+/* ---- normalize an IDXBroker response into an array of listings ----
+   IDXBroker returns an object keyed by an internal id (e.g. "c056!%894908")
+   whose values are the listing objects. We just want the values. */
+function toArray(payload) {
+  if (!payload || typeof payload !== "object") return [];
+  return Object.keys(payload)
+    .filter((k) => payload[k] && typeof payload[k] === "object" && payload[k].address)
+    .map((k) => payload[k]);
+}
+
+async function idxFetch(path, apiKey) {
+  const res = await fetch(`${IDX_BASE}/${path}`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+      accesskey: apiKey,
+      outputtype: "json",
+    },
+    // Let Next cache the upstream response per `revalidate` above.
+    next: { revalidate },
+  });
+  if (!res.ok) throw new Error(`IDXBroker ${path} -> ${res.status}`);
+  return res.json();
+}
+
+export async function GET() {
+  const apiKey = process.env.IDX_API_KEY;
+
+  if (!apiKey) {
+    // No key configured yet — return empty sets so the page shows its
+    // graceful "check back soon" state instead of crashing.
+    return Response.json(
+      { active: [], pending: [], sold: [], error: "missing_api_key" },
+      { status: 200 }
+    );
+  }
+
+  try {
+    // Featured = the team's own listings (active + pending live here).
+    // soldpending = sold + pending. We use featured for active/pending
+    // and soldpending for the sold set.
+    const [featuredRaw, soldRaw] = await Promise.all([
+      idxFetch("clients/featured", apiKey).catch(() => ({})),
+      idxFetch("clients/soldpending", apiKey).catch(() => ({})),
+    ]);
+
+    const featured = toArray(featuredRaw).map(mapListing);
+    const soldPending = toArray(soldRaw).map(mapListing);
+
+    const active = featured.filter((l) => l.status === "active");
+    const pending = featured.filter((l) => l.status === "pending");
+
+    // Sold: take closed/sold from the soldpending feed. IDXBroker marks
+    // these with propStatus "Closed" (and idxStatus "sold").
+    const sold = soldPending
+      .filter((l) => l.status === "closed" || l.status === "sold")
+      .sort((a, b) => (b.soldPrice || 0) - (a.soldPrice || 0));
+
+    // Sort active/pending high-to-low by price for a clean grid.
+    active.sort((a, b) => (b.listPrice || 0) - (a.listPrice || 0));
+    pending.sort((a, b) => (b.listPrice || 0) - (a.listPrice || 0));
+
+    return Response.json({ active, pending, sold }, { status: 200 });
+  } catch (err) {
+    return Response.json(
+      { active: [], pending: [], sold: [], error: String(err && err.message) },
+      { status: 200 }
+    );
+  }
 }
