@@ -1,8 +1,38 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Dynamic Duo LI — Work With Us",
-  description: "Long Island real estate, played to win. Buy, sell, or rent with Dynamic Duo LI.",
+  metadataBase: new URL("https://dynamicduoli.com"),
+  title: "Dynamic Duo LI — Long Island Real Estate",
+  description:
+    "Long Island real estate, played to win. Buy, sell, or rent with Dynamic Duo LI — strategy, speed, and straight talk on every move.",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "Dynamic Duo LI — Long Island Real Estate",
+    description:
+      "Buy, sell, or rent on Long Island with Dynamic Duo LI — strategy, speed, and straight talk on every move.",
+    url: "https://dynamicduoli.com",
+    siteName: "Dynamic Duo LI",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Dynamic Duo LI — Long Island Real Estate",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dynamic Duo LI — Long Island Real Estate",
+    description:
+      "Buy, sell, or rent on Long Island with Dynamic Duo LI.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
