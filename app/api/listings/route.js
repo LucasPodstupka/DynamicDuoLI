@@ -6,7 +6,7 @@
    them into { active, pending, sold }.
 
    The IDXBroker API key MUST be set as a Vercel environment variable
-   named  IDX_API_KEY  (Project → Settings → Environment Variables).
+   named  IDX_ACCESS_KEY  (Project → Settings → Environment Variables).
    It is read here on the server only and never sent to the browser.
 
    Endpoints used (IDXBroker Partners API):
@@ -93,7 +93,7 @@ async function idxFetch(path, apiKey) {
 }
 
 export async function GET() {
-  const apiKey = process.env.IDX_API_KEY;
+  const apiKey = process.env.IDX_ACCESS_KEY;
 
   if (!apiKey) {
     // No key configured yet — return empty sets so the page shows its
