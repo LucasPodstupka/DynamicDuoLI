@@ -92,33 +92,39 @@ img{display:block;max-width:100%}
 .team-band-head{margin-bottom:30px}
 .team-band-head .team-band-sub{color:var(--muted);font-size:17px;max-width:50ch;margin-top:14px;line-height:1.55}
 .team{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.agent{margin:0;position:relative;display:block;text-decoration:none;color:inherit;cursor:pointer}
-.agent-zillow{position:absolute;left:0;right:0;bottom:0;z-index:3;display:flex;align-items:center;justify-content:center;gap:7px;
-  padding:13px 14px;background:var(--brass);color:var(--navy);
-  font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:11.5px;
-  transform:translateY(100%);transition:transform .35s var(--ease)}
-.agent-zillow-arr{transition:transform .3s var(--ease)}
-.agent:hover .agent-zillow{transform:translateY(0)}
-.agent:hover .agent-zillow-arr{transform:translateX(4px)}
-.agent:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
-.agent-photo{position:relative;aspect-ratio:4/5;border-radius:3px;overflow:hidden;background:var(--bg-2);
-  border:1px solid var(--line-2);box-shadow:0 24px 50px -34px rgba(26,31,36,.5)}
+.agent{margin:0;position:relative;display:flex;flex-direction:column}
+.agent-photo{position:relative;display:block;aspect-ratio:4/5;border-radius:3px;overflow:hidden;background:var(--bg-2);
+  border:1px solid var(--line-2);box-shadow:0 24px 50px -34px rgba(26,31,36,.5);cursor:pointer}
 .agent-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;transition:transform 1s var(--ease),opacity .55s var(--ease);will-change:transform}
 .agent-photo .ph-color{opacity:0}
-.agent:hover .agent-photo .ph-gray{opacity:0}
-.agent:hover .agent-photo .ph-color{opacity:1}
+.agent-photo:hover .ph-gray{opacity:0}
+.agent-photo:hover .ph-color{opacity:1}
 .agent-nick .agent-photo img{object-position:50% var(--nick-pos);transform:scale(var(--nick-zoom))}
 .agent-lucas .agent-photo img{object-position:50% var(--lucas-pos);transform:scale(var(--lucas-zoom))}
 .agent-jeff .agent-photo img{object-position:50% var(--jeff-pos);transform:scale(var(--jeff-zoom))}
-.agent-nick:hover .agent-photo img{transform:scale(calc(var(--nick-zoom) * 1.04))}
-.agent-lucas:hover .agent-photo img{transform:scale(calc(var(--lucas-zoom) * 1.04))}
-.agent-jeff:hover .agent-photo img{transform:scale(calc(var(--jeff-zoom) * 1.04))}
-.agent-photo::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,transparent 50%,rgba(23,35,51,.92));pointer-events:none}
-.agent figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 18px 17px;z-index:2;display:flex;flex-direction:column;transition:transform .35s var(--ease)}
-.agent:hover figcaption{transform:translateY(-44px)}
-.agent-name{font-family:'Oswald',sans-serif;font-weight:600;font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:#fff}
-.agent-role{font-size:10px;color:var(--brass-bright);letter-spacing:.05em;margin-top:5px;line-height:1.4;font-weight:600;text-transform:uppercase}
+.agent-nick .agent-photo:hover img{transform:scale(calc(var(--nick-zoom) * 1.04))}
+.agent-lucas .agent-photo:hover img{transform:scale(calc(var(--lucas-zoom) * 1.04))}
+.agent-jeff .agent-photo:hover img{transform:scale(calc(var(--jeff-zoom) * 1.04))}
+.agent-photo:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.agent-zillow{position:absolute;left:0;right:0;bottom:0;z-index:3;display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:13px 14px;background:var(--brass);color:var(--navy);
+  font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:11.5px;
+  transform:translateY(100%);transition:transform .35s var(--ease)}
+.agent-zillow-ic{display:inline-flex;width:15px;height:15px}
+.agent-zillow-ic svg{width:100%;height:100%}
+.agent-zillow-arr{transition:transform .3s var(--ease)}
+.agent-photo:hover .agent-zillow{transform:translateY(0)}
+.agent-photo:hover .agent-zillow-arr{transform:translateX(4px)}
+/* meta below photo */
+.agent-meta{padding:16px 2px 0;display:flex;flex-direction:column}
+.agent-name{font-family:'Oswald',sans-serif;font-weight:600;font-size:17px;letter-spacing:.03em;text-transform:uppercase;color:var(--ink-2);line-height:1.1}
+.agent-role{font-size:10px;color:var(--brass);letter-spacing:.05em;margin-top:5px;line-height:1.4;font-weight:600;text-transform:uppercase}
+.agent-contact{display:flex;gap:10px;margin-top:14px}
+.agent-contact a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;
+  border:1px solid var(--line-2);color:var(--muted);background:var(--bg-3);transition:all .22s var(--ease)}
+.agent-contact a svg{width:17px;height:17px}
+.agent-contact a:hover{color:#fff;background:var(--navy);border-color:var(--navy);transform:translateY(-2px)}
+.agent-contact a:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
 
 /* ---- selector ---- */
 .selector{padding:24px 0 0}
@@ -319,5 +325,4 @@ textarea.ctrl{resize:vertical;min-height:88px}
 @media(hover:none){
   .agent-photo .ph-color{opacity:1}
   .agent-zillow{transform:translateY(0)}
-  .agent figcaption{transform:translateY(-44px)}
 }
