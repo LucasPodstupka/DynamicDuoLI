@@ -68,13 +68,24 @@ function mapListing(raw) {
 }
 
 /* ---- normalize an IDXBroker response into an array of listings ----
-   IDXBroker returns an object keyed by an internal id (e.g. "c056!%894908")
-   whose values are the listing objects. We just want the values. */
+   IDXBroker wraps results in a paginated envelope:
+     { total, first, last, next, previous, data: { "<id>": {listing}, ... } }
+   The actual listings live under `data`, keyed by an internal id
+   (e.g. "c056!%894908"). Older/!paginated responses put the id-keyed
+   listings at the top level. Handle both. */
 function toArray(payload) {
   if (!payload || typeof payload !== "object") return [];
-  return Object.keys(payload)
-    .filter((k) => payload[k] && typeof payload[k] === "object" && payload[k].address)
-    .map((k) => payload[k]);
+  // Unwrap the paginated envelope if present.
+  const container =
+    payload.data && typeof payload.data === "object" ? payload.data : payload;
+  return Object.keys(container)
+    .filter(
+      (k) =>
+        container[k] &&
+        typeof container[k] === "object" &&
+        container[k].address
+    )
+    .map((k) => container[k]);
 }
 
 async function idxFetch(path, apiKey) {
