@@ -88,11 +88,17 @@ async function idxFetch(path, apiKey) {
     // Let Next cache the upstream response per `revalidate` above.
     next: { revalidate },
   });
-  if (!res.ok) throw new Error(`IDXBroker ${path} -> ${res.status}`);
-  return res.json();
+  const text = await res.text();
+  let body = null;
+  try {
+    body = JSON.parse(text);
+  } catch {
+    body = text; // non-JSON (e.g. an error string)
+  }
+  return { ok: res.ok, status: res.status, body };
 }
 
-export async function GET() {
+export async function GET(request) {
   const apiKey = process.env.IDX_ACCESS_KEY;
 
   if (!apiKey) {
@@ -104,17 +110,61 @@ export async function GET() {
     );
   }
 
+  // TEMPORARY DIAGNOSTICS: hit /api/listings?debug=1 to see exactly what
+  // IDXBroker returns. Remove this block once listings are flowing.
+  let debug = null;
+  try {
+    debug = new URL(request.url).searchParams.get("debug");
+  } catch {
+    debug = null;
+  }
+
   try {
     // Featured = the team's own listings (active + pending live here).
     // soldpending = sold + pending. We use featured for active/pending
     // and soldpending for the sold set.
-    const [featuredRaw, soldRaw] = await Promise.all([
-      idxFetch("clients/featured", apiKey).catch(() => ({})),
-      idxFetch("clients/soldpending", apiKey).catch(() => ({})),
+    const [feat, soldRes] = await Promise.all([
+      idxFetch("clients/featured", apiKey).catch((e) => ({
+        ok: false,
+        status: 0,
+        body: String(e && e.message),
+      })),
+      idxFetch("clients/soldpending", apiKey).catch((e) => ({
+        ok: false,
+        status: 0,
+        body: String(e && e.message),
+      })),
     ]);
 
-    const featured = toArray(featuredRaw).map(mapListing);
-    const soldPending = toArray(soldRaw).map(mapListing);
+    if (debug) {
+      return Response.json(
+        {
+          featured: {
+            status: feat.status,
+            ok: feat.ok,
+            type: Array.isArray(feat.body) ? "array" : typeof feat.body,
+            keys:
+              feat.body && typeof feat.body === "object"
+                ? Object.keys(feat.body).slice(0, 5)
+                : null,
+            sample: feat.body,
+          },
+          soldpending: {
+            status: soldRes.status,
+            ok: soldRes.ok,
+            type: Array.isArray(soldRes.body) ? "array" : typeof soldRes.body,
+            keys:
+              soldRes.body && typeof soldRes.body === "object"
+                ? Object.keys(soldRes.body).slice(0, 5)
+                : null,
+          },
+        },
+        { status: 200 }
+      );
+    }
+
+    const featured = toArray(feat.body).map(mapListing);
+    const soldPending = toArray(soldRes.body).map(mapListing);
 
     const active = featured.filter((l) => l.status === "active");
     const pending = featured.filter((l) => l.status === "pending");
