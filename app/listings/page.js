@@ -22,6 +22,21 @@ const MARKUP = `<header class="topbar" id="topbar">
       <p class="listings-sub">Browse active, pending, and sold homes from our team. Filter by town, price, and size — then tap any home for the full details.</p>
     </div>
 
+    <div class="listings-stats reveal" id="listings-stats">
+      <div class="stat-box stat-active">
+        <span class="stat-num" id="stat-active">—</span>
+        <span class="stat-label">Active</span>
+      </div>
+      <div class="stat-box stat-pending">
+        <span class="stat-num" id="stat-pending">—</span>
+        <span class="stat-label">Pending</span>
+      </div>
+      <div class="stat-box stat-sold">
+        <span class="stat-num" id="stat-sold">—</span>
+        <span class="stat-label">Sold</span>
+      </div>
+    </div>
+
     <div class="listings-filter reveal" role="tablist">
       <button class="lf-btn active" data-status="active">Active</button>
       <button class="lf-btn" data-status="pending">Pending</button>
@@ -178,10 +193,10 @@ if(topbar){addEventListener('scroll',()=>{topbar.classList.toggle('scrolled',scr
       ? \`<div class="lc-dots">\${photos.slice(0,12).map((_,i)=>\`<span class="lc-dot\${i===0?' on':''}"></span>\`).join('')}</div>\` : '';
     const navs=photos.length>1
       ? '<button class="lc-nav lc-prev" aria-label="Previous photo">&#8249;</button><button class="lc-nav lc-next" aria-label="Next photo">&#8250;</button>' : '';
-    const statusClass = current==='sold'?'sold':(current==='pending'?'pending':'');
+    const statusClass = current==='sold'?'sold':(current==='pending'?'pending':'active');
     const statusLabel = current==='sold'?'Sold':(current==='pending'?'Pending':'Active');
-    const priceBlock = (current==='sold'&&p.soldPrice)
-      ? \`\${fmtPrice(p.listPrice)?'<span style="color:var(--muted-2);font-size:15px;text-decoration:line-through;margin-right:8px">'+fmtPrice(p.listPrice)+'</span>':''}<span class="lc-sold">Sold \${fmtPrice(p.soldPrice)}</span>\`
+    const priceBlock = (current==='sold')
+      ? \`<span class="lc-sold">Sold \${fmtPrice(p.soldPrice||p.listPrice)}</span>\`
       : fmtPrice(p.listPrice)||'Contact for price';
     const specs=[];
     if(p.beds!=null) specs.push(\`<span><b>\${p.beds}</b> bd</span>\`);
@@ -286,8 +301,8 @@ if(topbar){addEventListener('scroll',()=>{topbar.classList.toggle('scrolled',scr
   function openDetail(p){
     const photos=(p.photos&&p.photos.length)?p.photos:[];
     const statusLabel = p.status==='closed'||p.status==='sold'?'Sold':(p.status==='pending'?'Pending':'Active');
-    const priceBlock = (statusLabel==='Sold'&&p.soldPrice)
-      ? \`<span class="dv-sold">Sold \${fmtPrice(p.soldPrice)}</span>\${p.listPrice?\`<span class="dv-listprice">Listed \${fmtPrice(p.listPrice)}</span>\`:''}\`
+    const priceBlock = (statusLabel==='Sold')
+      ? \`<span class="dv-sold">Sold \${fmtPrice(p.soldPrice||p.listPrice)}</span>\`
       : (fmtPrice(p.listPrice)||'Contact for price');
 
     const gallery = photos.length
@@ -336,7 +351,7 @@ if(topbar){addEventListener('scroll',()=>{topbar.classList.toggle('scrolled',scr
       <div class="dv-body">
         <div class="dv-head">
           <div>
-            <span class="dv-status \${statusLabel==='Sold'?'sold':(statusLabel==='Pending'?'pending':'')}">\${statusLabel}</span>
+            <span class="dv-status \${statusLabel==='Sold'?'sold':(statusLabel==='Pending'?'pending':'active')}">\${statusLabel}</span>
             <div class="dv-price">\${priceBlock}</div>
             <div class="dv-addr">\${esc(p.address)}</div>
             <div class="dv-city">\${esc([p.city,p.state].filter(Boolean).join(', '))} \${esc(p.zip)}</div>
@@ -384,6 +399,12 @@ if(topbar){addEventListener('scroll',()=>{topbar.classList.toggle('scrolled',scr
   buildPriceOptions();
   fetch('/api/listings').then(r=>r.json()).then(d=>{
     DATA={active:d.active||[],pending:d.pending||[],sold:d.sold||[]};
+    const sa=document.getElementById('stat-active');
+    const sp=document.getElementById('stat-pending');
+    const ss=document.getElementById('stat-sold');
+    if(sa) sa.textContent=DATA.active.length;
+    if(sp) sp.textContent=DATA.pending.length;
+    if(ss) ss.textContent=DATA.sold.length;
     filterBtns.forEach(b=>{
       const s=b.dataset.status;
       if(s!=='active' && !(DATA[s]&&DATA[s].length)) b.style.display='none';
