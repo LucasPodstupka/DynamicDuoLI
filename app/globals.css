@@ -293,6 +293,20 @@ textarea.ctrl{resize:vertical;min-height:88px}
 .listings-title{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;color:var(--ink-2);
   font-size:clamp(30px,4.2vw,52px);line-height:.98;margin-top:14px;letter-spacing:.004em}
 .listings-sub{color:var(--muted);font-size:17px;max-width:50ch;margin:16px auto 0;line-height:1.55}
+.listings-stats{display:flex;justify-content:center;gap:14px;margin:0 auto 26px;flex-wrap:wrap;max-width:560px}
+.stat-box{flex:1 1 0;min-width:120px;display:flex;flex-direction:column;align-items:center;gap:4px;
+  padding:18px 14px;border-radius:4px;background:#fff;border:1px solid rgba(31,42,68,.08);
+  border-top:3px solid var(--navy)}
+.stat-box .stat-num{font-family:'Oswald',sans-serif;font-weight:600;font-size:30px;line-height:1;color:var(--navy)}
+.stat-box .stat-label{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
+  letter-spacing:.12em;font-size:11px;color:var(--muted-2,#7a7f8a)}
+.stat-active{border-top-color:#1f9d52}
+.stat-active .stat-num{color:#1f9d52}
+.stat-pending{border-top-color:#e0a911}
+.stat-pending .stat-num{color:#c98f00}
+.stat-sold{border-top-color:#c0392b}
+.stat-sold .stat-num{color:#c0392b}
+@media(max-width:520px){.stat-box{min-width:0;padding:14px 8px}.stat-box .stat-num{font-size:24px}}
 .listings-filter{display:flex;justify-content:center;gap:10px;margin-bottom:34px}
 .lf-btn{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:13px;
   padding:11px 22px;border:1px solid var(--line-2);background:var(--bg-3);color:var(--muted);border-radius:2px;cursor:pointer;transition:all .2s}
@@ -318,8 +332,9 @@ textarea.ctrl{resize:vertical;min-height:88px}
 .lc-prev{left:10px}.lc-next{right:10px}
 .lc-status{position:absolute;top:12px;left:12px;z-index:2;font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;
   letter-spacing:.08em;font-size:10.5px;padding:6px 12px;border-radius:2px;background:var(--brass);color:var(--navy)}
-.lc-status.pending{background:#c98a2c}
-.lc-status.sold{background:var(--navy);color:#fff}
+.lc-status.active{background:#1f9d52;color:#fff}
+.lc-status.pending{background:#e0a911;color:#3a2b00}
+.lc-status.sold{background:#c0392b;color:#fff}
 .lc-dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:2}
 .lc-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.5)}
 .lc-dot.on{background:#fff}
@@ -472,8 +487,9 @@ textarea.ctrl{resize:vertical;min-height:88px}
 .dv-body{padding:30px 34px 34px}
 .dv-status{display:inline-block;font-family:'Oswald',sans-serif;font-weight:600;font-size:11px;
   letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--navy);padding:5px 11px;border-radius:2px}
-.dv-status.pending{background:var(--brass)}
-.dv-status.sold{background:#5f6670}
+.dv-status.active{background:#1f9d52;color:#fff}
+.dv-status.pending{background:#e0a911;color:#3a2b00}
+.dv-status.sold{background:#c0392b;color:#fff}
 .dv-price{font-family:'Oswald',sans-serif;font-weight:700;font-size:30px;color:var(--ink-2);margin-top:12px;letter-spacing:.005em}
 .dv-sold{color:var(--ink-2)}
 .dv-listprice{font-family:'Inter',sans-serif;font-weight:500;font-size:15px;color:var(--muted-2);margin-left:12px}
