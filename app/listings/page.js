@@ -22,6 +22,7 @@ export default function ListingsPage() {
           <nav className="topnav">
             <a href="/listings" aria-current="page">Listings</a>
             <a className="topcall" href="tel:+15164049544" aria-label="Call Nick Barberio at 516-404-9544"><span>Call Nick 516-404-9544</span></a>
+            <a className="topig" href="https://instagram.com/dynamicduoli" target="_blank" rel="noopener noreferrer" aria-label="@dynamicduoli on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
             <a className="topcta" href="/#selector">Work With Us</a>
           </nav>
         </div>
