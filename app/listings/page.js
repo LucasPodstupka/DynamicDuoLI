@@ -21,6 +21,7 @@ export default function ListingsPage() {
           </a>
           <nav className="topnav">
             <a href="/listings" aria-current="page">Listings</a>
+            <a className="topcall" href="tel:+15168261111" aria-label="Call Dynamic Duo LI at 516-826-1111"><span>516-826-1111</span></a>
             <a className="topcta" href="/#selector">Work With Us</a>
           </nav>
         </div>
