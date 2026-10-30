@@ -149,6 +149,12 @@ function Detail({ l, onClose }) {
           {l.status === "Active" && (
             <a className="lx-interest" href={interestHref}>I&rsquo;m Interested <span>&rarr;</span></a>
           )}
+          {l.instagramUrl && (
+            <a className="lx-ig" href={l.instagramUrl} target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+              Watch Walkthrough
+            </a>
+          )}
           <p className="lx-courtesy">
             Listing courtesy of {l.listAgent || "listing agent"}. Source: OneKey&reg; MLS.
           </p>

@@ -119,3 +119,7 @@ a.topcta{text-decoration:none;display:inline-flex;align-items:center}
 .lx-vol .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
 .lx-vol-active .dot{background:#2e9e5b}.lx-vol-pending .dot{background:#e0b021}.lx-vol-sold .dot{background:#c23a32}
 @media(max-width:800px){.lx-vol{grid-template-columns:repeat(3,1fr)}.lx-vol-total{grid-column:1/-1}.lx-vol b{font-size:1.3rem}}
+
+.lx-ig{display:inline-flex;align-items:center;gap:10px;margin:24px 0 0 10px;padding:14px 22px;border:1px solid var(--navy);color:var(--navy);
+  text-decoration:none;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:13px;font-weight:600;transition:all .25s var(--ease)}
+.lx-ig:hover{background:var(--navy);color:#fff}

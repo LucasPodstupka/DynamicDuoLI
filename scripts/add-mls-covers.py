@@ -6,7 +6,7 @@ src = sys.argv[1] if len(sys.argv) > 1 else os.path.expanduser('~/Downloads/mls_
 d = json.load(open('data/listings.json')); by = {l['mls']: l for l in d['listings']}
 for f in glob.glob(f'{src}/*.jpg'):
     m = os.path.basename(f)[:-4]; l = by.get(m)
-    if not l or l['side'] == 'listing' or len(l['photos']) > 1: continue
+    if not l or len(l['photos']) > 1: continue
     out = f'public/listings/{m}'; os.makedirs(out, exist_ok=True)
     im = ImageOps.exif_transpose(Image.open(f)).convert('RGB')
     for w, q, s in ((1400, 72, ''), (480, 68, '-sm')):
