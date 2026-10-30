@@ -19,7 +19,7 @@ function Photo({ src, alt, sizes, className, eager }) {
     <img
       className={className}
       src={`${src}-sm.webp`}
-      srcSet={`${src}-sm.webp 640w, ${src}.webp 1600w`}
+      srcSet={`${src}-sm.webp 480w, ${src}.webp 1400w`}
       sizes={sizes}
       alt={alt}
       loading={eager ? "eager" : "lazy"}
@@ -158,6 +158,45 @@ function Detail({ l, onClose }) {
   );
 }
 
+const compact = (n) =>
+  n >= 1e6 ? "$" + (n / 1e6).toFixed(n >= 1e8 ? 0 : 1) + "M" : "$" + Math.round(n / 1e3) + "K";
+
+function Volume({ listings }) {
+  const v = useMemo(() => {
+    const now = new Date();
+    const from = new Date(now); from.setFullYear(now.getFullYear() - 1);
+    const out = { Active: [0, 0], Pending: [0, 0], Sold: [0, 0] };
+    listings.forEach((l) => {
+      if (l.status === "Sold") {
+        if (!l.soldDate) return;
+        const d = new Date(l.soldDate + "T12:00:00");
+        if (d < from || d > now) return;
+        out.Sold[0]++; out.Sold[1] += l.soldPrice ?? l.listPrice ?? 0;
+      } else if (out[l.status]) {
+        out[l.status][0]++; out[l.status][1] += l.listPrice ?? 0;
+      }
+    });
+    const total = Object.values(out).reduce((a, [c, s]) => [a[0] + c, a[1] + s], [0, 0]);
+    return { out, total };
+  }, [listings]);
+  return (
+    <div className="lx-vol" aria-label="Trailing 12-month volume">
+      <div className="lx-vol-total">
+        <span className="lbl">Total Volume · Last 12 Months</span>
+        <b>{money(v.total[1])}</b>
+        <span className="sub">{v.total[0]} homes</span>
+      </div>
+      {["Active", "Pending", "Sold"].map((k) => (
+        <div key={k} className={`lx-vol-cell lx-vol-${k.toLowerCase()}`}>
+          <span className="lbl"><span className="dot" />{k}</span>
+          <b>{compact(v.out[k][1])}</b>
+          <span className="sub">{v.out[k][0]} {v.out[k][0] === 1 ? "home" : "homes"}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function ListingsClient({ listings }) {
   const counts = useMemo(() => {
     const c = { Active: 0, Pending: 0, Sold: 0 };
@@ -182,6 +221,7 @@ export default function ListingsClient({ listings }) {
 
   return (
     <section className="wrap lx-body">
+      <Volume listings={listings} />
       <div className="lx-tabs" role="tablist">
         {TABS.map((t) => (
           <button key={t.key} role="tab" aria-selected={tab === t.key}

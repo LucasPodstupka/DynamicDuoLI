@@ -2,6 +2,8 @@ import data from "../../data/listings.json";
 import ListingsClient from "./ListingsClient";
 import "./listings.css";
 
+export const revalidate = 86400;
+
 export const metadata = {
   title: "Listings — Dynamic Duo LI",
   description:
