@@ -123,3 +123,35 @@ a.topcta{text-decoration:none;display:inline-flex;align-items:center}
 .lx-ig{display:inline-flex;align-items:center;gap:10px;margin:24px 0 0 10px;padding:14px 22px;border:1px solid var(--navy);color:var(--navy);
   text-decoration:none;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:13px;font-weight:600;transition:all .25s var(--ease)}
 .lx-ig:hover{background:var(--navy);color:#fff}
+
+/* ===================== Design refresh ===================== */
+.lx-tabs{position:relative}
+.lx-ind{position:absolute;left:0;bottom:-1px;height:2px;background:var(--brass);transition:transform .45s var(--ease),width .45s var(--ease)}
+.lx-grid .lx-card{animation:cardIn .6s var(--ease) both;animation-delay:calc(var(--i,0) * 55ms)}
+@keyframes cardIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.lx-card{transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .3s}
+.lx-card:hover,.lx-card:focus-visible{transform:translateY(-6px)}
+.lx-card:hover .lx-card-img{transform:scale(1.06)}
+.lx-modal{opacity:0;transition:opacity .26s ease;animation:none}
+.lx-modal .lx-sheet{transform:translateY(18px) scale(.985);transition:transform .32s var(--ease)}
+.lx-modal.is-open{opacity:1}
+.lx-modal.is-open .lx-sheet{transform:none}
+.lx-fade{animation:lxFade .4s ease}
+.lx-gal-facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.1);margin-top:auto}
+.lx-gal-facts div{padding:18px 12px;text-align:center;border-right:1px solid rgba(255,255,255,.08)}
+.lx-gal-facts div:last-child{border-right:0}
+.lx-gal-facts b{display:block;font-family:'Oswald',sans-serif;font-weight:600;font-size:22px;color:#fff}
+.lx-gal-facts span{display:block;margin-top:4px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.72)}
+.lx-gallery{align-self:stretch;min-height:100%}
+.lx-info{display:flex;flex-direction:column}
+.lx-sticky{position:sticky;bottom:0;margin:22px -34px -30px;padding:14px 34px;background:rgba(251,248,241,.96);backdrop-filter:blur(6px);border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:14px}
+.lx-sticky .lx-interest{margin-top:0}
+.lx-sticky-p{font-family:'Oswald',sans-serif;font-weight:600;font-size:22px;color:var(--ink-2)}
+.lx-info-price .k,.lx-dl dt,.lx-count,.lx-idx{font-size:12.5px}
+.lx-courtesy{font-size:12.5px;color:var(--muted)}
+.lx-ph span{font-size:12.5px}
+@media(max-width:900px){.lx-gallery{position:relative}.lx-sticky{margin:22px -22px -26px;padding:12px 22px}}
+@media(max-width:820px){.topnav>a.topcall{border:0}}
+@media(prefers-reduced-motion:reduce){.lx-grid .lx-card{animation:none}.lx-modal .lx-sheet{transform:none}}
+.lx-credit{margin:12px 0 0;font-size:12px;color:var(--muted);letter-spacing:.02em}
+.lx-tab-office .dot{background:var(--brass)}
