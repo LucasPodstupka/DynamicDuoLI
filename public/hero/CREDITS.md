@@ -1,7 +1,7 @@
 # Hero video credits
 
-- Clip: "Long Island Sound" (aerial 4K, 3840x2160, 0:26) by Be The Observer
-- Source: https://www.pexels.com/video/long-island-sound-16389534/
-- License: Pexels License (https://www.pexels.com/license/) — free for commercial use, attribution not required.
-- Used: 12 s excerpt (0:02–0:14), re-encoded, audio removed.
-  - hero-li.mp4 (H.264 1920w), hero-li.webm (VP9 1920w), hero-li-720.mp4 (mobile, 1280w), hero-li-poster.webp (still at 0:02)
+- Clip: Dynamic Duo LI's own drone footage, 324 Ocean Ave, Massapequa (Nassau County), closed 2025 listing.
+- Source file: Dropbox `/a. Real Estate/a Sellers/Closed/2025/324 Ocean Ave, Massapequa/Drone Footage/DJI_0078.MOV` (4096x2160, 59.94fps, flat/log profile)
+- License: owned by Dynamic Duo LI. No third-party license or attribution.
+- Used: 12 s excerpt (0:04–0:16), color-graded (contrast/saturation), 24fps, audio removed.
+  - hero-nassau.mp4 (H.264 1920w), hero-nassau.webm (VP9 1920w), hero-nassau-720.mp4 (mobile, 1280w), hero-nassau-poster.webp (still at 0:04)
