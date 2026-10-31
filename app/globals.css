@@ -648,3 +648,8 @@ body{background:
 @media(max-width:1000px){.ig-grid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:820px){.topnav>a.topig{display:none!important}}
 @media(max-width:560px){.ig-grid{grid-template-columns:repeat(2,1fr)}.igsec{padding-top:72px}}
+/* team photos: original color always */
+.agent-photo .ph-gray{display:none}
+.agent-photo .ph-color,.agent-photo:hover .ph-color{opacity:1;filter:none}
+.agent-photo{transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.agent-photo:hover{transform:translateY(-4px);box-shadow:0 22px 44px -24px rgba(26,31,36,.45)}

@@ -5,6 +5,7 @@ const TABS = [
   { key: "Active", label: "Active" },
   { key: "Pending", label: "Pending" },
   { key: "Sold", label: "Sold" },
+  { key: "Office", label: "Office Listings" },
 ];
 
 // One window rule shared by the volume bar, tab counts and the grid,
@@ -36,7 +37,8 @@ function CountUp({ value, format }) {
 const money = (n) => (n == null ? "—" : "$" + n.toLocaleString("en-US"));
 const fmtDate = (d) =>
   d ? new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }) : null;
-const sideLabel = (s) => (s === "listing" ? "Our Listing" : s === "buyer" ? "Buyer Represented" : "Listing & Buyer");
+const credit = (l) => `Listed by ${l.listAgent}, Realty Advisors Inc`;
+const sideLabel = (s) => (s === "office" ? "Office Listing" : s === "listing" ? "Our Listing" : s === "buyer" ? "Buyer Represented" : "Listing & Buyer");
 const baths = (b) => (b == null ? null : Number.isInteger(b) ? b : b.toFixed(1));
 
 function Photo({ src, alt, sizes, className, eager }) {
@@ -95,6 +97,7 @@ function Card({ l, onOpen, idx }) {
           {l.baths != null && <span><b>{baths(l.baths)}</b> Baths</span>}
           <span className="lx-side">{sideLabel(l.side)}</span>
         </div>
+        {l.side === "office" && <p className="lx-credit">{credit(l)}</p>}
       </div>
     </article>
   );
@@ -178,7 +181,8 @@ function Detail({ l, onClose }) {
             {l.beds != null && (<><dt>Bedrooms</dt><dd>{l.beds}</dd></>)}
             {l.baths != null && (<><dt>Bathrooms</dt><dd>{baths(l.baths)}</dd></>)}
             <dt>MLS #</dt><dd>{l.mls}</dd>
-            <dt>Represented by</dt><dd>{l.ourAgents.join(" & ")}</dd>
+            {l.propertyType && l.propertyType !== "Residential" && (<><dt>Type</dt><dd>{l.propertyType}</dd></>)}
+            {l.ourAgents ? (<><dt>Represented by</dt><dd>{l.ourAgents.join(" & ")}</dd></>) : (<><dt>Listed by</dt><dd>{l.listAgent}, Realty Advisors Inc</dd></>)}
           </dl>
           {l.description && <p className="lx-desc">{l.description}</p>}
           {l.instagramUrl && (
@@ -188,7 +192,7 @@ function Detail({ l, onClose }) {
             </a>
           )}
           <p className="lx-courtesy">
-            Listing courtesy of {l.listAgent || "listing agent"}. Source: OneKey&reg; MLS.
+            {l.side === "office" ? credit(l) : `Listing courtesy of ${l.listAgent || "listing agent"}`}. Source: OneKey&reg; MLS.
           </p>
           {l.status === "Active" && (
             <div className="lx-sticky">
@@ -239,13 +243,14 @@ function Volume({ listings }) {
   );
 }
 
-export default function ListingsClient({ listings: all }) {
+export default function ListingsClient({ listings: all, office = [] }) {
   const listings = useMemo(() => all.filter(inWindow), [all]);
   const counts = useMemo(() => {
     const c = { Active: 0, Pending: 0, Sold: 0 };
     listings.forEach((l) => (c[l.status] = (c[l.status] || 0) + 1));
+    c.Office = office.length;
     return c;
-  }, [listings]);
+  }, [listings, office]);
   const [tab, setTab] = useState("Active");
   const [open, setOpen] = useState(null);
 
@@ -260,7 +265,7 @@ export default function ListingsClient({ listings: all }) {
     history.replaceState(null, "", `#${k.toLowerCase()}`);
   };
 
-  const shown = listings.filter((l) => l.status === tab);
+  const shown = tab === "Office" ? office : listings.filter((l) => l.status === tab);
   const tabsRef = useRef(null);
   const [ind, setInd] = useState(null);
   useEffect(() => {
@@ -289,7 +294,7 @@ export default function ListingsClient({ listings: all }) {
           {shown.map((l, idx) => <Card key={l.mls} l={l} idx={idx} onOpen={setOpen} />)}
         </div>
       ) : (
-        <p className="lx-empty">No {tab.toLowerCase()} listings right now — check back soon.</p>
+        <p className="lx-empty">No {tab === "Office" ? "office" : tab.toLowerCase()} listings right now — check back soon.</p>
       )}
       {open && <Detail l={open} onClose={() => setOpen(null)} />}
     </section>

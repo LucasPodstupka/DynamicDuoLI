@@ -1,4 +1,5 @@
 import data from "../../data/listings.json";
+import office from "../../data/office-listings.json";
 import ListingsClient from "./ListingsClient";
 import "./listings.css";
 
@@ -35,7 +36,7 @@ export default function ListingsPage() {
             Homes we&rsquo;ve listed and buyers we&rsquo;ve represented across Long Island over the last twelve months.
           </p>
         </section>
-        <ListingsClient listings={data.listings} />
+        <ListingsClient listings={data.listings} office={office.listings} />
       </main>
       <footer className="footer">
         <div className="wrap footer-inner">
