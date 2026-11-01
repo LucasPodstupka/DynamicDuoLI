@@ -689,3 +689,24 @@ body{background:
 /* audit fixes */
 .privacy-link{color:var(--brass);text-decoration:underline;text-underline-offset:2px;margin-left:4px}
 .lx-ph span{color:#8a6214}
+/* reviews */
+.rvsec{padding:110px 0 20px}
+.rv-intro{text-align:center;max-width:720px;margin:0 auto 34px}
+.rv-tabs{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:30px}
+.rv-tab{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.14em;font-weight:600;font-size:14px;padding:12px 20px;border:1px solid var(--line-2);border-radius:999px;background:var(--bg-3);color:var(--ink-2);cursor:pointer;display:inline-flex;gap:10px;align-items:center;transition:all .3s var(--ease)}
+.rv-tab span{font-family:'Inter',sans-serif;letter-spacing:0;text-transform:none;font-weight:500;font-size:13px;color:var(--muted)}
+.rv-tab.on{background:var(--navy);border-color:var(--navy);color:#fff}.rv-tab.on span{color:#e2b85a}
+.rv-head{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-bottom:20px;margin-bottom:22px;border-bottom:1px solid var(--line)}
+.rv-name{display:block;font-family:'Oswald',sans-serif;text-transform:uppercase;font-weight:600;font-size:22px;color:var(--ink-2)}
+.rv-score{display:block;margin-top:4px;color:var(--muted);font-size:14px}.rv-score b{color:var(--ink-2)}
+.rv-stars{color:#8a6214;letter-spacing:2px}
+.rv-grid{columns:3 320px;column-gap:16px}
+.rv-card{break-inside:avoid;margin:0 0 16px;background:var(--bg-3);border:1px solid var(--line);border-radius:6px;padding:22px 22px 18px;animation:cardIn .6s var(--ease) both;animation-delay:calc(var(--i,0)*60ms);transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.rv-card:hover{transform:translateY(-4px);box-shadow:0 22px 44px -26px rgba(26,31,36,.4)}
+.rv-title{font-weight:600;color:var(--ink-2);margin-top:8px}
+.rv-text{margin:10px 0 14px;color:var(--ink-2);line-height:1.65;font-size:15px}
+.rv-card figcaption{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:13px;color:var(--muted)}
+.rv-card figcaption b{color:var(--ink-2)}
+.rv-card figcaption em{flex-basis:100%;font-style:normal;color:var(--muted)}
+.rv-panel[hidden]{display:none}
+@media(prefers-reduced-motion:reduce){.rv-card{animation:none}}
