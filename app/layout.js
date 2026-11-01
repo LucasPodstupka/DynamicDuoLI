@@ -1,7 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  metadataBase: new URL("https://dynamicduoli.com"),
+  metadataBase: new URL("https://www.dynamicduoli.com"),
+  alternates: { canonical: "/" },
   title: "Dynamic Duo LI — Long Island Real Estate",
   description:
     "Long Island real estate, played to win. Buy, sell, or rent with Dynamic Duo LI — strategy, speed, and straight talk on every move.",
@@ -13,7 +14,7 @@ export const metadata = {
     title: "Dynamic Duo LI — Long Island Real Estate",
     description:
       "Buy, sell, or rent on Long Island with Dynamic Duo LI — strategy, speed, and straight talk on every move.",
-    url: "https://dynamicduoli.com",
+    url: "/",
     siteName: "Dynamic Duo LI",
     images: [
       {
@@ -35,6 +36,60 @@ export const metadata = {
   },
 };
 
+const LD = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://www.dynamicduoli.com/#team",
+      name: "Dynamic Duo LI",
+      url: "https://www.dynamicduoli.com",
+      logo: "https://www.dynamicduoli.com/logo.png",
+      image: "https://www.dynamicduoli.com/og-image.png",
+      telephone: "+1-516-826-1111",
+      email: "dynamicduoli@therealtyadvisors.com",
+      parentOrganization: { "@type": "Organization", name: "Realty Advisors" },
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "3341 Park Avenue",
+        addressLocality: "Wantagh",
+        addressRegion: "NY",
+        postalCode: "11793",
+        addressCountry: "US",
+      },
+      areaServed: [
+        { "@type": "AdministrativeArea", name: "Nassau County, NY" },
+        { "@type": "AdministrativeArea", name: "Suffolk County, NY" },
+      ],
+      sameAs: ["https://instagram.com/dynamicduoli"],
+      member: [
+        { "@id": "https://www.dynamicduoli.com/#lucas" },
+        { "@id": "https://www.dynamicduoli.com/#nick" },
+        { "@id": "https://www.dynamicduoli.com/#jeff" },
+      ],
+    },
+    {
+      "@type": "Person", "@id": "https://www.dynamicduoli.com/#lucas",
+      name: "Lucas Podstupka", jobTitle: "Real Estate Sales Associate",
+      telephone: "+1-631-310-7488", email: "lucas@therealtyadvisors.com",
+      worksFor: { "@id": "https://www.dynamicduoli.com/#team" },
+      sameAs: ["https://instagram.com/lucaspods", "https://www.zillow.com/profile/lucas6626"],
+    },
+    {
+      "@type": "Person", "@id": "https://www.dynamicduoli.com/#nick",
+      name: "Nick Barberio", jobTitle: "Associate Broker",
+      telephone: "+1-516-404-9544", email: "nickbarberio@therealtyadvisors.com",
+      worksFor: { "@id": "https://www.dynamicduoli.com/#team" },
+    },
+    {
+      "@type": "Person", "@id": "https://www.dynamicduoli.com/#jeff",
+      name: "Jeff Memisha", jobTitle: "Associate Broker · Licensed Loan Officer · NMLS #2042222",
+      telephone: "+1-516-741-3375", email: "jeff@therealtyadvisors.com",
+      worksFor: { "@id": "https://www.dynamicduoli.com/#team" },
+    },
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -46,7 +101,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(LD) }} />
+        {children}
+      </body>
     </html>
   );
 }

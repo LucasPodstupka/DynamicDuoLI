@@ -686,3 +686,6 @@ body{background:
   @keyframes sheetUp{from{transform:translateY(100%)}to{transform:none}}
 }
 @media(prefers-reduced-motion:reduce){.callpop{animation:none}}
+/* audit fixes */
+.privacy-link{color:var(--brass);text-decoration:underline;text-underline-offset:2px;margin-left:4px}
+.lx-ph span{color:#8a6214}

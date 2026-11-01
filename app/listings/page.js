@@ -7,13 +7,32 @@ export const revalidate = 86400;
 
 export const metadata = {
   title: "Listings — Dynamic Duo LI",
+  alternates: { canonical: "/listings" },
+  openGraph: { url: "/listings", title: "Listings — Dynamic Duo LI", siteName: "Dynamic Duo LI", type: "website", images: ["/og-image.png"] },
   description:
     "Active, pending and sold Long Island homes represented by Dynamic Duo LI (Nick Barberio & Lucas Podstupka, Realty Advisors).",
 };
 
+function itemList() {
+  const items = data.listings.map((l, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    item: {
+      "@type": "SingleFamilyResidence",
+      name: `${l.address}, ${l.town}, NY`,
+      address: { "@type": "PostalAddress", streetAddress: l.address, addressLocality: l.town, addressRegion: "NY", addressCountry: "US" },
+      ...(l.beds != null ? { numberOfRooms: l.beds } : {}),
+      ...(l.photos && l.photos[0] ? { image: `https://www.dynamicduoli.com${l.photos[0]}.webp` } : {}),
+      ...(l.status === "Active" && l.listPrice ? { offers: { "@type": "Offer", price: l.listPrice, priceCurrency: "USD", availability: "https://schema.org/InStock" } } : {}),
+    },
+  }));
+  return { "@context": "https://schema.org", "@type": "ItemList", name: "Dynamic Duo LI listings", numberOfItems: items.length, itemListElement: items };
+}
+
 export default function ListingsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList()) }} />
       <header className="topbar scrolled" id="topbar">
         <div className="topbar-inner">
           <a className="brand" href="/">
