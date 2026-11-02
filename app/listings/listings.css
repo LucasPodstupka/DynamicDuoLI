@@ -29,7 +29,7 @@ a.topcta{text-decoration:none;display:inline-flex;align-items:center}
 .lx-card-media{position:relative;aspect-ratio:3/2;background:var(--bg-2);overflow:hidden}
 .lx-card-img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
 .lx-card:hover .lx-card-img{transform:scale(1.045)}
-.lx-count{position:absolute;right:12px;bottom:12px;background:rgba(18,18,20,.78);color:var(--ink);font-size:11.5px;
+.lx-count{position:absolute;right:12px;bottom:12px;background:rgba(241,236,225,.78);color:var(--ink);font-size:11.5px;
   padding:4px 10px;border-radius:999px;letter-spacing:.04em;backdrop-filter:blur(4px)}
 .lx-card-body{padding:20px 22px 22px}
 .lx-price{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
@@ -72,7 +72,7 @@ a.topcta{text-decoration:none;display:inline-flex;align-items:center}
 .lx-stage>img{width:100%;height:100%;object-fit:contain;animation:lxFade .35s ease}
 .lx-stage-ph{position:absolute;inset:0}
 .lx-nav{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:0;
-  background:rgba(18,18,20,.9);color:var(--ink);font-size:30px;line-height:1;cursor:pointer}
+  background:rgba(241,236,225,.9);color:var(--ink);font-size:30px;line-height:1;cursor:pointer}
 .lx-prev{left:14px}.lx-next{right:14px}
 .lx-idx{position:absolute;bottom:12px;right:14px;color:var(--ink);font-size:12px;background:rgba(0,0,0,.45);padding:3px 10px;border-radius:999px}
 .lx-thumbs{display:flex;gap:6px;overflow-x:auto;padding:10px}
@@ -144,7 +144,7 @@ a.topcta{text-decoration:none;display:inline-flex;align-items:center}
 .lx-gal-facts span{display:block;margin-top:4px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.72)}
 .lx-gallery{align-self:stretch;min-height:100%}
 .lx-info{display:flex;flex-direction:column}
-.lx-sticky{position:sticky;bottom:0;margin:22px -34px -30px;padding:14px 34px;background:rgba(18,18,20,.96);backdrop-filter:blur(6px);border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:14px}
+.lx-sticky{position:sticky;bottom:0;margin:22px -34px -30px;padding:14px 34px;background:rgba(241,236,225,.96);backdrop-filter:blur(6px);border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:14px}
 .lx-sticky .lx-interest{margin-top:0}
 .lx-sticky-p{font-family:var(--serif);font-weight:300;font-size:22px;color:var(--ink-2);font-variant-numeric:lining-nums}
 .lx-info-price .k,.lx-dl dt,.lx-count,.lx-idx{font-size:12.5px}
