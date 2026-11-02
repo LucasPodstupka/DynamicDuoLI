@@ -715,3 +715,20 @@ body{background:
 .footer-links{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px}
 .footer-links a{color:inherit;opacity:.85;text-decoration:none}
 .footer-links a:hover{opacity:1;text-decoration:underline}
+/* Instagram tabs: Walkthroughs / Most Viewed (CSS only) */
+.ig-r{position:absolute;opacity:0;pointer-events:none}
+.ig-tabbar{position:relative;display:grid;grid-template-columns:1fr 1fr;width:max-content;min-width:320px;margin:0 auto 28px;padding:5px;border:1px solid rgba(15,22,32,.14);border-radius:999px;background:rgba(255,255,255,.55)}
+.ig-tabbar label{position:relative;z-index:1;cursor:pointer;padding:10px 22px;text-align:center;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:14px;color:var(--ink-2);transition:color .35s}
+.ig-ink{position:absolute;top:5px;bottom:5px;left:5px;width:calc(50% - 5px);border-radius:999px;background:var(--navy);transition:transform .45s var(--ease)}
+#igt-m:checked~.ig-tabbar .ig-ink{transform:translateX(100%)}
+#igt-w:checked~.ig-tabbar label[for=igt-w],#igt-m:checked~.ig-tabbar label[for=igt-m]{color:#fff}
+#igt-w:focus-visible~.ig-tabbar label[for=igt-w],#igt-m:focus-visible~.ig-tabbar label[for=igt-m]{outline:2px solid #c9973a;outline-offset:2px;border-radius:999px}
+.ig-panel{display:none}
+#igt-w:checked~.ig-p-w,#igt-m:checked~.ig-p-m{display:block;animation:igIn .55s var(--ease) both}
+@keyframes igIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.ig-grid-top .ig-tile{aspect-ratio:9/16}
+.ig-rank{position:absolute;z-index:1;top:10px;left:10px;font-family:'Oswald',sans-serif;font-weight:700;font-size:15px;color:#fff;background:#8a6214;padding:2px 9px;border-radius:3px}
+.ig-views{position:absolute;z-index:1;top:10px;right:10px;display:flex;align-items:center;gap:5px;font-size:12px;font-weight:600;color:#fff;background:rgba(15,22,32,.72);padding:3px 8px;border-radius:999px}
+.ig-note{text-align:center;color:var(--muted);font-size:13px;margin-top:16px}
+@media(prefers-reduced-motion:reduce){.ig-ink{transition:none}#igt-w:checked~.ig-p-w,#igt-m:checked~.ig-p-m{animation:none}}
+@media(max-width:560px){.ig-tabbar{min-width:0;width:100%}.ig-tabbar label{padding:10px 8px;font-size:13px}}
