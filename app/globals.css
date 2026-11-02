@@ -710,3 +710,8 @@ body{background:
 .rv-card figcaption em{flex-basis:100%;font-style:normal;color:var(--muted)}
 .rv-panel[hidden]{display:none}
 @media(prefers-reduced-motion:reduce){.rv-card{animation:none}}
+
+/* footer site links */
+.footer-links{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px}
+.footer-links a{color:inherit;opacity:.85;text-decoration:none}
+.footer-links a:hover{opacity:1;text-decoration:underline}
