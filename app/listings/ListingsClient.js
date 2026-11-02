@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useMemo, useState, useCallback, useRef } from "react";
 import { listingSlug } from "../../lib/listings";
+import { OpenHouseBadge } from "../../components/OpenHouse";
 
 const TABS = [
   { key: "Active", label: "Active" },
@@ -78,6 +79,7 @@ function Card({ l, onOpen, idx }) {
       <div className="lx-card-media">
         <Photo src={cover} alt={`${l.address}, ${l.town}`} sizes="(max-width: 700px) 100vw, 380px" className="lx-card-img" />
         <Badge status={l.status} />
+        <OpenHouseBadge l={l} />
         {l.photos.length > 1 && <span className="lx-count">{l.photos.length} photos</span>}
       </div>
       <div className="lx-card-body">
@@ -166,6 +168,7 @@ function Detail({ l, onClose }) {
             <span className="lx-side">{sideLabel(l.side)}</span>
           </div>
           <h2 className="lx-info-addr">{l.address}</h2>
+          <OpenHouseBadge l={l} variant="inline" />
           <p className="lx-town">{l.town}, NY · {l.county} County</p>
           <div className="lx-info-price">
             {l.status === "Sold" ? (

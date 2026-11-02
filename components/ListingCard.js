@@ -1,3 +1,4 @@
+import { OpenHouseBadge } from "./OpenHouse";
 import { listingSlug, money, fmtDate, fmtBaths, sideLabel } from "../lib/listings";
 
 export default function ListingCard({ l, idx = 0 }) {
@@ -11,6 +12,7 @@ export default function ListingCard({ l, idx = 0 }) {
           <div className="lx-ph lx-card-img" aria-hidden="true"><img src="/logo.png" alt="" /><span>Photos coming soon</span></div>
         )}
         <span className={`lx-badge lx-badge-${l.status.toLowerCase()}`}>{l.status}</span>
+        <OpenHouseBadge l={l} />
       </div>
       <div className="lx-card-body">
         <div className="lx-price">
