@@ -870,3 +870,17 @@ p a:not([class]){color:var(--gold)}
 .topnav .callmenu>summary,.topnav>a.topcta{white-space:nowrap;letter-spacing:.2em}
 .lx-vol .lx-vol-total .lbl{color:var(--gold)}.lx-vol .lx-vol-total .sub{color:#4f5660}.lx-vol .lx-vol-total b{color:#1a1f24}
 .lx-card .lx-addr{font-size:22px;line-height:1.15}
+
+/* reviews teaser (home) + /reviews page */
+.rv-teaser{padding:36px 0 8px}
+.rv-teaser-in{display:flex;align-items:center;justify-content:center;gap:14px 22px;flex-wrap:wrap;text-decoration:none;color:#1a1f24;padding:18px 22px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.rv-teaser-stars{color:var(--gold);letter-spacing:3px;font-size:16px}
+.rv-teaser-txt{font-family:var(--serif);font-size:26px;font-weight:400;font-variant-numeric:lining-nums;line-height:1.1}
+.rv-teaser-txt b{font-weight:500}
+.rv-teaser-btn{padding:11px 18px 11px 22px;font-size:12px}
+.rv-teaser-in:hover .rv-teaser-btn{background:rgba(154,111,30,.08);border-color:var(--gold);color:#6e4e10}
+.sp .rvsec{padding:64px 0 80px}
+.sp .rv-intro h1.ig-title{font-size:clamp(34px,5vw,56px)}
+@media(max-width:760px){.rv-teaser{padding:24px 0 4px}.rv-teaser-in{gap:10px 14px;padding:14px 8px}.rv-teaser-txt{font-size:22px}.rv-teaser-btn{letter-spacing:.18em!important;font-size:11px!important}
+ .sp .rvsec{padding:40px 0 60px}.rv-tabs{gap:8px}.rv-tab{padding:10px 12px;letter-spacing:.16em}.rv-head{flex-direction:column;align-items:flex-start}}
+.topbar a.brand,.topbar .brand{text-decoration:none}

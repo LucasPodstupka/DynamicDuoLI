@@ -8,6 +8,7 @@ const NAV = [
   ["/sell", "Sell"],
   ["/rent", "Rent"],
   ["/towns", "Towns"],
+  ["/reviews", "Reviews"],
 ];
 
 export function SiteHeader({ current }) {
