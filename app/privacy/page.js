@@ -5,14 +5,14 @@ export const metadata = {
   openGraph: { url: "/privacy", title: "Privacy Policy — Dynamic Duo LI", siteName: "Dynamic Duo LI", type: "website" },
 };
 
-const h2 = { fontFamily: "'Oswald',sans-serif", textTransform: "uppercase", fontSize: 22, letterSpacing: ".04em", margin: "34px 0 10px", color: "var(--ink-2)" };
+const h2 = { fontFamily: "var(--serif)", fontWeight: 300, fontSize: 22, letterSpacing: ".04em", margin: "34px 0 10px", color: "var(--ink-2)" };
 const p = { color: "var(--ink-2)", lineHeight: 1.7, marginTop: 10 };
 
 export default function Privacy() {
   return (
     <main className="wrap" style={{ maxWidth: 820, padding: "90px 28px 110px" }}>
       <a href="/" style={{ color: "var(--brass)" }}>&larr; Back to Dynamic Duo LI</a>
-      <h1 style={{ fontFamily: "'Oswald',sans-serif", textTransform: "uppercase", fontSize: 42, margin: "20px 0 6px", color: "var(--ink-2)" }}>Privacy Policy</h1>
+      <h1 style={{ fontFamily: "var(--serif)", fontWeight: 300, fontSize: 42, margin: "20px 0 6px", color: "var(--ink-2)" }}>Privacy Policy</h1>
       <p style={{ color: "var(--muted)" }}>Last updated: November 1, 2026</p>
 
       <h2 style={h2}>Who we are</h2>
