@@ -1,5 +1,5 @@
 {
-  "source": "OneKey MLS export Podstupka_Barberio_listings_12mo.csv (Matrix), exported 2026-10-30",
+  "source": "OneKey MLS export Podstupka_Barberio_listings_12mo_2026-11-02.csv (Matrix), exported 2026-11-02",
   "listings": [
     {
       "mls": "1061440",
@@ -142,7 +142,7 @@
     },
     {
       "mls": "1062275",
-      "status": "Active",
+      "status": "Pending",
       "address": "234 Division Avenue",
       "town": "Massapequa",
       "county": "Nassau",
@@ -548,6 +548,94 @@
       "photos": [
         "/listings/1056043/00"
       ],
+      "instagramUrl": null
+    },
+    {
+      "mls": "894908",
+      "status": "Pending",
+      "address": "53 Clearwater Avenue",
+      "town": "Massapequa",
+      "county": "Nassau",
+      "listPrice": 1449999,
+      "soldPrice": null,
+      "soldDate": null,
+      "beds": 5,
+      "baths": 4.0,
+      "side": "both",
+      "ourAgents": [
+        "Nick Barberio"
+      ],
+      "listAgent": "Nicolas Barberio",
+      "coListAgent": "Jeffrey Memisha",
+      "buyerAgent": "Nicolas Barberio",
+      "coBuyerAgent": "Jeffrey Memisha",
+      "description": "YOU CAN SEE \"CLEARLY\" NOW THE RAIN IS GONE...THERE ARE NOOO OBSTACLES IN YOUR WAY....WELCOME TO \"CLEARWATER\" AVENUE IN MASSAPEQUA'S COVETED NASSAU SHORES COMMUNITY....CALLING ALL BAYFRONT BUYERS WHO HAVE STILL NOT FOUND EXACTLY WHAT THEY ARE LOOKING FOR....THIS IS YOUR ONCE IN A LIFETIME CHANCE TO DESIGN YOUR DREAM HOME...RARE TO FIND A GRAND 6000 SQUARE FOOT BRICK HOME SITUATED ON A 80X163 LOT WITH UNOBSTRUCTED PANORAMIC VIEWS OF THE GREAT SOUTH BAY...THIS MASSIVE BAYFRONT STRUCTURE IS YOUR BLANK CANVAS READY FOR YOUR VISION-DREAMS & IDEAS...MAKE THEM COME TO LIFE....BONUS IS AN ATTACHED 2+ CAR GARAGE...SPECTACULAR WATERVIEWS FROM ALMOST EVERY ANGLE...ENJOY THE SUNRISE...SUNSET...SEA BREEZES AND THE SOUND OF NOTHING BUT THE WATER ALL WITH 80 FEET OF DIRECT OPEN BAY FRONTAGE...THIS IS NOT YOUR TYPICAL RENOVATION PROJECT...THIS IS YOUR OPPORTUNITY TO BRING YOUR ARCHITECT...CONTRACTOR AND INTERIOR DESIGNER TO CUSTOM BUILD THE HOME YOU HAVE ALWAYS DREAMED OF....HOUSE SOLD AS IS....TAXES HAVE NOT BEEN GRIEVED...",
+      "photos": [
+        "/listings/894908/00",
+        "/listings/894908/01",
+        "/listings/894908/02",
+        "/listings/894908/03",
+        "/listings/894908/04",
+        "/listings/894908/05",
+        "/listings/894908/06",
+        "/listings/894908/07",
+        "/listings/894908/08",
+        "/listings/894908/09",
+        "/listings/894908/10",
+        "/listings/894908/11",
+        "/listings/894908/12",
+        "/listings/894908/13",
+        "/listings/894908/14",
+        "/listings/894908/15",
+        "/listings/894908/16",
+        "/listings/894908/17",
+        "/listings/894908/18",
+        "/listings/894908/19",
+        "/listings/894908/20",
+        "/listings/894908/21",
+        "/listings/894908/22",
+        "/listings/894908/23",
+        "/listings/894908/24",
+        "/listings/894908/25",
+        "/listings/894908/26",
+        "/listings/894908/27",
+        "/listings/894908/28",
+        "/listings/894908/29",
+        "/listings/894908/30",
+        "/listings/894908/31",
+        "/listings/894908/32",
+        "/listings/894908/33",
+        "/listings/894908/34",
+        "/listings/894908/35",
+        "/listings/894908/36",
+        "/listings/894908/37",
+        "/listings/894908/38",
+        "/listings/894908/39",
+        "/listings/894908/40"
+      ],
+      "instagramUrl": null
+    },
+    {
+      "mls": "1028890",
+      "status": "Pending",
+      "address": "51 Butternut Lane",
+      "town": "Levittown",
+      "county": "Nassau",
+      "listPrice": 649000,
+      "soldPrice": null,
+      "soldDate": null,
+      "beds": 3,
+      "baths": 1.0,
+      "side": "buyer",
+      "ourAgents": [
+        "Nick Barberio"
+      ],
+      "listAgent": "James A. McKenna",
+      "coListAgent": "James P. McKenna CBR",
+      "buyerAgent": "Laura Dupkin Memisha SRES RENE",
+      "coBuyerAgent": "Nicolas Barberio",
+      "description": "Welcome home to this beautiful Cape in the highly sought-after Levittown neighborhood. The house features 3 bedrooms and 1 Full bath. Updates in 2023 include kitchen with granite countertop and marble backsplash, bathroom, vinyl siding, windows, doors, and insulation. Air conditioning- there are 2 split units and one in wall unit. 4 zone in-ground sprinklers. 200 amp electric. Concrete driveway and walk way. Detached 1 car garage and a level fenced rear yard.",
+      "photos": [],
       "instagramUrl": null
     },
     {
@@ -1024,6 +1112,29 @@
         "/listings/1021808/00"
       ],
       "instagramUrl": "https://www.instagram.com/reel/Dadzo-7vclQ/"
+    },
+    {
+      "mls": "1014788",
+      "status": "Sold",
+      "address": "1270 Dahlia Lane",
+      "town": "Wantagh",
+      "county": "Nassau",
+      "listPrice": 679999,
+      "soldPrice": 730000,
+      "soldDate": "2026-09-16",
+      "beds": 4,
+      "baths": 3.0,
+      "side": "buyer",
+      "ourAgents": [
+        "Nick Barberio"
+      ],
+      "listAgent": "Laura Dupkin Memisha SRES RENE",
+      "coListAgent": null,
+      "buyerAgent": "Jeffrey Memisha",
+      "coBuyerAgent": "Nicolas Barberio",
+      "description": "IF YOU WANT TO STAKE YOUR CLAIM ON A HOME WHERE YOU CAN ENTERTAIN THEN HEAD ON OVER TO THIS BEAUTY ON DAHLIA LANE....SUPER 3/4 BEDROOM 2.5 BATH EXPANDED RANCH IN THE HEART OF THE FLOWER SECTION OF WANTAGH....LIGHT BRIGHT LIVING ROOM...FORMAL DINING ROOM...UPDATED EAT-IN-KITCHEN WITH GRANITE COUNTERTOPS...BEAUTIFUL HARDWOOD FLOORING...MASTER BEDROOM SUITE WITH FULL BATH....NEW BOILER & OIL TANK (ABOVE GROUND)....FULL FINISHED BASEMENT W/RECESSED LIGHTING PLUS A FRENCH DRAIN & HALF BATH (NO REP)...PULL DOWN ATTIC FOR LOTS OF STORAGE...NO GARAGE...NICE SIZED YARD WITH DECK...(AS IS)...TAXES ARE UNDER $13,000 WITH THE BASIC STAR EXEMPTION....",
+      "photos": [],
+      "instagramUrl": null
     },
     {
       "mls": "1009340",
@@ -1650,6 +1761,52 @@
       "photos": [
         "/listings/1007014/00"
       ],
+      "instagramUrl": null
+    },
+    {
+      "mls": "975936",
+      "status": "Sold",
+      "address": "1500 Wagner Street",
+      "town": "Wantagh",
+      "county": "Nassau",
+      "listPrice": 789000,
+      "soldPrice": 893000,
+      "soldDate": "2026-07-08",
+      "beds": 3,
+      "baths": 2.0,
+      "side": "buyer",
+      "ourAgents": [
+        "Nick Barberio"
+      ],
+      "listAgent": "Elpis Hardiman",
+      "coListAgent": null,
+      "buyerAgent": "Laura Dupkin Memisha SRES RENE",
+      "coBuyerAgent": "Nicolas Barberio",
+      "description": "What you\u2019ve been waiting for! This sprawling ranch is located in the desirable Wantagh Woods on an amazing piece of property on a private block. Adorable entry with double coat closets and room for custom cubbies. The large living room features gorgeous Andersen casement windows and hardwood floors, flowing seamlessly into the formal dining room and a bright, airy den with beautiful backyard views. The kitchen offers maple cabinetry, cathedral ceilings, an eat-in area, and a dedicated desk space\u2014perfect for work or organization. The primary bedroom includes its own private en-suite bath. The full basement will not disappoint, offering incredible versatility with a home office, playroom, spacious laundry room with folding/craft area, workshop, and abundant storage. Additional highlights include solar for energy efficiency, gas heating and an attached .5 car garage.  Step outside to a secluded, serene yard with a deck for entertaining, garden area, and plenty of space to play.  Located in a Blue Ribbon school district. A must-see home!",
+      "photos": [],
+      "instagramUrl": null
+    },
+    {
+      "mls": "973976",
+      "status": "Sold",
+      "address": "2420 Willow Street",
+      "town": "Wantagh",
+      "county": "Nassau",
+      "listPrice": 759999,
+      "soldPrice": 852000,
+      "soldDate": "2026-07-08",
+      "beds": 3,
+      "baths": 2.0,
+      "side": "buyer",
+      "ourAgents": [
+        "Nick Barberio"
+      ],
+      "listAgent": "Richard Sagistano",
+      "coListAgent": "Lauren Sagistano",
+      "buyerAgent": "Laura Dupkin Memisha SRES RENE",
+      "coBuyerAgent": "Nicolas Barberio",
+      "description": "Welcome to this move in ready, turn key home in Wantagh, zoned for Wantagh Schools! Thoughtfully updated and impeccably maintained, this home is the one you've been waiting for! From the moment you enter, you\u2019ll notice the sparkling hardwood floors and freshly painted interiors that create a bright, inviting feel throughout. Major updates including a new gas boiler, hot water heater, ductless A/C units, and a newer roof offer peace of mind for years to come. The open kitchen and dining area is perfect for entertaining, while the bonus room off the living room provides flexible space with sliding doors leading right out to the backyard.  A convenient main level laundry/mudroom with a brand new washer and dryer adds everyday ease. Upstairs, the rear dormer expands the living space, offering generously sized bedrooms, including a primary suite with a large walk in closet. Both full bathrooms feature radiant heat, bringing an extra touch of comfort. With a full basement for storage, charming curb appeal, and beautifully maintained landscaping, this home truly checks all the boxes. Don\u2019t miss your opportunity to make it yours!",
+      "photos": [],
       "instagramUrl": null
     },
     {
@@ -2728,31 +2885,6 @@
       "description": "Prestigious Polo Estates \u2013 Ready for Your Personal Touch! Golden opportunity to own in the sought-after Polo Estates community! This spacious Cadillac Split offers approximately. 2312 square feet of potential on a 70 x 110 lot \u2013PVC Fenced Yard* perfect for entertaining friends and family. Key Features:3 Bedrooms / 2 Full Baths*Hardwood floors * Central Air Conditioning Replaced (2022)*Crown moldings in select areas*Oversized Living Room and formal Dining Room \u2013 ideal for gatherings*Eat-in Kitchen with sliding doors to deck*Stainless steel refrigerator and electric stove* Primary Bedroom includes Private full bath, Beautiful lake view from bedroom* Den with wood-burning fireplace* Spacious walk-up attic for added storage or future expansion* Several replaced windows*Updated gutters(2024)*Roof replaced 1999 (25 Yr life) 150 Amp electric service* 2-car garage with electric eye opener* 4 car Driveway* 3.5 ton 13 Seer heating system (2022) * Partially finished basement with utility room and plenty of storage* oak railings* Close to railroad, major highways, shopping, beaches & community pool* There is Gas in the Street for easy conversion. Taxes only $15,888.58 (does not reflect STAR exemption). \u201cHome Sold strictly as-is \u2013 End The Space Race...Your golden opportunity awaits \u2013 bring your vision and make it yours. The possibilities are grand!",
       "photos": [
         "/listings/892682/00"
-      ],
-      "instagramUrl": null
-    },
-    {
-      "mls": "901127",
-      "status": "Sold",
-      "address": "94 Chapel Avenue",
-      "town": "East Patchogue",
-      "county": "Suffolk",
-      "listPrice": 499999,
-      "soldPrice": 530000,
-      "soldDate": "2025-10-30",
-      "beds": 2,
-      "baths": 1.0,
-      "side": "buyer",
-      "ourAgents": [
-        "Nick Barberio"
-      ],
-      "listAgent": "Steven N. Cordella",
-      "coListAgent": null,
-      "buyerAgent": "Nicolas Barberio",
-      "coBuyerAgent": null,
-      "description": "This home combines suburban tranquility with urban accessibility.  Located within the desirable East Patchogue community.  This architecturally charming 2 bedroom 1 bathroom home makes homeownership possible with its extremely low property taxes at only $3,067.87  Homeownership is within reach!  Whether you are commuting to work or enjoying a day a the nearby Patchogue village, Bellport village or Fire island, this location offers the best of both worlds.  Situated on .31 acres, the recently renovated patio features Cambridge pavers to host your guests.  Nestled in a quiet neighborhood, this home is ideal for first time home buyers or those seeking a serene retreat close to all long island has to offer.  Enjoy water views of Swan River from your backyard.",
-      "photos": [
-        "/listings/901127/00"
       ],
       "instagramUrl": null
     }
