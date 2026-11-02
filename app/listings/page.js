@@ -7,13 +7,32 @@ export const revalidate = 86400;
 
 export const metadata = {
   title: "Listings — Dynamic Duo LI",
+  alternates: { canonical: "/listings" },
+  openGraph: { url: "/listings", title: "Listings — Dynamic Duo LI", siteName: "Dynamic Duo LI", type: "website", images: ["/og-image.png"] },
   description:
     "Active, pending and sold Long Island homes represented by Dynamic Duo LI (Nick Barberio & Lucas Podstupka, Realty Advisors).",
 };
 
+function itemList() {
+  const items = data.listings.map((l, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    item: {
+      "@type": "SingleFamilyResidence",
+      name: `${l.address}, ${l.town}, NY`,
+      address: { "@type": "PostalAddress", streetAddress: l.address, addressLocality: l.town, addressRegion: "NY", addressCountry: "US" },
+      ...(l.beds != null ? { numberOfRooms: l.beds } : {}),
+      ...(l.photos && l.photos[0] ? { image: `https://www.dynamicduoli.com${l.photos[0]}.webp` } : {}),
+      ...(l.status === "Active" && l.listPrice ? { offers: { "@type": "Offer", price: l.listPrice, priceCurrency: "USD", availability: "https://schema.org/InStock" } } : {}),
+    },
+  }));
+  return { "@context": "https://schema.org", "@type": "ItemList", name: "Dynamic Duo LI listings", numberOfItems: items.length, itemListElement: items };
+}
+
 export default function ListingsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList()) }} />
       <header className="topbar scrolled" id="topbar">
         <div className="topbar-inner">
           <a className="brand" href="/">
@@ -22,7 +41,7 @@ export default function ListingsPage() {
           </a>
           <nav className="topnav">
             <a href="/listings" aria-current="page">Listings</a>
-            <a className="topcall" href="tel:+15164049544" aria-label="Call Nick Barberio at 516-404-9544"><span>Call Nick 516-404-9544</span></a>
+            <details className="callmenu"><summary className="topcall" aria-label="Call our team: choose who to call"><span>Talk With Our Team</span></summary><div className="callpop" role="menu"><span className="callpop-h">Call our team</span><a href="tel:+16313107488"><b>Lucas Podstupka</b><span>631-310-7488</span></a><a href="tel:+15164049544"><b>Nick Barberio</b><span>516-404-9544</span></a><a href="tel:+15167413375"><b>Jeff Memisha</b><span>516-741-3375</span></a></div></details>
             <a className="topig" href="https://instagram.com/dynamicduoli" target="_blank" rel="noopener noreferrer" aria-label="@dynamicduoli on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
             <a className="topcta" href="/#selector">Work With Us</a>
           </nav>
