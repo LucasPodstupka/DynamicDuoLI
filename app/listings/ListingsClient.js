@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useMemo, useState, useCallback, useRef } from "react";
+import { listingSlug } from "../../lib/listings";
 
 const TABS = [
   { key: "Active", label: "Active" },
@@ -194,6 +195,9 @@ function Detail({ l, onClose }) {
           <p className="lx-courtesy">
             {l.side === "office" ? credit(l) : `Listing courtesy of ${l.listAgent || "listing agent"}`}. Source: OneKey&reg; MLS.
           </p>
+          {l.side !== "office" && (
+            <a className="lx-fullpage" href={`/listings/${listingSlug(l)}`}>View full listing page <span>&rarr;</span></a>
+          )}
           {l.status === "Active" && (
             <div className="lx-sticky">
               <span className="lx-sticky-p">{money(l.listPrice)}</span>
