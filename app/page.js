@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import REV from "../data/reviews.json";
 import { MARKUP, SCRIPT } from "../lib/home-markup";
+import { fillHomeStrip } from "../components/OpenHouse";
 
 const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const stars = (n) => `<span class="rv-stars" aria-label="${n} out of 5 stars">${"\u2605".repeat(Math.round(n))}${"\u2606".repeat(5 - Math.round(n))}</span>`;
@@ -20,6 +21,7 @@ function reviewsHtml() {
 
 export default function Home() {
   useEffect(() => {
+    fillHomeStrip();
     const t = setTimeout(() => {
       try {
         const s = document.createElement("script");

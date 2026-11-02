@@ -1,10 +1,12 @@
 import data from "../../data/listings.json";
 import office from "../../data/office-listings.json";
 import ListingsClient from "./ListingsClient";
+import { OpenHouseStrip } from "../../components/OpenHouse";
+import { publicListings, listingSlug } from "../../lib/listings";
 import "./listings.css";
 import { SiteHeader, SiteFooter } from "../../components/SiteChrome";
 
-export const revalidate = 86400;
+export const revalidate = 3600;
 
 export const metadata = {
   title: "Listings — Dynamic Duo LI",
@@ -36,6 +38,7 @@ export default function ListingsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList()) }} />
       <SiteHeader current="/listings" />
       <main className="lx">
+        <OpenHouseStrip listings={publicListings()} />
         <section className="lx-hero wrap">
           <span className="eyebrow">Our Portfolio</span>
           <h1 className="lx-title">Listings</h1>

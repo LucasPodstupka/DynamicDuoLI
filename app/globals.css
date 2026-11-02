@@ -732,3 +732,22 @@ body{background:
 .ig-note{text-align:center;color:var(--muted);font-size:13px;margin-top:16px}
 @media(prefers-reduced-motion:reduce){.ig-ink{transition:none}#igt-w:checked~.ig-p-w,#igt-m:checked~.ig-p-m{animation:none}}
 @media(max-width:560px){.ig-tabbar{min-width:0;width:100%}.ig-tabbar label{padding:10px 8px;font-size:13px}}
+
+/* Open houses */
+.oh-badge{display:inline-flex;align-items:center;gap:8px;font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:.74rem;
+  background:var(--navy);color:#fff;padding:6px 11px;border-radius:3px;line-height:1.2;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.oh-badge b{color:var(--brass-bright);font-weight:600}
+.oh-badge span{text-transform:none;letter-spacing:.02em}
+.oh-card{position:absolute;left:14px;bottom:14px;z-index:2}
+.oh-inline{margin-top:14px;font-size:.85rem;padding:9px 14px}
+.oh-strip{background:var(--navy);color:#fff;padding:16px 0}
+.oh-wrap{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.oh-eyebrow{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;color:var(--brass-bright);display:inline-flex;align-items:center;gap:8px}
+.oh-eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--brass-bright);animation:ohPulse 1.8s ease-in-out infinite}
+.oh-list{display:flex;flex-wrap:wrap;gap:10px 26px;list-style:none;margin:0;padding:0}
+.oh-list a{display:inline-flex;gap:10px;align-items:baseline;color:#fff;text-decoration:none}
+.oh-list a span{color:rgba(255,255,255,.78)}
+.oh-list a i{font-style:normal;color:var(--brass-bright);transition:transform .2s}
+.oh-list a:hover i{transform:translateX(4px)}
+@keyframes ohPulse{0%,100%{opacity:1}50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){.oh-eyebrow::before{animation:none}.oh-list a i{transition:none}}

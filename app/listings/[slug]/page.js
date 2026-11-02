@@ -2,12 +2,13 @@ import { notFound } from "next/navigation";
 import { publicListings, findBySlug, listingSlug, money, fmtDate, fmtBaths, sideLabel } from "../../../lib/listings";
 import { townForListing } from "../../../lib/towns";
 import { SiteHeader, SiteFooter } from "../../../components/SiteChrome";
+import { OpenHouseBadge } from "../../../components/OpenHouse";
 import Gallery from "../../../components/Gallery";
 import LeadForm from "../../../components/LeadForm";
 import "../listings.css";
 import "../../site-pages.css";
 
-export const revalidate = 86400;
+export const revalidate = 3600;
 export const dynamicParams = false;
 
 const SITE = "https://www.dynamicduoli.com";
@@ -91,6 +92,7 @@ export default function ListingPage({ params }) {
                 <span className="lx-side">{sideLabel(l.side)}</span>
               </div>
               <h1 className="ld-addr">{l.address}</h1>
+              <OpenHouseBadge l={l} variant="inline" />
               <p className="lx-town">{l.town}, NY{l.county ? ` · ${l.county} County` : ""}</p>
               <div className="ld-price">
                 {l.status === "Sold" ? money(l.soldPrice) : money(l.listPrice)}
