@@ -22,7 +22,7 @@ export function SiteHeader({ current }) {
           {NAV.map(([href, label]) => (
             <a key={href} href={href} aria-current={current === href ? "page" : undefined}>{label}</a>
           ))}
-          <details className="callmenu"><summary className="topcall" aria-label="Call our team: choose who to call"><span>Call Our Team</span></summary><div className="callpop" role="menu"><span className="callpop-h">Call our team</span><a href="tel:+16313107488"><b>Lucas Podstupka</b><span>631-310-7488</span></a><a href="tel:+15164049544"><b>Nick Barberio</b><span>516-404-9544</span></a><a href="tel:+15167413375"><b>Jeff Memisha</b><span>516-741-3375</span></a></div></details>
+          <details className="callmenu"><summary className="topcall" aria-label="Call our team: choose who to call"><span>Talk With Our Team</span></summary><div className="callpop" role="menu"><span className="callpop-h">Call our team</span><a href="tel:+16313107488"><b>Lucas Podstupka</b><span>631-310-7488</span></a><a href="tel:+15164049544"><b>Nick Barberio</b><span>516-404-9544</span></a><a href="tel:+15167413375"><b>Jeff Memisha</b><span>516-741-3375</span></a></div></details>
           <a className="topig" href="https://instagram.com/dynamicduoli" target="_blank" rel="noopener noreferrer" aria-label="@dynamicduoli on Instagram">{IG}</a>
           <a className="topcta" href="/#selector">Work With Us</a>
         </nav>
