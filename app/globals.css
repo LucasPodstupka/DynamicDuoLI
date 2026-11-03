@@ -745,3 +745,15 @@ body{background:
 .oh-list a:hover i{transform:translateX(4px)}
 @keyframes ohPulse{0%,100%{opacity:1}50%{opacity:.35}}
 @media (prefers-reduced-motion:reduce){.oh-eyebrow::before{animation:none}.oh-list a i{transition:none}}
+
+/* reviews teaser (home) + /reviews page */
+.rv-teaser{padding:36px 0 8px}
+.rv-teaser-in{display:flex;align-items:center;justify-content:center;gap:14px 22px;flex-wrap:wrap;text-decoration:none;color:var(--ink-2);padding:18px 22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rv-teaser-stars{color:#8a6214;letter-spacing:3px;font-size:16px}
+.rv-teaser-txt{font-family:'Oswald',sans-serif;text-transform:uppercase;font-weight:600;font-size:22px;letter-spacing:.03em;line-height:1.1}
+.rv-teaser-btn{padding:11px 18px;font-size:13px}
+.rv-teaser-in:hover .rv-teaser-btn{background:var(--navy);color:#fff;border-color:var(--navy)}
+.sp .rvsec{padding:64px 0 80px}
+.topbar a.brand{text-decoration:none}
+@media(max-width:760px){.rv-teaser{padding:24px 0 4px}.rv-teaser-in{gap:10px 14px;padding:14px 8px}.rv-teaser-txt{font-size:19px}.rv-teaser-btn{font-size:12px;letter-spacing:.08em}
+ .sp .rvsec{padding:40px 0 60px}.rv-tabs{gap:8px}.rv-tab{padding:10px 14px;letter-spacing:.08em}.rv-head{flex-direction:column;align-items:flex-start}}
