@@ -31,7 +31,7 @@
 .sp-town{display:block;background:var(--bg-3);border:1px solid var(--line);border-radius:6px;padding:26px;text-decoration:none;color:inherit;
   transition:transform .45s var(--ease),border-color .3s,box-shadow .45s var(--ease);animation:spIn .6s var(--ease) both;animation-delay:calc(var(--i,0) * 70ms)}
 .sp-town:hover{transform:translateY(-4px);border-color:var(--brass);box-shadow:0 18px 40px -24px rgba(20,25,30,.45)}
-.sp-town h2{font-family:var(--serif);text-transform:uppercase;letter-spacing:.04em;font-size:22px;margin:0 0 4px;color:var(--ink-2)}
+.sp-town h2, .sp-town h3{font-family:var(--serif);text-transform:uppercase;letter-spacing:.04em;font-size:22px;margin:0 0 4px;color:var(--ink-2)}
 .sp-town p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.55}
 .sp-town .n{display:inline-block;margin-top:12px;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--brass)}
 .sp-towns-inline{display:flex;flex-wrap:wrap;gap:10px}
