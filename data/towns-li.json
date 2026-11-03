@@ -1,0 +1,4093 @@
+[
+ {
+  "slug": "glen-cove",
+  "name": "Glen Cove",
+  "place": "Glen Cove",
+  "county": "Nassau",
+  "kind": "city",
+  "towns": [],
+  "stations": [
+   [
+    "Glen Cove",
+    "Oyster Bay Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Glen_Cove,_New_York"
+ },
+ {
+  "slug": "long-beach",
+  "name": "Long Beach",
+  "place": "Long Beach",
+  "county": "Nassau",
+  "kind": "city",
+  "towns": [],
+  "stations": [
+   [
+    "Long Beach",
+    "Long Beach Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Long_Beach,_New_York"
+ },
+ {
+  "slug": "town-of-hempstead",
+  "name": "Town of Hempstead",
+  "place": "Hempstead",
+  "county": "Nassau",
+  "kind": "town",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Hempstead",
+    "Hempstead Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Hempstead,_New_York"
+ },
+ {
+  "slug": "town-of-north-hempstead",
+  "name": "Town of North Hempstead",
+  "place": "North Hempstead",
+  "county": "Nassau",
+  "kind": "town",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Hempstead,_New_York"
+ },
+ {
+  "slug": "town-of-oyster-bay",
+  "name": "Town of Oyster Bay",
+  "place": "Oyster Bay",
+  "county": "Nassau",
+  "kind": "town",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [
+   [
+    "Oyster Bay",
+    "Oyster Bay Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Oyster_Bay,_New_York"
+ },
+ {
+  "slug": "atlantic-beach",
+  "name": "Atlantic Beach",
+  "place": "Atlantic Beach",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Atlantic_Beach,_New_York"
+ },
+ {
+  "slug": "baxter-estates",
+  "name": "Baxter Estates",
+  "place": "Baxter Estates",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Baxter_Estates,_New_York"
+ },
+ {
+  "slug": "bayville",
+  "name": "Bayville",
+  "place": "Bayville",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Bayville,_New_York"
+ },
+ {
+  "slug": "bellerose",
+  "name": "Bellerose",
+  "place": "Bellerose",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Bellerose",
+    "Hempstead Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Bellerose,_New_York"
+ },
+ {
+  "slug": "brookville",
+  "name": "Brookville",
+  "place": "Brookville",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Brookville,_New_York"
+ },
+ {
+  "slug": "cedarhurst",
+  "name": "Cedarhurst",
+  "place": "Cedarhurst",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Cedarhurst",
+    "Far Rockaway Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Cedarhurst,_New_York"
+ },
+ {
+  "slug": "centre-island",
+  "name": "Centre Island",
+  "place": "Centre Island",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Centre_Island,_New_York"
+ },
+ {
+  "slug": "cove-neck",
+  "name": "Cove Neck",
+  "place": "Cove Neck",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Cove_Neck,_New_York"
+ },
+ {
+  "slug": "east-hills",
+  "name": "East Hills",
+  "place": "East Hills",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Hills,_New_York"
+ },
+ {
+  "slug": "east-rockaway",
+  "name": "East Rockaway",
+  "place": "East Rockaway",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [],
+  "stations": [
+   [
+    "East Rockaway",
+    "Long Beach Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/East_Rockaway,_New_York"
+ },
+ {
+  "slug": "east-williston",
+  "name": "East Williston",
+  "place": "East Williston",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [
+   [
+    "East Williston",
+    "Oyster Bay Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/East_Williston,_New_York"
+ },
+ {
+  "slug": "farmingdale",
+  "name": "Farmingdale",
+  "place": "Farmingdale",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [
+   [
+    "Farmingdale",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Farmingdale,_New_York"
+ },
+ {
+  "slug": "floral-park",
+  "name": "Floral Park",
+  "place": "Floral Park",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [],
+  "stations": [
+   [
+    "Floral Park",
+    "Hempstead Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Floral_Park,_New_York"
+ },
+ {
+  "slug": "flower-hill",
+  "name": "Flower Hill",
+  "place": "Flower Hill",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Flower_Hill,_New_York"
+ },
+ {
+  "slug": "freeport",
+  "name": "Freeport",
+  "place": "Freeport",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Freeport",
+    "Babylon Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Freeport,_New_York"
+ },
+ {
+  "slug": "garden-city",
+  "name": "Garden City",
+  "place": "Garden City",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [],
+  "stations": [
+   [
+    "Garden City",
+    "Hempstead Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Garden_City,_New_York"
+ },
+ {
+  "slug": "great-neck",
+  "name": "Great Neck",
+  "place": "Great Neck",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [
+   [
+    "Great Neck",
+    "Port Washington Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Great_Neck_(village),_New_York"
+ },
+ {
+  "slug": "great-neck-estates",
+  "name": "Great Neck Estates",
+  "place": "Great Neck Estates",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Great_Neck_Estates,_New_York"
+ },
+ {
+  "slug": "great-neck-plaza",
+  "name": "Great Neck Plaza",
+  "place": "Great Neck Plaza",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Great_Neck_Plaza,_New_York"
+ },
+ {
+  "slug": "hempstead",
+  "name": "Hempstead",
+  "place": "Hempstead",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Hempstead",
+    "Hempstead Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Hempstead_(village),_New_York"
+ },
+ {
+  "slug": "hewlett-bay-park",
+  "name": "Hewlett Bay Park",
+  "place": "Hewlett Bay Park",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Hewlett_Bay_Park,_New_York"
+ },
+ {
+  "slug": "hewlett-harbor",
+  "name": "Hewlett Harbor",
+  "place": "Hewlett Harbor",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Hewlett_Harbor,_New_York"
+ },
+ {
+  "slug": "hewlett-neck",
+  "name": "Hewlett Neck",
+  "place": "Hewlett Neck",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Hewlett_Neck,_New_York"
+ },
+ {
+  "slug": "island-park",
+  "name": "Island Park",
+  "place": "Island Park",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Island Park",
+    "Long Beach Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Island_Park,_New_York"
+ },
+ {
+  "slug": "kensington",
+  "name": "Kensington",
+  "place": "Kensington",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Kensington,_New_York"
+ },
+ {
+  "slug": "kings-point",
+  "name": "Kings Point",
+  "place": "Kings Point",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Kings_Point,_New_York"
+ },
+ {
+  "slug": "lake-success",
+  "name": "Lake Success",
+  "place": "Lake Success",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Lake_Success,_New_York"
+ },
+ {
+  "slug": "lattingtown",
+  "name": "Lattingtown",
+  "place": "Lattingtown",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Lattingtown,_New_York"
+ },
+ {
+  "slug": "laurel-hollow",
+  "name": "Laurel Hollow",
+  "place": "Laurel Hollow",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Laurel_Hollow,_New_York"
+ },
+ {
+  "slug": "lawrence",
+  "name": "Lawrence",
+  "place": "Lawrence",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Lawrence",
+    "Far Rockaway Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Lawrence,_Nassau_County,_New_York"
+ },
+ {
+  "slug": "lynbrook",
+  "name": "Lynbrook",
+  "place": "Lynbrook",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Lynbrook",
+    "Long Beach Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Lynbrook,_New_York"
+ },
+ {
+  "slug": "malverne",
+  "name": "Malverne",
+  "place": "Malverne",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Malverne",
+    "West Hempstead Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Malverne,_New_York"
+ },
+ {
+  "slug": "manorhaven",
+  "name": "Manorhaven",
+  "place": "Manorhaven",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Manorhaven,_New_York"
+ },
+ {
+  "slug": "massapequa-park",
+  "name": "Massapequa Park",
+  "place": "Massapequa Park",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [
+   [
+    "Massapequa Park",
+    "Babylon Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Massapequa_Park,_New_York"
+ },
+ {
+  "slug": "matinecock",
+  "name": "Matinecock",
+  "place": "Matinecock",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Matinecock,_New_York"
+ },
+ {
+  "slug": "mill-neck",
+  "name": "Mill Neck",
+  "place": "Mill Neck",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Mill_Neck,_New_York"
+ },
+ {
+  "slug": "mineola",
+  "name": "Mineola",
+  "place": "Mineola",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [],
+  "stations": [
+   [
+    "Mineola",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Mineola,_New_York"
+ },
+ {
+  "slug": "munsey-park",
+  "name": "Munsey Park",
+  "place": "Munsey Park",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Munsey_Park,_New_York"
+ },
+ {
+  "slug": "muttontown",
+  "name": "Muttontown",
+  "place": "Muttontown",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Muttontown,_New_York"
+ },
+ {
+  "slug": "new-hyde-park",
+  "name": "New Hyde Park",
+  "place": "New Hyde Park",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead",
+   "North Hempstead"
+  ],
+  "stations": [
+   [
+    "New Hyde Park",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/New_Hyde_Park,_New_York"
+ },
+ {
+  "slug": "north-hills",
+  "name": "North Hills",
+  "place": "North Hills",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Hills,_New_York"
+ },
+ {
+  "slug": "old-brookville",
+  "name": "Old Brookville",
+  "place": "Old Brookville",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Old_Brookville,_New_York"
+ },
+ {
+  "slug": "old-westbury",
+  "name": "Old Westbury",
+  "place": "Old Westbury",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead",
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Old_Westbury,_New_York"
+ },
+ {
+  "slug": "oyster-bay-cove",
+  "name": "Oyster Bay Cove",
+  "place": "Oyster Bay Cove",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Oyster_Bay_Cove,_New_York"
+ },
+ {
+  "slug": "plandome",
+  "name": "Plandome",
+  "place": "Plandome",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [
+   [
+    "Plandome",
+    "Port Washington Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Plandome,_New_York"
+ },
+ {
+  "slug": "plandome-heights",
+  "name": "Plandome Heights",
+  "place": "Plandome Heights",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Plandome_Heights,_New_York"
+ },
+ {
+  "slug": "plandome-manor",
+  "name": "Plandome Manor",
+  "place": "Plandome Manor",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Plandome_Manor,_New_York"
+ },
+ {
+  "slug": "port-washington-north",
+  "name": "Port Washington North",
+  "place": "Port Washington North",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Port_Washington_North,_New_York"
+ },
+ {
+  "slug": "rockville-centre",
+  "name": "Rockville Centre",
+  "place": "Rockville Centre",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Rockville Centre",
+    "Babylon Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Rockville_Centre,_New_York"
+ },
+ {
+  "slug": "roslyn",
+  "name": "Roslyn",
+  "place": "Roslyn",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [
+   [
+    "Roslyn",
+    "Oyster Bay Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Roslyn,_New_York"
+ },
+ {
+  "slug": "roslyn-estates",
+  "name": "Roslyn Estates",
+  "place": "Roslyn Estates",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Roslyn_Estates,_New_York"
+ },
+ {
+  "slug": "roslyn-harbor",
+  "name": "Roslyn Harbor",
+  "place": "Roslyn Harbor",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Roslyn_Harbor,_New_York"
+ },
+ {
+  "slug": "russell-gardens",
+  "name": "Russell Gardens",
+  "place": "Russell Gardens",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Russell_Gardens,_New_York"
+ },
+ {
+  "slug": "saddle-rock",
+  "name": "Saddle Rock",
+  "place": "Saddle Rock",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Saddle_Rock,_New_York"
+ },
+ {
+  "slug": "sands-point",
+  "name": "Sands Point",
+  "place": "Sands Point",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Sands_Point,_New_York"
+ },
+ {
+  "slug": "sea-cliff",
+  "name": "Sea Cliff",
+  "place": "Sea Cliff",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [
+   [
+    "Sea Cliff",
+    "Oyster Bay Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Sea_Cliff,_New_York"
+ },
+ {
+  "slug": "south-floral-park",
+  "name": "South Floral Park",
+  "place": "South Floral Park",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/South_Floral_Park,_New_York"
+ },
+ {
+  "slug": "stewart-manor",
+  "name": "Stewart Manor",
+  "place": "Stewart Manor",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Stewart Manor",
+    "Hempstead Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Stewart_Manor,_New_York"
+ },
+ {
+  "slug": "thomaston",
+  "name": "Thomaston",
+  "place": "Thomaston",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Thomaston,_New_York"
+ },
+ {
+  "slug": "upper-brookville",
+  "name": "Upper Brookville",
+  "place": "Upper Brookville",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Upper_Brookville,_New_York"
+ },
+ {
+  "slug": "valley-stream",
+  "name": "Valley Stream",
+  "place": "Valley Stream",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [],
+  "stations": [
+   [
+    "Valley Stream",
+    "Far Rockaway Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Valley_Stream,_New_York"
+ },
+ {
+  "slug": "westbury",
+  "name": "Westbury",
+  "place": "Westbury",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead",
+   "Oyster Bay"
+  ],
+  "stations": [
+   [
+    "Westbury",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Westbury,_New_York"
+ },
+ {
+  "slug": "williston-park",
+  "name": "Williston Park",
+  "place": "Williston Park",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Williston_Park,_New_York"
+ },
+ {
+  "slug": "woodsburgh",
+  "name": "Woodsburgh",
+  "place": "Woodsburgh",
+  "county": "Nassau",
+  "kind": "village",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Woodsburgh,_New_York"
+ },
+ {
+  "slug": "albertson",
+  "name": "Albertson",
+  "place": "Albertson",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [
+   [
+    "Albertson",
+    "Oyster Bay Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Albertson,_New_York"
+ },
+ {
+  "slug": "baldwin",
+  "name": "Baldwin",
+  "place": "Baldwin",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Baldwin",
+    "Babylon Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Baldwin_(hamlet),_New_York"
+ },
+ {
+  "slug": "barnum-island",
+  "name": "Barnum Island",
+  "place": "Barnum Island",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Barnum_Island,_New_York"
+ },
+ {
+  "slug": "bay-park",
+  "name": "Bay Park",
+  "place": "Bay Park",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Bay_Park,_New_York"
+ },
+ {
+  "slug": "bellerose-terrace",
+  "name": "Bellerose Terrace",
+  "place": "Bellerose Terrace",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Bellerose_Terrace,_New_York"
+ },
+ {
+  "slug": "bellmore",
+  "name": "Bellmore",
+  "place": "Bellmore",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [
+   [
+    "Bellmore",
+    "Babylon Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Bellmore,_New_York"
+ },
+ {
+  "slug": "bethpage",
+  "name": "Bethpage",
+  "place": "Bethpage",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [
+   [
+    "Bethpage",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Bethpage,_New_York"
+ },
+ {
+  "slug": "carle-place",
+  "name": "Carle Place",
+  "place": "Carle Place",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [
+   [
+    "Carle Place",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Carle_Place,_New_York"
+ },
+ {
+  "slug": "east-atlantic-beach",
+  "name": "East Atlantic Beach",
+  "place": "East Atlantic Beach",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Atlantic_Beach,_New_York"
+ },
+ {
+  "slug": "east-massapequa",
+  "name": "East Massapequa",
+  "place": "East Massapequa",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Massapequa,_New_York"
+ },
+ {
+  "slug": "east-meadow",
+  "name": "East Meadow",
+  "place": "East Meadow",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Meadow,_New_York"
+ },
+ {
+  "slug": "east-norwich",
+  "name": "East Norwich",
+  "place": "East Norwich",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Norwich,_New_York"
+ },
+ {
+  "slug": "elmont",
+  "name": "Elmont",
+  "place": "Elmont",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Elmont–UBS Arena",
+    "Hempstead Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Elmont,_New_York"
+ },
+ {
+  "slug": "franklin-square",
+  "name": "Franklin Square",
+  "place": "Franklin Square",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Franklin_Square,_New_York"
+ },
+ {
+  "slug": "garden-city-park",
+  "name": "Garden City Park",
+  "place": "Garden City Park",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Garden_City_Park,_New_York"
+ },
+ {
+  "slug": "garden-city-south",
+  "name": "Garden City South",
+  "place": "Garden City South",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Garden_City_South,_New_York"
+ },
+ {
+  "slug": "glen-head",
+  "name": "Glen Head",
+  "place": "Glen Head",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [
+   [
+    "Glen Head",
+    "Oyster Bay Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Glen_Head,_New_York"
+ },
+ {
+  "slug": "glenwood-landing",
+  "name": "Glenwood Landing",
+  "place": "Glenwood Landing",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Glenwood_Landing,_New_York"
+ },
+ {
+  "slug": "great-neck-gardens",
+  "name": "Great Neck Gardens",
+  "place": "Great Neck Gardens",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Great_Neck_Gardens,_New_York"
+ },
+ {
+  "slug": "greenvale",
+  "name": "Greenvale",
+  "place": "Greenvale",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "North Hempstead",
+   "Oyster Bay"
+  ],
+  "stations": [
+   [
+    "Greenvale",
+    "Oyster Bay Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Greenvale,_New_York"
+ },
+ {
+  "slug": "harbor-hills",
+  "name": "Harbor Hills",
+  "place": "Harbor Hills",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Harbor_Hills,_New_York"
+ },
+ {
+  "slug": "harbor-isle",
+  "name": "Harbor Isle",
+  "place": "Harbor Isle",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Harbor_Isle,_New_York"
+ },
+ {
+  "slug": "herricks",
+  "name": "Herricks",
+  "place": "Herricks",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Herricks,_New_York"
+ },
+ {
+  "slug": "hewlett",
+  "name": "Hewlett",
+  "place": "Hewlett",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Hewlett",
+    "Far Rockaway Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Hewlett,_New_York"
+ },
+ {
+  "slug": "hicksville",
+  "name": "Hicksville",
+  "place": "Hicksville",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [
+   [
+    "Hicksville",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Hicksville,_New_York"
+ },
+ {
+  "slug": "inwood",
+  "name": "Inwood",
+  "place": "Inwood",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Inwood",
+    "Far Rockaway Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Inwood,_New_York"
+ },
+ {
+  "slug": "jericho",
+  "name": "Jericho",
+  "place": "Jericho",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Jericho,_New_York"
+ },
+ {
+  "slug": "lakeview",
+  "name": "Lakeview",
+  "place": "Lakeview",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Lakeview",
+    "West Hempstead Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Lakeview,_New_York"
+ },
+ {
+  "slug": "levittown",
+  "name": "Levittown",
+  "place": "Levittown",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Levittown,_New_York"
+ },
+ {
+  "slug": "lido-beach",
+  "name": "Lido Beach",
+  "place": "Lido Beach",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Lido_Beach,_New_York"
+ },
+ {
+  "slug": "locust-valley",
+  "name": "Locust Valley",
+  "place": "Locust Valley",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [
+   [
+    "Locust Valley",
+    "Oyster Bay Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Locust_Valley,_New_York"
+ },
+ {
+  "slug": "malverne-park-oaks",
+  "name": "Malverne Park Oaks",
+  "place": "Malverne Park Oaks",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Malverne_Park_Oaks,_New_York"
+ },
+ {
+  "slug": "manhasset",
+  "name": "Manhasset",
+  "place": "Manhasset",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [
+   [
+    "Manhasset",
+    "Port Washington Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Manhasset,_New_York"
+ },
+ {
+  "slug": "manhasset-hills",
+  "name": "Manhasset Hills",
+  "place": "Manhasset Hills",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Manhasset_Hills,_New_York"
+ },
+ {
+  "slug": "massapequa",
+  "name": "Massapequa",
+  "place": "Massapequa",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [
+   [
+    "Massapequa",
+    "Babylon Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Massapequa,_New_York"
+ },
+ {
+  "slug": "merrick",
+  "name": "Merrick",
+  "place": "Merrick",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Merrick",
+    "Babylon Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Merrick,_New_York"
+ },
+ {
+  "slug": "new-cassel",
+  "name": "New Cassel",
+  "place": "New Cassel",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/New_Cassel,_New_York"
+ },
+ {
+  "slug": "north-bellmore",
+  "name": "North Bellmore",
+  "place": "North Bellmore",
+  "county": "Nassau",
+  "kind": "community",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Bellmore,_New_York"
+ },
+ {
+  "slug": "north-lynbrook",
+  "name": "North Lynbrook",
+  "place": "North Lynbrook",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Lynbrook,_New_York"
+ },
+ {
+  "slug": "north-massapequa",
+  "name": "North Massapequa",
+  "place": "North Massapequa",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Massapequa,_New_York"
+ },
+ {
+  "slug": "north-merrick",
+  "name": "North Merrick",
+  "place": "North Merrick",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Merrick,_New_York"
+ },
+ {
+  "slug": "north-new-hyde-park",
+  "name": "North New Hyde Park",
+  "place": "North New Hyde Park",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_New_Hyde_Park,_New_York"
+ },
+ {
+  "slug": "north-valley-stream",
+  "name": "North Valley Stream",
+  "place": "North Valley Stream",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Valley_Stream,_New_York"
+ },
+ {
+  "slug": "north-wantagh",
+  "name": "North Wantagh",
+  "place": "North Wantagh",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Wantagh,_New_York"
+ },
+ {
+  "slug": "oceanside",
+  "name": "Oceanside",
+  "place": "Oceanside",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Oceanside",
+    "Long Beach Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Oceanside,_New_York"
+ },
+ {
+  "slug": "old-bethpage",
+  "name": "Old Bethpage",
+  "place": "Old Bethpage",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Old_Bethpage,_New_York"
+ },
+ {
+  "slug": "oyster-bay",
+  "name": "Oyster Bay",
+  "place": "Oyster Bay",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [
+   [
+    "Oyster Bay",
+    "Oyster Bay Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Oyster_Bay_(hamlet),_New_York"
+ },
+ {
+  "slug": "plainedge",
+  "name": "Plainedge",
+  "place": "Plainedge",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Plainedge,_New_York"
+ },
+ {
+  "slug": "plainview",
+  "name": "Plainview",
+  "place": "Plainview",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Plainview,_New_York"
+ },
+ {
+  "slug": "point-lookout",
+  "name": "Point Lookout",
+  "place": "Point Lookout",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Point_Lookout,_New_York"
+ },
+ {
+  "slug": "port-washington",
+  "name": "Port Washington",
+  "place": "Port Washington",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [
+   [
+    "Port Washington",
+    "Port Washington Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Port_Washington,_New_York"
+ },
+ {
+  "slug": "roosevelt",
+  "name": "Roosevelt",
+  "place": "Roosevelt",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Roosevelt,_New_York"
+ },
+ {
+  "slug": "roslyn-heights",
+  "name": "Roslyn Heights",
+  "place": "Roslyn Heights",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Roslyn_Heights,_New_York"
+ },
+ {
+  "slug": "saddle-rock-estates",
+  "name": "Saddle Rock Estates",
+  "place": "Saddle Rock Estates",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Saddle_Rock_Estates,_New_York"
+ },
+ {
+  "slug": "salisbury",
+  "name": "Salisbury",
+  "place": "Salisbury",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Salisbury,_Nassau_County,_New_York"
+ },
+ {
+  "slug": "seaford",
+  "name": "Seaford",
+  "place": "Seaford",
+  "county": "Nassau",
+  "kind": "community",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Seaford",
+    "Babylon Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Seaford,_New_York"
+ },
+ {
+  "slug": "searingtown",
+  "name": "Searingtown",
+  "place": "Searingtown",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Searingtown,_New_York"
+ },
+ {
+  "slug": "south-farmingdale",
+  "name": "South Farmingdale",
+  "place": "South Farmingdale",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/South_Farmingdale,_New_York"
+ },
+ {
+  "slug": "south-hempstead",
+  "name": "South Hempstead",
+  "place": "South Hempstead",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/South_Hempstead,_New_York"
+ },
+ {
+  "slug": "south-valley-stream",
+  "name": "South Valley Stream",
+  "place": "South Valley Stream",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/South_Valley_Stream,_New_York"
+ },
+ {
+  "slug": "syosset",
+  "name": "Syosset",
+  "place": "Syosset",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [
+   [
+    "Syosset",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Syosset,_New_York"
+ },
+ {
+  "slug": "uniondale",
+  "name": "Uniondale",
+  "place": "Uniondale",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Uniondale,_New_York"
+ },
+ {
+  "slug": "university-gardens",
+  "name": "University Gardens",
+  "place": "University Gardens",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "North Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/University_Gardens,_New_York"
+ },
+ {
+  "slug": "wantagh",
+  "name": "Wantagh",
+  "place": "Wantagh",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Wantagh",
+    "Babylon Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Wantagh,_New_York"
+ },
+ {
+  "slug": "west-hempstead",
+  "name": "West Hempstead",
+  "place": "West Hempstead",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "West Hempstead",
+    "West Hempstead Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/West_Hempstead,_New_York"
+ },
+ {
+  "slug": "woodbury",
+  "name": "Woodbury",
+  "place": "Woodbury",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Woodbury,_Nassau_County,_New_York"
+ },
+ {
+  "slug": "woodmere",
+  "name": "Woodmere",
+  "place": "Woodmere",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [
+   [
+    "Woodmere",
+    "Far Rockaway Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Woodmere,_New_York"
+ },
+ {
+  "slug": "baldwin-harbor",
+  "name": "Baldwin Harbor",
+  "place": "Baldwin Harbor",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Baldwin_Harbor,_New_York"
+ },
+ {
+  "slug": "east-garden-city",
+  "name": "East Garden City",
+  "place": "East Garden City",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Hempstead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Garden_City,_New_York"
+ },
+ {
+  "slug": "locust-grove",
+  "name": "Locust Grove",
+  "place": "Locust Grove",
+  "county": "Nassau",
+  "kind": "hamlet",
+  "towns": [
+   "Oyster Bay"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Locust_Grove,_New_York"
+ },
+ {
+  "slug": "town-of-babylon",
+  "name": "Town of Babylon",
+  "place": "Babylon",
+  "county": "Suffolk",
+  "kind": "town",
+  "towns": [
+   "Babylon"
+  ],
+  "stations": [
+   [
+    "Babylon",
+    "Babylon Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Babylon,_New_York"
+ },
+ {
+  "slug": "town-of-brookhaven",
+  "name": "Town of Brookhaven",
+  "place": "Brookhaven",
+  "county": "Suffolk",
+  "kind": "town",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Brookhaven,_New_York"
+ },
+ {
+  "slug": "town-of-east-hampton",
+  "name": "Town of East Hampton",
+  "place": "East Hampton",
+  "county": "Suffolk",
+  "kind": "town",
+  "towns": [
+   "East Hampton"
+  ],
+  "stations": [
+   [
+    "East Hampton",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/East_Hampton,_New_York"
+ },
+ {
+  "slug": "town-of-huntington",
+  "name": "Town of Huntington",
+  "place": "Huntington",
+  "county": "Suffolk",
+  "kind": "town",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [
+   [
+    "Huntington",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Huntington,_New_York"
+ },
+ {
+  "slug": "town-of-islip",
+  "name": "Town of Islip",
+  "place": "Islip",
+  "county": "Suffolk",
+  "kind": "town",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [
+   [
+    "Islip",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Islip,_New_York"
+ },
+ {
+  "slug": "town-of-riverhead",
+  "name": "Town of Riverhead",
+  "place": "Riverhead",
+  "county": "Suffolk",
+  "kind": "town",
+  "towns": [
+   "Riverhead"
+  ],
+  "stations": [
+   [
+    "Riverhead",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Riverhead,_New_York"
+ },
+ {
+  "slug": "town-of-shelter-island",
+  "name": "Town of Shelter Island",
+  "place": "Shelter Island",
+  "county": "Suffolk",
+  "kind": "town",
+  "towns": [
+   "Shelter Island"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Shelter_Island,_New_York"
+ },
+ {
+  "slug": "town-of-smithtown",
+  "name": "Town of Smithtown",
+  "place": "Smithtown",
+  "county": "Suffolk",
+  "kind": "town",
+  "towns": [
+   "Smithtown"
+  ],
+  "stations": [
+   [
+    "Smithtown",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Smithtown,_New_York"
+ },
+ {
+  "slug": "town-of-southampton",
+  "name": "Town of Southampton",
+  "place": "Southampton",
+  "county": "Suffolk",
+  "kind": "town",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [
+   [
+    "Southampton",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Southampton,_New_York"
+ },
+ {
+  "slug": "town-of-southold",
+  "name": "Town of Southold",
+  "place": "Southold",
+  "county": "Suffolk",
+  "kind": "town",
+  "towns": [
+   "Southold"
+  ],
+  "stations": [
+   [
+    "Southold",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Southold,_New_York"
+ },
+ {
+  "slug": "amityville",
+  "name": "Amityville",
+  "place": "Amityville",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Oyster Bay",
+   "Babylon"
+  ],
+  "stations": [
+   [
+    "Amityville",
+    "Babylon Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Amityville,_New_York"
+ },
+ {
+  "slug": "asharoken",
+  "name": "Asharoken",
+  "place": "Asharoken",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Asharoken,_New_York"
+ },
+ {
+  "slug": "babylon",
+  "name": "Babylon",
+  "place": "Babylon",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Babylon"
+  ],
+  "stations": [
+   [
+    "Babylon",
+    "Babylon Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Babylon_(village),_New_York"
+ },
+ {
+  "slug": "belle-terre",
+  "name": "Belle Terre",
+  "place": "Belle Terre",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Belle_Terre,_New_York"
+ },
+ {
+  "slug": "bellport",
+  "name": "Bellport",
+  "place": "Bellport",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [
+   [
+    "Bellport",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Bellport,_New_York"
+ },
+ {
+  "slug": "brightwaters",
+  "name": "Brightwaters",
+  "place": "Brightwaters",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Brightwaters,_New_York"
+ },
+ {
+  "slug": "dering-harbor",
+  "name": "Dering Harbor",
+  "place": "Dering Harbor",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Shelter Island"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Dering_Harbor,_New_York"
+ },
+ {
+  "slug": "east-hampton",
+  "name": "East Hampton",
+  "place": "East Hampton",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "East Hampton"
+  ],
+  "stations": [
+   [
+    "East Hampton",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/East_Hampton_(village),_New_York"
+ },
+ {
+  "slug": "greenport",
+  "name": "Greenport",
+  "place": "Greenport",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Southold"
+  ],
+  "stations": [
+   [
+    "Greenport",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Greenport,_Suffolk_County,_New_York"
+ },
+ {
+  "slug": "head-of-the-harbor",
+  "name": "Head of the Harbor",
+  "place": "Head of the Harbor",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Smithtown"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Head_of_the_Harbor,_New_York"
+ },
+ {
+  "slug": "huntington-bay",
+  "name": "Huntington Bay",
+  "place": "Huntington Bay",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Huntington_Bay,_New_York"
+ },
+ {
+  "slug": "islandia",
+  "name": "Islandia",
+  "place": "Islandia",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Islandia,_New_York"
+ },
+ {
+  "slug": "lake-grove",
+  "name": "Lake Grove",
+  "place": "Lake Grove",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Lake_Grove,_New_York"
+ },
+ {
+  "slug": "lindenhurst",
+  "name": "Lindenhurst",
+  "place": "Lindenhurst",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Babylon"
+  ],
+  "stations": [
+   [
+    "Lindenhurst",
+    "Babylon Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Lindenhurst,_New_York"
+ },
+ {
+  "slug": "lloyd-harbor",
+  "name": "Lloyd Harbor",
+  "place": "Lloyd Harbor",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Lloyd_Harbor,_New_York"
+ },
+ {
+  "slug": "nissequogue",
+  "name": "Nissequogue",
+  "place": "Nissequogue",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Nissequogue,_New_York"
+ },
+ {
+  "slug": "north-haven",
+  "name": "North Haven",
+  "place": "North Haven",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Haven,_New_York"
+ },
+ {
+  "slug": "northport",
+  "name": "Northport",
+  "place": "Northport",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [
+   [
+    "Northport",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Northport,_New_York"
+ },
+ {
+  "slug": "ocean-beach",
+  "name": "Ocean Beach",
+  "place": "Ocean Beach",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Ocean_Beach,_New_York"
+ },
+ {
+  "slug": "old-field",
+  "name": "Old Field",
+  "place": "Old Field",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Old_Field,_New_York"
+ },
+ {
+  "slug": "patchogue",
+  "name": "Patchogue",
+  "place": "Patchogue",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [
+   [
+    "Patchogue",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Patchogue,_New_York"
+ },
+ {
+  "slug": "poquott",
+  "name": "Poquott",
+  "place": "Poquott",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Poquott,_New_York"
+ },
+ {
+  "slug": "port-jefferson",
+  "name": "Port Jefferson",
+  "place": "Port Jefferson",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [
+   [
+    "Port Jefferson",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Port_Jefferson,_New_York"
+ },
+ {
+  "slug": "quogue",
+  "name": "Quogue",
+  "place": "Quogue",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Quogue,_New_York"
+ },
+ {
+  "slug": "sag-harbor",
+  "name": "Sag Harbor",
+  "place": "Sag Harbor",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "East Hampton",
+   "Southampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Sag_Harbor,_New_York"
+ },
+ {
+  "slug": "sagaponack",
+  "name": "Sagaponack",
+  "place": "Sagaponack",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Sagaponack,_New_York"
+ },
+ {
+  "slug": "saltaire",
+  "name": "Saltaire",
+  "place": "Saltaire",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Saltaire,_New_York"
+ },
+ {
+  "slug": "shoreham",
+  "name": "Shoreham",
+  "place": "Shoreham",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Shoreham,_New_York"
+ },
+ {
+  "slug": "southampton",
+  "name": "Southampton",
+  "place": "Southampton",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [
+   [
+    "Southampton",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Southampton_(village),_New_York"
+ },
+ {
+  "slug": "village-of-the-branch",
+  "name": "Village of the Branch",
+  "place": "Village of the Branch",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Smithtown"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Village_of_the_Branch,_New_York"
+ },
+ {
+  "slug": "westhampton-beach",
+  "name": "Westhampton Beach",
+  "place": "Westhampton Beach",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Westhampton_Beach,_New_York"
+ },
+ {
+  "slug": "west-hampton-dunes",
+  "name": "West Hampton Dunes",
+  "place": "West Hampton Dunes",
+  "county": "Suffolk",
+  "kind": "village",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/West_Hampton_Dunes,_New_York"
+ },
+ {
+  "slug": "amagansett",
+  "name": "Amagansett",
+  "place": "Amagansett",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [
+   "East Hampton"
+  ],
+  "stations": [
+   [
+    "Amagansett",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Amagansett,_New_York"
+ },
+ {
+  "slug": "aquebogue",
+  "name": "Aquebogue",
+  "place": "Aquebogue",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [
+   "Riverhead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Aquebogue,_New_York"
+ },
+ {
+  "slug": "baiting-hollow",
+  "name": "Baiting Hollow",
+  "place": "Baiting Hollow",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [
+   "Riverhead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Baiting_Hollow,_New_York"
+ },
+ {
+  "slug": "bay-shore",
+  "name": "Bay Shore",
+  "place": "Bay Shore",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [
+   [
+    "Bay Shore",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Bay_Shore,_New_York"
+ },
+ {
+  "slug": "bayport",
+  "name": "Bayport",
+  "place": "Bayport",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Bayport,_New_York"
+ },
+ {
+  "slug": "baywood",
+  "name": "Baywood",
+  "place": "Baywood",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Baywood,_New_York"
+ },
+ {
+  "slug": "blue-point",
+  "name": "Blue Point",
+  "place": "Blue Point",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Blue_Point,_New_York"
+ },
+ {
+  "slug": "bohemia",
+  "name": "Bohemia",
+  "place": "Bohemia",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Bohemia,_New_York"
+ },
+ {
+  "slug": "brentwood",
+  "name": "Brentwood",
+  "place": "Brentwood",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [
+   [
+    "Brentwood",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Brentwood,_New_York"
+ },
+ {
+  "slug": "bridgehampton",
+  "name": "Bridgehampton",
+  "place": "Bridgehampton",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [
+   [
+    "Bridgehampton",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Bridgehampton,_New_York"
+ },
+ {
+  "slug": "brookhaven",
+  "name": "Brookhaven",
+  "place": "Brookhaven",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Brookhaven_(CDP),_New_York"
+ },
+ {
+  "slug": "calverton",
+  "name": "Calverton",
+  "place": "Calverton",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Calverton,_New_York"
+ },
+ {
+  "slug": "captree",
+  "name": "Captree",
+  "place": "Captree",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Babylon",
+   "Islip"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Captree,_New_York"
+ },
+ {
+  "slug": "center-moriches",
+  "name": "Center Moriches",
+  "place": "Center Moriches",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Center_Moriches,_New_York"
+ },
+ {
+  "slug": "centereach",
+  "name": "Centereach",
+  "place": "Centereach",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Centereach,_New_York"
+ },
+ {
+  "slug": "centerport",
+  "name": "Centerport",
+  "place": "Centerport",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Centerport,_New_York"
+ },
+ {
+  "slug": "central-islip",
+  "name": "Central Islip",
+  "place": "Central Islip",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [
+   [
+    "Central Islip",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Central_Islip,_New_York"
+ },
+ {
+  "slug": "cold-spring-harbor",
+  "name": "Cold Spring Harbor",
+  "place": "Cold Spring Harbor",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [
+   [
+    "Cold Spring Harbor",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Cold_Spring_Harbor,_New_York"
+ },
+ {
+  "slug": "commack",
+  "name": "Commack",
+  "place": "Commack",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Huntington",
+   "Smithtown"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Commack,_New_York"
+ },
+ {
+  "slug": "copiague",
+  "name": "Copiague",
+  "place": "Copiague",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Babylon"
+  ],
+  "stations": [
+   [
+    "Copiague",
+    "Babylon Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Copiague,_New_York"
+ },
+ {
+  "slug": "coram",
+  "name": "Coram",
+  "place": "Coram",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Coram,_New_York"
+ },
+ {
+  "slug": "cutchogue",
+  "name": "Cutchogue",
+  "place": "Cutchogue",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Cutchogue,_New_York"
+ },
+ {
+  "slug": "deer-park",
+  "name": "Deer Park",
+  "place": "Deer Park",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Babylon"
+  ],
+  "stations": [
+   [
+    "Deer Park",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Deer_Park,_New_York"
+ },
+ {
+  "slug": "dix-hills",
+  "name": "Dix Hills",
+  "place": "Dix Hills",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Dix_Hills,_New_York"
+ },
+ {
+  "slug": "east-farmingdale",
+  "name": "East Farmingdale",
+  "place": "East Farmingdale",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Babylon"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Farmingdale,_New_York"
+ },
+ {
+  "slug": "east-hampton-north",
+  "name": "East Hampton North",
+  "place": "East Hampton North",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Hampton_North,_New_York"
+ },
+ {
+  "slug": "east-islip",
+  "name": "East Islip",
+  "place": "East Islip",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Islip,_New_York"
+ },
+ {
+  "slug": "east-marion",
+  "name": "East Marion",
+  "place": "East Marion",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [
+   "Southold"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Marion,_New_York"
+ },
+ {
+  "slug": "east-moriches",
+  "name": "East Moriches",
+  "place": "East Moriches",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Moriches,_New_York"
+ },
+ {
+  "slug": "east-northport",
+  "name": "East Northport",
+  "place": "East Northport",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Northport,_New_York"
+ },
+ {
+  "slug": "east-patchogue",
+  "name": "East Patchogue",
+  "place": "East Patchogue",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Patchogue,_New_York"
+ },
+ {
+  "slug": "east-quogue",
+  "name": "East Quogue",
+  "place": "East Quogue",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Quogue,_New_York"
+ },
+ {
+  "slug": "east-setauket",
+  "name": "East Setauket",
+  "place": "East Setauket",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Setauket,_New_York"
+ },
+ {
+  "slug": "east-shoreham",
+  "name": "East Shoreham",
+  "place": "East Shoreham",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/East_Shoreham,_New_York"
+ },
+ {
+  "slug": "eastport",
+  "name": "Eastport",
+  "place": "Eastport",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Eastport,_New_York"
+ },
+ {
+  "slug": "eatons-neck",
+  "name": "Eatons Neck",
+  "place": "Eatons Neck",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Eatons_Neck,_New_York"
+ },
+ {
+  "slug": "elwood",
+  "name": "Elwood",
+  "place": "Elwood",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Elwood,_New_York"
+ },
+ {
+  "slug": "farmingville",
+  "name": "Farmingville",
+  "place": "Farmingville",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Farmingville,_New_York"
+ },
+ {
+  "slug": "fire-island",
+  "name": "Fire Island",
+  "place": "Fire Island",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Fire_Island"
+ },
+ {
+  "slug": "fishers-island",
+  "name": "Fishers Island",
+  "place": "Fishers Island",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [
+   "Southold"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Fishers_Island,_New_York"
+ },
+ {
+  "slug": "flanders",
+  "name": "Flanders",
+  "place": "Flanders",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Flanders,_New_York"
+ },
+ {
+  "slug": "fort-salonga",
+  "name": "Fort Salonga",
+  "place": "Fort Salonga",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Huntington",
+   "Smithtown"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Fort_Salonga,_New_York"
+ },
+ {
+  "slug": "gilgo",
+  "name": "Gilgo",
+  "place": "Gilgo",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Babylon"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Gilgo,_New_York"
+ },
+ {
+  "slug": "gordon-heights",
+  "name": "Gordon Heights",
+  "place": "Gordon Heights",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Gordon_Heights,_New_York"
+ },
+ {
+  "slug": "great-river",
+  "name": "Great River",
+  "place": "Great River",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [
+   [
+    "Great River",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Great_River,_New_York"
+ },
+ {
+  "slug": "greenlawn",
+  "name": "Greenlawn",
+  "place": "Greenlawn",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [
+   [
+    "Greenlawn",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Greenlawn,_New_York"
+ },
+ {
+  "slug": "greenport-west",
+  "name": "Greenport West",
+  "place": "Greenport West",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Greenport_West,_New_York"
+ },
+ {
+  "slug": "halesite",
+  "name": "Halesite",
+  "place": "Halesite",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Halesite,_New_York"
+ },
+ {
+  "slug": "hampton-bays",
+  "name": "Hampton Bays",
+  "place": "Hampton Bays",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [
+   [
+    "Hampton Bays",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Hampton_Bays,_New_York"
+ },
+ {
+  "slug": "hauppauge",
+  "name": "Hauppauge",
+  "place": "Hauppauge",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip",
+   "Smithtown"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Hauppauge,_New_York"
+ },
+ {
+  "slug": "holbrook",
+  "name": "Holbrook",
+  "place": "Holbrook",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven",
+   "Islip"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Holbrook,_New_York"
+ },
+ {
+  "slug": "holtsville",
+  "name": "Holtsville",
+  "place": "Holtsville",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Holtsville,_New_York"
+ },
+ {
+  "slug": "huntington",
+  "name": "Huntington",
+  "place": "Huntington",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [
+   [
+    "Huntington",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Huntington_(CDP),_New_York"
+ },
+ {
+  "slug": "huntington-station",
+  "name": "Huntington Station",
+  "place": "Huntington Station",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Huntington_Station,_New_York"
+ },
+ {
+  "slug": "islip",
+  "name": "Islip",
+  "place": "Islip",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [
+   [
+    "Islip",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Islip_(hamlet),_New_York"
+ },
+ {
+  "slug": "islip-terrace",
+  "name": "Islip Terrace",
+  "place": "Islip Terrace",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Islip_Terrace,_New_York"
+ },
+ {
+  "slug": "jamesport",
+  "name": "Jamesport",
+  "place": "Jamesport",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Riverhead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Jamesport,_New_York"
+ },
+ {
+  "slug": "kings-park",
+  "name": "Kings Park",
+  "place": "Kings Park",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Smithtown"
+  ],
+  "stations": [
+   [
+    "Kings Park",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Kings_Park,_New_York"
+ },
+ {
+  "slug": "lake-ronkonkoma",
+  "name": "Lake Ronkonkoma",
+  "place": "Lake Ronkonkoma",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Lake_Ronkonkoma,_New_York"
+ },
+ {
+  "slug": "laurel",
+  "name": "Laurel",
+  "place": "Laurel",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [
+   "Riverhead",
+   "Southold"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Laurel,_New_York"
+ },
+ {
+  "slug": "manorville",
+  "name": "Manorville",
+  "place": "Manorville",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Manorville,_New_York"
+ },
+ {
+  "slug": "mastic",
+  "name": "Mastic",
+  "place": "Mastic",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [
+   [
+    "Mastic–Shirley",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Mastic,_New_York"
+ },
+ {
+  "slug": "mastic-beach",
+  "name": "Mastic Beach",
+  "place": "Mastic Beach",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Mastic_Beach,_New_York"
+ },
+ {
+  "slug": "mattituck",
+  "name": "Mattituck",
+  "place": "Mattituck",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Southold"
+  ],
+  "stations": [
+   [
+    "Mattituck",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Mattituck,_New_York"
+ },
+ {
+  "slug": "medford",
+  "name": "Medford",
+  "place": "Medford",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [
+   [
+    "Medford",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Medford,_New_York"
+ },
+ {
+  "slug": "melville",
+  "name": "Melville",
+  "place": "Melville",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Melville,_New_York"
+ },
+ {
+  "slug": "middle-island",
+  "name": "Middle Island",
+  "place": "Middle Island",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Middle_Island,_New_York"
+ },
+ {
+  "slug": "miller-place",
+  "name": "Miller Place",
+  "place": "Miller Place",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Miller_Place,_New_York"
+ },
+ {
+  "slug": "montauk",
+  "name": "Montauk",
+  "place": "Montauk",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "East Hampton"
+  ],
+  "stations": [
+   [
+    "Montauk",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Montauk,_New_York"
+ },
+ {
+  "slug": "moriches",
+  "name": "Moriches",
+  "place": "Moriches",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Moriches,_New_York"
+ },
+ {
+  "slug": "mount-sinai",
+  "name": "Mount Sinai",
+  "place": "Mount Sinai",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Mount_Sinai,_New_York"
+ },
+ {
+  "slug": "napeague",
+  "name": "Napeague",
+  "place": "Napeague",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [
+   "East Hampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Napeague,_New_York"
+ },
+ {
+  "slug": "nesconset",
+  "name": "Nesconset",
+  "place": "Nesconset",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Smithtown"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Nesconset,_New_York"
+ },
+ {
+  "slug": "new-suffolk",
+  "name": "New Suffolk",
+  "place": "New Suffolk",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [
+   "Southold"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/New_Suffolk,_New_York"
+ },
+ {
+  "slug": "north-amityville",
+  "name": "North Amityville",
+  "place": "North Amityville",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Babylon"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Amityville,_New_York"
+ },
+ {
+  "slug": "north-babylon",
+  "name": "North Babylon",
+  "place": "North Babylon",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Babylon"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Babylon,_New_York"
+ },
+ {
+  "slug": "north-bay-shore",
+  "name": "North Bay Shore",
+  "place": "North Bay Shore",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Bay_Shore,_New_York"
+ },
+ {
+  "slug": "north-bellport",
+  "name": "North Bellport",
+  "place": "North Bellport",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Bellport,_New_York"
+ },
+ {
+  "slug": "north-great-river",
+  "name": "North Great River",
+  "place": "North Great River",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Great_River,_New_York"
+ },
+ {
+  "slug": "north-lindenhurst",
+  "name": "North Lindenhurst",
+  "place": "North Lindenhurst",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Babylon"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Lindenhurst,_New_York"
+ },
+ {
+  "slug": "north-patchogue",
+  "name": "North Patchogue",
+  "place": "North Patchogue",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Patchogue,_New_York"
+ },
+ {
+  "slug": "north-sea",
+  "name": "North Sea",
+  "place": "North Sea",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/North_Sea,_New_York"
+ },
+ {
+  "slug": "northampton",
+  "name": "Northampton",
+  "place": "Northampton",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Northampton,_Suffolk_County,_New_York"
+ },
+ {
+  "slug": "northville",
+  "name": "Northville",
+  "place": "Northville",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Riverhead"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Northville,_Suffolk_County,_New_York"
+ },
+ {
+  "slug": "northwest-harbor",
+  "name": "Northwest Harbor",
+  "place": "Northwest Harbor",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "East Hampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Northwest_Harbor,_New_York"
+ },
+ {
+  "slug": "noyack",
+  "name": "Noyack",
+  "place": "Noyack",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Noyack,_New_York"
+ },
+ {
+  "slug": "oak-beach",
+  "name": "Oak Beach",
+  "place": "Oak Beach",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Oak_Beach,_New_York"
+ },
+ {
+  "slug": "oakdale",
+  "name": "Oakdale",
+  "place": "Oakdale",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [
+   [
+    "Oakdale",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Oakdale,_New_York"
+ },
+ {
+  "slug": "orient",
+  "name": "Orient",
+  "place": "Orient",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Orient,_New_York"
+ },
+ {
+  "slug": "peconic",
+  "name": "Peconic",
+  "place": "Peconic",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [
+   "Southold"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Peconic,_New_York"
+ },
+ {
+  "slug": "port-jefferson-station",
+  "name": "Port Jefferson Station",
+  "place": "Port Jefferson Station",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Port_Jefferson_Station,_New_York"
+ },
+ {
+  "slug": "quiogue",
+  "name": "Quiogue",
+  "place": "Quiogue",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Quiogue,_New_York"
+ },
+ {
+  "slug": "remsenburg-speonk",
+  "name": "Remsenburg-Speonk",
+  "place": "Remsenburg-Speonk",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Remsenburg-Speonk,_New_York"
+ },
+ {
+  "slug": "ridge",
+  "name": "Ridge",
+  "place": "Ridge",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Ridge,_New_York"
+ },
+ {
+  "slug": "riverhead",
+  "name": "Riverhead",
+  "place": "Riverhead",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Riverhead"
+  ],
+  "stations": [
+   [
+    "Riverhead",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Riverhead_(CDP),_New_York"
+ },
+ {
+  "slug": "riverside",
+  "name": "Riverside",
+  "place": "Riverside",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Riverside,_Suffolk_County,_New_York"
+ },
+ {
+  "slug": "rocky-point",
+  "name": "Rocky Point",
+  "place": "Rocky Point",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Rocky_Point,_New_York"
+ },
+ {
+  "slug": "ronkonkoma",
+  "name": "Ronkonkoma",
+  "place": "Ronkonkoma",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [
+   [
+    "Ronkonkoma",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Ronkonkoma,_New_York"
+ },
+ {
+  "slug": "sayville",
+  "name": "Sayville",
+  "place": "Sayville",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [
+   [
+    "Sayville",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Sayville,_New_York"
+ },
+ {
+  "slug": "selden",
+  "name": "Selden",
+  "place": "Selden",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Selden,_New_York"
+ },
+ {
+  "slug": "setauket",
+  "name": "Setauket",
+  "place": "Setauket",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Setauket,_New_York"
+ },
+ {
+  "slug": "shelter-island",
+  "name": "Shelter Island",
+  "place": "Shelter Island",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Shelter Island"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Shelter_Island_(CDP),_New_York"
+ },
+ {
+  "slug": "shelter-island-heights",
+  "name": "Shelter Island Heights",
+  "place": "Shelter Island Heights",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Shelter Island"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Shelter_Island_Heights,_New_York"
+ },
+ {
+  "slug": "shinnecock-hills",
+  "name": "Shinnecock Hills",
+  "place": "Shinnecock Hills",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Shinnecock_Hills,_New_York"
+ },
+ {
+  "slug": "shirley",
+  "name": "Shirley",
+  "place": "Shirley",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Shirley,_New_York"
+ },
+ {
+  "slug": "smithtown",
+  "name": "Smithtown",
+  "place": "Smithtown",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Smithtown"
+  ],
+  "stations": [
+   [
+    "Smithtown",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Smithtown_(CDP),_New_York"
+ },
+ {
+  "slug": "sound-beach",
+  "name": "Sound Beach",
+  "place": "Sound Beach",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Sound_Beach,_New_York"
+ },
+ {
+  "slug": "south-huntington",
+  "name": "South Huntington",
+  "place": "South Huntington",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/South_Huntington,_New_York"
+ },
+ {
+  "slug": "southold",
+  "name": "Southold",
+  "place": "Southold",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [
+   "Southold"
+  ],
+  "stations": [
+   [
+    "Southold",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Southold_(CDP),_New_York"
+ },
+ {
+  "slug": "springs",
+  "name": "Springs",
+  "place": "Springs",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [
+   "East Hampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Springs,_New_York"
+ },
+ {
+  "slug": "st-james",
+  "name": "St. James",
+  "place": "St. James",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [],
+  "stations": [
+   [
+    "St. James",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/St._James,_New_York"
+ },
+ {
+  "slug": "stony-brook",
+  "name": "Stony Brook",
+  "place": "Stony Brook",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [
+   [
+    "Stony Brook",
+    "Port Jefferson Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Stony_Brook,_New_York"
+ },
+ {
+  "slug": "terryville",
+  "name": "Terryville",
+  "place": "Terryville",
+  "county": "Suffolk",
+  "kind": "community",
+  "towns": [
+   "Brookhaven"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Terryville,_New_York"
+ },
+ {
+  "slug": "tuckahoe",
+  "name": "Tuckahoe",
+  "place": "Tuckahoe",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Tuckahoe,_Suffolk_County,_New_York"
+ },
+ {
+  "slug": "wading-river",
+  "name": "Wading River",
+  "place": "Wading River",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Wading_River,_New_York"
+ },
+ {
+  "slug": "wainscott",
+  "name": "Wainscott",
+  "place": "Wainscott",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "East Hampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Wainscott,_New_York"
+ },
+ {
+  "slug": "water-mill",
+  "name": "Water Mill",
+  "place": "Water Mill",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Southampton"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Water_Mill,_New_York"
+ },
+ {
+  "slug": "west-babylon",
+  "name": "West Babylon",
+  "place": "West Babylon",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Babylon"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/West_Babylon,_New_York"
+ },
+ {
+  "slug": "west-bay-shore",
+  "name": "West Bay Shore",
+  "place": "West Bay Shore",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/West_Bay_Shore,_New_York"
+ },
+ {
+  "slug": "west-hills",
+  "name": "West Hills",
+  "place": "West Hills",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Huntington"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/West_Hills,_New_York"
+ },
+ {
+  "slug": "west-islip",
+  "name": "West Islip",
+  "place": "West Islip",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Islip"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/West_Islip,_New_York"
+ },
+ {
+  "slug": "west-sayville",
+  "name": "West Sayville",
+  "place": "West Sayville",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/West_Sayville,_New_York"
+ },
+ {
+  "slug": "westhampton",
+  "name": "Westhampton",
+  "place": "Westhampton",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [
+   [
+    "Westhampton",
+    "Montauk Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Westhampton,_New_York"
+ },
+ {
+  "slug": "wheatley-heights",
+  "name": "Wheatley Heights",
+  "place": "Wheatley Heights",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Babylon"
+  ],
+  "stations": [],
+  "source": "https://en.wikipedia.org/wiki/Wheatley_Heights,_New_York"
+ },
+ {
+  "slug": "wyandanch",
+  "name": "Wyandanch",
+  "place": "Wyandanch",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [
+   "Babylon"
+  ],
+  "stations": [
+   [
+    "Wyandanch",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Wyandanch,_New_York"
+ },
+ {
+  "slug": "yaphank",
+  "name": "Yaphank",
+  "place": "Yaphank",
+  "county": "Suffolk",
+  "kind": "hamlet",
+  "towns": [],
+  "stations": [
+   [
+    "Yaphank–BNL",
+    "Ronkonkoma Branch"
+   ]
+  ],
+  "source": "https://en.wikipedia.org/wiki/Yaphank,_New_York"
+ }
+]

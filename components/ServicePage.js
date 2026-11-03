@@ -1,6 +1,6 @@
 import { SiteHeader, SiteFooter } from "./SiteChrome";
 import LeadForm from "./LeadForm";
-import { TOWNS } from "../lib/towns";
+import { TOWNS, listingsForTown } from "../lib/towns";
 
 export default function ServicePage({ path, eyebrow, title, lead, stats, steps, prose, forms, extra }) {
   return (
@@ -29,7 +29,7 @@ export default function ServicePage({ path, eyebrow, title, lead, stats, steps, 
         ))}
         <section className="sp-section wrap">
           <h2 className="sp-h2">Towns we cover</h2>
-          <div className="sp-towns-inline">{TOWNS.map((t) => <a key={t.slug} href={`/towns/${t.slug}`}>{t.name}</a>)}</div>
+          <div className="sp-towns-inline">{TOWNS.filter((t) => listingsForTown(t).length).map((t) => <a key={t.slug} href={`/towns/${t.slug}`}>{t.name}</a>)}<a href="/towns">All Long Island towns &rarr;</a></div>
         </section>
       </main>
       <SiteFooter />

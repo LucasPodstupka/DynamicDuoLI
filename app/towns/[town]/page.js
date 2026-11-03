@@ -41,7 +41,7 @@ export default function TownPage({ params }) {
       <main className="sp" id="main">
         <section className="sp-hero wrap">
           <p className="sp-crumbs"><a href="/towns">Towns</a> / {t.name}</p>
-          <span className="eyebrow">{t.county} County · {t.region}</span>
+          <span className="eyebrow">{t.county} County{t.region && !t.region.endsWith("County") ? ` · ${t.region}` : ""}</span>
           <h1 className="sp-title">{t.name} Real Estate</h1>
           <p className="sp-lead">{t.blurb}</p>
           {s.total > 0 && (
@@ -56,6 +56,7 @@ export default function TownPage({ params }) {
         <section className="sp-section wrap sp-prose">
           <h2 className="sp-h2">Living in {t.name}</h2>
           {t.copy.map((p, i) => <p key={i}>{p}</p>)}
+          {t.source && <p className="sp-source">Source: <a href={t.source} rel="noopener noreferrer" target="_blank">Wikipedia</a> and the LIRR station list.</p>}
         </section>
         <section className="sp-section wrap">
           <h2 className="sp-h2">Our {t.name} homes</h2>
@@ -70,8 +71,9 @@ export default function TownPage({ params }) {
           </div>
         </section>
         <section className="sp-section wrap">
-          <h2 className="sp-h2">Nearby towns we cover</h2>
-          <div className="sp-towns-inline">{TOWNS.filter((x) => x.slug !== t.slug && x.county === t.county && x.region === t.region).slice(0, 12).map((x) => <a key={x.slug} href={`/towns/${x.slug}`}>{x.name}</a>)}</div>
+          <h2 className="sp-h2">More in {t.region}</h2>
+          <p className="sp-source"><a href={`/towns#${t.county.toLowerCase()}`}>All {t.county} County towns &rarr;</a></p>
+          <div className="sp-towns-inline">{TOWNS.filter((x) => x.slug !== t.slug && x.county === t.county && x.region === t.region).slice(0, 16).map((x) => <a key={x.slug} href={`/towns/${x.slug}`}>{x.name}</a>)}</div>
         </section>
       </main>
       <SiteFooter />
