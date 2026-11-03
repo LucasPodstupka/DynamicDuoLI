@@ -1,0 +1,123 @@
+/* ===== Concept: luxury v1 — cream paper, serif headlines, navy + deep gold ===== */
+:root{
+  --serif:var(--font-serif),'Cormorant Garamond',Georgia,serif;
+  --sans:var(--font-sans),Inter,system-ui,sans-serif;
+  --bg:#f4efe4;--bg-2:#ebe4d5;--bg-3:#fbf8f1;--field:#fff;
+  --ink:#1b1f24;--ink-2:#1b1f24;--muted:#3d4450;--muted-2:#5a616b;
+  --line:#d8d0bf;--line-2:#cbc1ad;
+  --brass:#7a5410;--brass-bright:#7a5410;--brass-deep:#5e400a;
+  --gold:#c9a24e;--navy:#1d2a3a;--navy-2:#16212f;
+}
+body{background:var(--bg);background-image:none;font-size:17px;line-height:1.6;color:var(--ink)}
+@media(min-width:900px){body{font-size:18px}}
+
+/* Headlines: Cormorant Garamond 600, sentence case */
+h1,h2,h3,h4,.ig-title,.contact-title,.rvt-title,.sp-title,.sp-h2,.sp-town h2,.ld-addr,.contact-name,.agent-name,.selector-head h2,.panel h2,.panel h3{
+  font-family:var(--serif)!important;font-weight:600!important;text-transform:none!important;letter-spacing:-.01em!important}
+.hero h1{font-size:clamp(40px,6.4vw,72px)!important;line-height:1.05!important;max-width:16ch}
+.hero h1 em,h2 em{font-style:italic;color:var(--brass)}
+h2,.ig-title,.contact-title,.rvt-title,.sp-title,.selector-head h2{font-size:clamp(30px,4vw,44px)!important;line-height:1.1!important}
+.ld-addr{font-size:clamp(30px,3.6vw,44px)!important}
+.ld-price,.stat-num,.hero-meta b,.lx-price,.lc-price{font-family:var(--serif)!important;font-weight:600}
+
+/* Small caps-style labels in Inter (serif uppercase reads poorly) */
+.eyebrow,.btn,.sp-btn,.topnav a,.topcall,.topcta,.tab,label,.lx-badge,.lc-status,.dv-status,.oh-badge,.mcta a,.mcta summary,
+.agent-zillow,.callpop-h,.office-label,.contact-role,.benefit-num,.tab-i,.ig-tabbar label,.rv-tab,.sp-steps b,.lx-tab,.lx-tabs button{
+  font-family:var(--sans)!important}
+.eyebrow{color:var(--brass);letter-spacing:.22em;font-size:12.5px;font-weight:600}
+.eyebrow::before{background:var(--gold);height:1px;width:36px}
+.btn,.sp-btn{text-transform:none;letter-spacing:.01em;font-size:16px;font-weight:600;border-radius:2px;min-height:48px}
+.btn-gold,.sp-btn{background:var(--navy);color:#fff;box-shadow:0 18px 34px -22px rgba(29,42,58,.7);border:1px solid var(--navy)}
+.btn-gold:hover,.sp-btn:hover{background:#2a3b50;color:#fff}
+.btn-navy{background:var(--navy);color:#fff;border:1px solid var(--navy)}
+.btn-navy:hover{background:#2a3b50}
+.btn-ghost,.hero-photo .btn-ghost,.btn-line{border:1px solid var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover,.btn-line:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+.topcta{background:var(--gold)!important;color:var(--navy)!important;border-color:var(--gold)!important;text-transform:none;letter-spacing:.01em}
+.topcall{text-transform:none;letter-spacing:.01em}
+.topnav a{text-transform:none;letter-spacing:.02em;font-weight:500}
+a{color:inherit}
+
+/* Hero: text-only paper, generous whitespace, thin rule */
+.hero-photo,.hero{background:transparent!important}
+.hero-photo .eyebrow{color:var(--brass)}
+.hero-copy{padding:72px 0 64px}
+@media(min-width:900px){.hero-copy{padding:120px 0 96px}}
+.hero-lead{color:var(--muted);font-size:clamp(17px,1.6vw,19px);max-width:56ch}
+.hero-meta{border-top:1px solid var(--line);padding-top:24px}
+.hero-meta b{color:var(--ink)}
+.hero-meta span{color:var(--muted-2);font-size:13px;letter-spacing:.12em}
+
+/* Team: always full color, larger on mobile */
+.agent-photo{border-radius:2px;border:1px solid var(--line);box-shadow:0 30px 60px -40px rgba(29,42,58,.55)}
+.agent-photo .ph-color{opacity:1!important;filter:none!important}
+.agent-zillow{background:var(--navy);color:#fff;font-size:13px;text-transform:none;letter-spacing:.02em}
+@media(hover:none),(max-width:820px){.agent-zillow{transform:none}}
+@media(max-width:820px){
+  .team{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding-bottom:8px;-webkit-overflow-scrolling:touch}
+  .team .agent{flex:0 0 82vw;max-width:360px;scroll-snap-align:center}
+  .agent-photo{max-height:none!important;min-height:300px}
+}
+
+/* Section rhythm */
+.selector,.igsec,.contact,.rvteaser,.team-band{padding-top:72px;padding-bottom:72px}
+@media(min-width:900px){.selector,.igsec,.contact{padding-top:120px;padding-bottom:120px}}
+.contact-card,.lx-card,.sp-town,.benefit{border-radius:2px;border-color:var(--line)}
+
+/* Reviews teaser */
+.rvteaser{padding:24px 0}
+.rvt-card{display:grid;grid-template-columns:1.2fr 1fr auto;gap:28px;align-items:center;background:var(--bg-3);border:1px solid var(--line);border-top:2px solid var(--gold);padding:32px 36px}
+.rvt-sub{color:var(--muted);margin-top:8px}
+.rvt-list{list-style:none;display:grid;gap:10px}
+.rvt-list li{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;font-size:15px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.rvt-name{font-weight:600;min-width:7ch}
+.rvt-score{color:var(--muted)}
+.rv-stars{color:var(--brass);letter-spacing:.08em}
+@media(max-width:900px){.rvt-card{grid-template-columns:1fr;padding:26px 22px}.rvt-cta{justify-self:start}}
+
+/* Status badges: solid, AA, with dot */
+.lx-badge,.lc-status,.dv-status{font-size:12px!important;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border-radius:999px}
+.lc-status::before,.dv-status::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:currentColor;margin-right:6px;vertical-align:1px}
+.lx-badge-active,.lc-status.active,.dv-status.active{background:#1e6b3a!important;color:#fff!important}
+.lx-badge-pending,.lc-status.pending,.dv-status.pending{background:#e8b923!important;color:#2b2100!important}
+.lx-badge-sold,.lc-status.sold,.dv-status.sold{background:#a8322a!important;color:#fff!important}
+.stat-active .stat-num{color:#1e6b3a!important}.stat-active{border-top-color:#1e6b3a}
+.stat-pending .stat-num{color:#8a5a00!important}
+.stat-sold .stat-num{color:#a8322a!important}
+.stat-num{color:var(--ink)}
+.oh-badge b{color:var(--brass)}
+
+/* Forms: 17px stops iOS zoom; 44px targets */
+.ctrl,input,select,textarea{font-size:17px!important}
+.ctrl{min-height:48px;border-radius:2px;border-color:var(--line-2);background:#fff}
+.ctrl:focus{outline:2px solid var(--navy);outline-offset:1px}
+.topnav a,.tab,.ig-tabbar label,.rv-tab,.lx-tabs button,.callpop a,.contact-links a,.footer a{min-height:44px;display:inline-flex;align-items:center}
+
+/* Footer / bars in navy */
+.footer{background:var(--navy);color:#e9e4d8}
+.footer a{color:#fff}
+.footer .brand-txt span,.footer-note{color:#c9c3b6}
+
+/* Mobile sticky bar: Call · Text · Work With Us (3 equal, 56px) */
+@media(max-width:820px){
+  .mcta{display:flex!important;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--navy)!important}
+  .mcta>*{flex:1 1 0!important;min-width:0}
+  .mcta summary,.mcta a.mcta-main{display:flex;align-items:center;justify-content:center;min-height:56px;width:100%;font-size:15px!important;font-weight:600;
+    text-transform:none!important;letter-spacing:.01em!important;border-radius:2px;color:#fff;border:1px solid rgba(255,255,255,.35);list-style:none;text-align:center;line-height:1.15;padding:6px}
+  .mcta summary::-webkit-details-marker{display:none}
+  .mcta a.mcta-main{background:var(--gold)!important;border-color:var(--gold)!important;color:var(--navy)!important}
+  .mcta-text .callpop{left:auto;right:0}
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  body:has(input:focus,textarea:focus,select:focus) .mcta{display:none!important}
+  .reveal{transition-duration:.45s!important;transform:translateY(12px)}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important}}
+@media(max-width:820px){.team-band{overflow-x:clip}.team{width:100%;min-width:0}.team .agent{flex-basis:min(82vw,360px)}}
+.page-enter{animation-fill-mode:backwards!important} /* keep fixed bars fixed: no lingering transform */
+/* mobile nits */
+.rv-teaser-txt{white-space:nowrap}
+@media (max-width:600px){
+  .agent-name{font-size:26px!important;line-height:1.15}
+  .rv-teaser-in{flex-wrap:wrap;justify-content:center;gap:10px}
+  .rv-teaser-txt{font-size:17px}
+}
