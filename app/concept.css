@@ -121,3 +121,33 @@ a{color:inherit}
   .rv-teaser-in{flex-wrap:wrap;justify-content:center;gap:10px}
   .rv-teaser-txt{font-size:17px}
 }
+
+/* ---- Nov 3: shorter homepage on phones ---- */
+.panel-more{margin:28px 0 8px;text-align:center}
+.panel-more a{font-family:var(--serif);text-transform:uppercase;letter-spacing:.12em;font-size:13px;color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--brass);padding-bottom:4px}
+.ig-more{display:none}
+@media(max-width:560px){
+  .hero-photo{padding:84px 0 12px}
+  .team{grid-template-columns:repeat(3,1fr);gap:10px}
+  .agent-photo{max-height:none;aspect-ratio:3/4}
+  .agent-zillow{display:none}
+  .agent-name{font-size:15px!important}
+  .agent-role{font-size:10.5px!important;line-height:1.3}
+  .agent-contact{gap:4px;flex-wrap:wrap}
+  .selector-sub,.panel-sub,.form-sub{display:none}
+  .igsec{padding-top:48px;padding-bottom:40px}
+  .ig-sub{display:none}
+  .ig-grid .ig-tile:nth-child(n+5){display:none}
+  .ig-more{display:block;text-align:center;margin-top:16px}
+  .contact-grid{display:none}
+  .contact{padding-top:40px;padding-bottom:40px}
+}
+
+/* ---- Nov 3: no gold text on navy. Cream text; gold only as thin lines/dots ---- */
+:root{--on-navy:#f6f1e6}
+html body .office-label,html body .band-kicker,html body .oh-eyebrow,html body .oh-strip b,html body .oh-strip i,
+html body .tab.active .tab-go,html body .tab.active .tab-arr,html body .sp-stat b,html body .stat-num,
+html body .lx-vol-total b,html body .lx-vol-total .tnum,html body .rv-tab.on span,html body .oh-strip .oh-badge b,html body .oh-badge b{color:var(--on-navy)!important}
+html body .sp-stat,html body .office,html body .oh-strip,html body .lx-vol-total{box-shadow:inset 0 2px 0 var(--brass-bright)}
+html body .office-label{border-bottom:1px solid var(--brass-bright);padding-bottom:4px}
+@media(max-width:560px){.hero-meta{display:grid!important;grid-template-columns:repeat(2,1fr)}.hero-meta div{padding:10px 6px!important}.hero-meta b{font-size:24px!important}}

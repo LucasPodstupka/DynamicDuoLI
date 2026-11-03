@@ -1,5 +1,5 @@
 import ServicePage from "../../components/ServicePage";
-import { teamStats } from "../../lib/listings";
+import { teamStats, dealStats, shortMoney } from "../../lib/listings";
 import "../site-pages.css";
 
 export const revalidate = 86400;
@@ -12,13 +12,14 @@ export const metadata = {
 
 export default function Buy() {
   const s = teamStats();
+  const d = dealStats();
   return (
     <ServicePage
       path="/buy"
       eyebrow="Buyers"
       title="Buy on Long Island"
       lead="Buying on the South Shore is competitive. We help you understand the market, move fast and write offers that hold up."
-      stats={[[s.buyerSide, "Buyer-side deals · last 12 mo"], [s.sold, "Homes sold · last 12 mo"]]}
+      stats={[[d.buyerSideAll, `Buyer-side sales · since ${d.allTime.since}`], [d.allTime.count, `Homes sold · since ${d.allTime.since}`], [shortMoney(d.allTime.volume), `Sold volume · since ${d.allTime.since}`], [s.buyerSide, "Buyer-side deals · last 12 mo"]]}
       steps={[
         ["Plan", "We talk budget, towns, timing and must-haves, and Jeff can walk you through financing as a licensed loan officer."],
         ["Search", "We send homes that fit, flag the ones worth seeing fast, and tell you plainly what we think of each."],

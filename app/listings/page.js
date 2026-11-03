@@ -2,8 +2,10 @@ import data from "../../data/listings.json";
 import office from "../../data/office-listings.json";
 import ListingsClient from "./ListingsClient";
 import { OpenHouseStrip } from "../../components/OpenHouse";
-import { publicListings, listingSlug } from "../../lib/listings";
+import { publicListings, listingSlug, allDeals } from "../../lib/listings";
 import "./listings.css";
+import "../site-pages.css";
+
 import { SiteHeader, SiteFooter } from "../../components/SiteChrome";
 
 export const revalidate = 3600;
@@ -17,7 +19,7 @@ export const metadata = {
 };
 
 function itemList() {
-  const items = data.listings.map((l, i) => ({
+  const items = publicListings().map((l, i) => ({
     "@type": "ListItem",
     position: i + 1,
     item: {
@@ -43,10 +45,10 @@ export default function ListingsPage() {
           <span className="eyebrow">Our Portfolio</span>
           <h1 className="lx-title">Listings</h1>
           <p className="lx-sub">
-            Homes we&rsquo;ve listed and buyers we&rsquo;ve represented across Long Island over the last twelve months.
+            Homes we&rsquo;ve listed and buyers we&rsquo;ve represented across Long Island. Active and pending homes are current; Sold goes back through our full closed-sale history.
           </p>
         </section>
-        <ListingsClient listings={data.listings} office={office.listings} />
+        <ListingsClient listings={allDeals()} office={office.listings} />
       </main>
       <SiteFooter />
     </>
