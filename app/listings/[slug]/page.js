@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { publicListings, findBySlug, listingSlug, money, fmtDate, fmtBaths, sideLabel } from "../../../lib/listings";
+import { allDeals, findBySlug, listingSlug, money, fmtDate, fmtBaths, sideLabel } from "../../../lib/listings";
 import { townForListing } from "../../../lib/towns";
 import { SiteHeader, SiteFooter } from "../../../components/SiteChrome";
 import { OpenHouseBadge } from "../../../components/OpenHouse";
@@ -14,7 +14,7 @@ export const dynamicParams = false;
 const SITE = "https://www.dynamicduoli.com";
 
 export function generateStaticParams() {
-  return publicListings().map((l) => ({ slug: listingSlug(l) }));
+  return allDeals().map((l) => ({ slug: listingSlug(l) }));
 }
 
 const priceLine = (l) => (l.status === "Sold" ? `Sold ${money(l.soldPrice)}` : `${l.status} · ${money(l.listPrice)}`);
@@ -93,16 +93,16 @@ export default function ListingPage({ params }) {
               </div>
               <h1 className="ld-addr">{l.address}</h1>
               <OpenHouseBadge l={l} variant="inline" />
-              <p className="lx-town">{l.town}, NY{l.county ? ` · ${l.county} County` : ""}</p>
+              <p className="lx-town">{l.town}, NY{l.county ? ` · ${l.county} County` : ""}{l.nyc ? " · New York City (Queens)" : ""}</p>
               <div className="ld-price">
                 {l.status === "Sold" ? money(l.soldPrice) : money(l.listPrice)}
-                <small>{l.status === "Sold" ? `Sold ${fmtDate(l.soldDate)} · List price ${money(l.listPrice)}` : "List price"}</small>
+                <small>{l.status === "Sold" ? `Sold ${fmtDate(l.soldDate)}${l.listPrice != null ? ` · List price ${money(l.listPrice)}` : ""}` : "List price"}</small>
               </div>
               <div className="ld-facts">
                 {l.beds != null && <div><b>{l.beds}</b><span>Beds</span></div>}
                 {l.baths != null && <div><b>{fmtBaths(l.baths)}</b><span>Baths</span></div>}
                 {l.sqft != null && <div><b>{l.sqft.toLocaleString("en-US")}</b><span>Sq Ft</span></div>}
-                <div><b>{(l.photos || []).length}</b><span>Photos</span></div>
+                {(l.photos || []).length > 0 && <div><b>{l.photos.length}</b><span>Photos</span></div>}
               </div>
               <dl className="lx-dl">
                 <dt>MLS #</dt><dd>{l.mls}</dd>
@@ -130,7 +130,7 @@ export default function ListingPage({ params }) {
               <p className="ld-desc sp-prose">{l.description}</p>
             </section>
           )}
-          <p className="lx-courtesy">Listing courtesy of {l.listAgent || "listing agent"}. Source: OneKey&reg; MLS. Information deemed reliable but not guaranteed.</p>
+          <p className="lx-courtesy">{l.history ? "Closed sale." : <>Listing courtesy of {l.listAgent || "listing agent"}.</>} Source: OneKey&reg; MLS. Information deemed reliable but not guaranteed.</p>
           {l.status === "Active" && (
             <section className="sp-section" id="interested">
               <h2 className="sp-h2">Interested in {l.address}?</h2>

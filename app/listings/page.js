@@ -49,6 +49,12 @@ export default function ListingsPage() {
           </p>
         </section>
         <ListingsClient listings={allDeals()} office={office.listings} />
+        <section className="wrap sp-section">
+          <details className="lx-index">
+            <summary>Every home on this page, by address ({allDeals().length})</summary>
+            <ul>{allDeals().map((l) => <li key={l.mls}><a href={`/listings/${listingSlug(l)}`}>{l.address}, {l.town}</a> <span>{l.status}</span></li>)}</ul>
+          </details>
+        </section>
       </main>
       <SiteFooter />
     </>

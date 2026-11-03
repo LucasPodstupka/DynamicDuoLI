@@ -151,3 +151,13 @@ html body .lx-vol-total b,html body .lx-vol-total .tnum,html body .rv-tab.on spa
 html body .sp-stat,html body .office,html body .oh-strip,html body .lx-vol-total{box-shadow:inset 0 2px 0 var(--brass-bright)}
 html body .office-label{border-bottom:1px solid var(--brass-bright);padding-bottom:4px}
 @media(max-width:560px){.hero-meta{display:grid!important;grid-template-columns:repeat(2,1fr)}.hero-meta div{padding:10px 6px!important}.hero-meta b{font-size:24px!important}}
+/* Audit Nov 3: 17px fields so iPhone doesn't zoom; fieldset reset */
+.ctrl,.lead-form select,.lead-form input,.lead-form textarea,.fb-field select,.lx-filters select,.ps-filters select{font-size:17px!important}
+fieldset.field{border:0;margin:0;padding:0;min-width:0}
+fieldset.field>legend.field-label{padding:0;float:left;width:100%}
+fieldset.field>legend.field-label+*{clear:both}
+.wws{padding:56px 0 8px}
+.wws-lead{max-width:640px;color:var(--ink);font-size:17px;line-height:1.6;margin:0 0 18px}
+.wws-lead b{color:var(--ink-2)}
+.wws .sp-towns-inline{margin-bottom:14px}
+.wws-all{font-family:var(--serif);text-transform:uppercase;letter-spacing:.12em;font-size:13px;color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--brass);padding-bottom:4px}

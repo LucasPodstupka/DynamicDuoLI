@@ -166,3 +166,6 @@ a.topcta{text-decoration:none;display:inline-flex;align-items:center}
 .lx-fcount{font-size:13px;color:var(--muted);padding-bottom:10px}
 .lx-more{margin:24px auto 0;display:block;font-family:var(--serif);text-transform:uppercase;letter-spacing:.12em;font-size:13px;background:transparent;color:var(--ink-2);border:1px solid var(--line-2);border-radius:999px;padding:12px 24px;cursor:pointer}
 .lx-more:hover{background:var(--navy);color:#fff}
+.lx-index summary{cursor:pointer;font-family:var(--serif);text-transform:uppercase;letter-spacing:.12em;font-size:13px;color:var(--ink-2)}
+.lx-index ul{list-style:none;padding:0;margin:14px 0 0;columns:2 260px;column-gap:24px;font-size:14px}
+.lx-index li{padding:3px 0;break-inside:avoid}.lx-index a{color:var(--ink-2)}.lx-index span{color:var(--muted);font-size:12px}

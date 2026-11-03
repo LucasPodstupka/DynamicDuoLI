@@ -4,7 +4,7 @@ import { teaserHtml } from "../lib/reviews-html";
 import { MARKUP, SCRIPT, HERO_META } from "../lib/home-markup";
 import { fillHomeStrip } from "./OpenHouse";
 
-export default function HomeClient({ meta }) {
+export default function HomeClient({ meta, wws = "" }) {
   useEffect(() => {
     fillHomeStrip();
     const t = setTimeout(() => {
@@ -17,5 +17,5 @@ export default function HomeClient({ meta }) {
     return () => clearTimeout(t);
   }, []);
 
-  return <div dangerouslySetInnerHTML={{ __html: MARKUP.replace(HERO_META, meta).replace("<!--REVIEWS-->", teaserHtml()) }} />;
+  return <div dangerouslySetInnerHTML={{ __html: MARKUP.replace(HERO_META, meta).replace("<!--WHERE-WE-SELL-->", wws).replace("<!--REVIEWS-->", teaserHtml()) }} />;
 }

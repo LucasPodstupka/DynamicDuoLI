@@ -87,3 +87,10 @@
 .ps-side{color:var(--brass-deep);font-weight:600}.ps-agents{color:var(--ink-2)}
 .ps-more{margin:18px auto 0;display:block;font-family:var(--serif);text-transform:uppercase;letter-spacing:.12em;font-size:13px;background:transparent;color:var(--ink-2);border:1px solid var(--line-2);border-radius:999px;padding:12px 24px;cursor:pointer}
 .ps-more:hover{background:var(--navy);color:#fff}
+.tr-list{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.tr-card{margin:0;background:var(--bg-3);border:1px solid var(--line);border-left:2px solid var(--brass);padding:18px 20px}
+.tr-card blockquote{margin:0 0 10px;font-size:15.5px;line-height:1.65;color:var(--ink)}
+.tr-card figcaption{font-size:12.5px;color:var(--muted)}.tr-card a{color:var(--ink-2)}
+.tr-faq details{border-bottom:1px solid var(--line);padding:14px 0}
+.tr-faq summary{cursor:pointer;font-family:var(--serif);font-weight:600;font-size:18px;color:var(--ink-2)}
+.tr-faq p{margin:10px 0 0;color:var(--ink);line-height:1.7}
