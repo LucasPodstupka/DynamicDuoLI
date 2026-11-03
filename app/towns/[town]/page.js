@@ -41,7 +41,7 @@ export default function TownPage({ params }) {
       <main className="sp" id="main">
         <section className="sp-hero wrap">
           <p className="sp-crumbs"><a href="/towns">Towns</a> / {t.name}</p>
-          <span className="eyebrow">{t.county} County · South Shore</span>
+          <span className="eyebrow">{t.county} County · {t.region}</span>
           <h1 className="sp-title">{t.name} Real Estate</h1>
           <p className="sp-lead">{t.blurb}</p>
           {s.total > 0 && (
@@ -70,8 +70,8 @@ export default function TownPage({ params }) {
           </div>
         </section>
         <section className="sp-section wrap">
-          <h2 className="sp-h2">Other towns we cover</h2>
-          <div className="sp-towns-inline">{TOWNS.filter((x) => x.slug !== t.slug).map((x) => <a key={x.slug} href={`/towns/${x.slug}`}>{x.name}</a>)}</div>
+          <h2 className="sp-h2">Nearby towns we cover</h2>
+          <div className="sp-towns-inline">{TOWNS.filter((x) => x.slug !== t.slug && x.county === t.county && x.region === t.region).slice(0, 12).map((x) => <a key={x.slug} href={`/towns/${x.slug}`}>{x.name}</a>)}</div>
         </section>
       </main>
       <SiteFooter />
