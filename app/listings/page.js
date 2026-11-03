@@ -4,6 +4,9 @@ import ListingsClient from "./ListingsClient";
 import { OpenHouseStrip } from "../../components/OpenHouse";
 import { publicListings, listingSlug } from "../../lib/listings";
 import "./listings.css";
+import "../site-pages.css";
+import PastSales from "../../components/PastSales";
+import { pastSales } from "../../lib/past-sales";
 import { SiteHeader, SiteFooter } from "../../components/SiteChrome";
 
 export const revalidate = 3600;
@@ -47,6 +50,12 @@ export default function ListingsPage() {
           </p>
         </section>
         <ListingsClient listings={data.listings} office={office.listings} />
+        <section className="wrap sp-section" id="past-sales">
+          <span className="eyebrow">Deal History</span>
+          <h2 className="sp-h2">Past Sales</h2>
+          <p className="lx-sub">Closed sales where Lucas, Nick or Jeff represented the seller or the buyer, from OneKey MLS records. The totals above cover the last twelve months only.</p>
+          <PastSales sales={pastSales()} />
+        </section>
       </main>
       <SiteFooter />
     </>

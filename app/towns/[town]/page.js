@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import { TOWNS, findTown, listingsForTown, townStats } from "../../../lib/towns";
 import { money } from "../../../lib/listings";
 import { SiteHeader, SiteFooter } from "../../../components/SiteChrome";
+import PastSales from "../../../components/PastSales";
+import { pastSalesForTown } from "../../../lib/past-sales";
 import ListingCard from "../../../components/ListingCard";
 import "../../listings/listings.css";
 import "../../site-pages.css";
@@ -70,6 +72,12 @@ export default function TownPage({ params }) {
             <a className="sp-btn ghost" href="/sell">Sell in {t.name}</a>
           </div>
         </section>
+        {(() => { const ps = pastSalesForTown(t); return ps.length > 0 && (
+          <section className="sp-section wrap">
+            <h2 className="sp-h2">Our past {t.name} sales</h2>
+            <p className="sp-source">{ps.length} closed {ps.length === 1 ? "sale" : "sales"} from OneKey MLS records. <a href="/listings#past-sales">See the full deal history &rarr;</a></p>
+            <PastSales sales={ps} filters={false} initial={6} />
+          </section>); })()}
         <section className="sp-section wrap">
           <h2 className="sp-h2">More in {t.region}</h2>
           <p className="sp-source"><a href={`/towns#${t.county.toLowerCase()}`}>All {t.county} County towns &rarr;</a></p>

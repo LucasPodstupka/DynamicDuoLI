@@ -52,6 +52,7 @@ export default function TownsIndex() {
           </div>
           <County county="Nassau" />
           <County county="Suffolk" />
+          <script dangerouslySetInnerHTML={{ __html: `(function(){function s(){var h=location.hash.slice(1);var el=document.getElementById(h==="suffolk"?"tw-s":h==="nassau"?"tw-n":"");if(el)el.checked=true}s();addEventListener("hashchange",s)})()` }} />
         </section>
       </main>
       <SiteFooter />

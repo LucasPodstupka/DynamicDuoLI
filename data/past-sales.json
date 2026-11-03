@@ -1,0 +1,1560 @@
+{
+ "source": "OneKey MLS export team-deals-8yr-combined.csv (closed residential sales), exported 2026-11-03",
+ "sales": [
+  {
+   "mls": "997686",
+   "address": "19 and 19A Brook Street",
+   "town": "Lindenhurst",
+   "soldPrice": 820000,
+   "soldDate": "2026-09-28",
+   "beds": 5,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "1007044",
+   "address": "3622 Summer Drive",
+   "town": "Wantagh",
+   "soldPrice": 1200000,
+   "soldDate": "2026-09-22",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "1012288",
+   "address": "2163 Spruce Street",
+   "town": "Wantagh",
+   "soldPrice": 875000,
+   "soldDate": "2026-09-11",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "970750",
+   "address": "3860 Hudson Avenue",
+   "town": "Seaford",
+   "soldPrice": 1400000,
+   "soldDate": "2026-06-15",
+   "beds": 5,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "973918",
+   "address": "19 Gardenia Drive",
+   "town": "Commack",
+   "soldPrice": 855000,
+   "soldDate": "2026-05-20",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "957663",
+   "address": "2582 Centre Avenue",
+   "town": "Bellmore",
+   "soldPrice": 740000,
+   "soldDate": "2026-05-15",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "940973",
+   "address": "2929 Mandalay Beach Road",
+   "town": "Wantagh",
+   "soldPrice": 835000,
+   "soldDate": "2026-04-16",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "934013",
+   "address": "3805 Colonial Court",
+   "town": "Seaford",
+   "soldPrice": 700000,
+   "soldDate": "2026-01-20",
+   "beds": 3,
+   "baths": 1.0,
+   "side": "listing",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "901127",
+   "address": "94 Chapel Avenue",
+   "town": "East Patchogue",
+   "soldPrice": 530000,
+   "soldDate": "2025-10-30",
+   "beds": 2,
+   "baths": 1.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "880184",
+   "address": "2602 Beltagh Avenue",
+   "town": "North Bellmore",
+   "soldPrice": 685000,
+   "soldDate": "2025-10-17",
+   "beds": 4,
+   "baths": 1.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Lucas Podstupka",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "899432",
+   "address": "474 Kell Place",
+   "town": "Seaford",
+   "soldPrice": 699000,
+   "soldDate": "2025-10-16",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "834593",
+   "address": "33 Clearwater Avenue",
+   "town": "Massapequa",
+   "soldPrice": 1050000,
+   "soldDate": "2025-10-02",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "872152",
+   "address": "39 Lake Grove Boulevard",
+   "town": "Centereach",
+   "soldPrice": 550000,
+   "soldDate": "2025-09-26",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Lucas Podstupka",
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "878690",
+   "address": "3028 Lawrence Place",
+   "town": "Wantagh",
+   "soldPrice": 782000,
+   "soldDate": "2025-09-25",
+   "beds": 5,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "891717",
+   "address": "3067 Johnson Place",
+   "town": "Wantagh",
+   "soldPrice": 888000,
+   "soldDate": "2025-09-22",
+   "beds": 4,
+   "baths": 4.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "879290",
+   "address": "150 Coates Avenue N",
+   "town": "Holbrook",
+   "soldPrice": 690000,
+   "soldDate": "2025-09-11",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "885893",
+   "address": "95 Pointe Circle S Unit#95",
+   "town": "Coram",
+   "soldPrice": 228000,
+   "soldDate": "2025-09-09",
+   "beds": 2,
+   "baths": 1.0,
+   "side": "listing",
+   "ourAgents": [
+    "Lucas Podstupka",
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "865492",
+   "address": "3355 Stratford Road",
+   "town": "Wantagh",
+   "soldPrice": 950000,
+   "soldDate": "2025-09-08",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "878731",
+   "address": "2953 Bluepoint Court",
+   "town": "Wantagh",
+   "soldPrice": 745000,
+   "soldDate": "2025-08-28",
+   "beds": 5,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "868850",
+   "address": "690 Franklin Avenue",
+   "town": "Massapequa",
+   "soldPrice": 710000,
+   "soldDate": "2025-08-27",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "830431",
+   "address": "75 Autumn Drive",
+   "town": "Plainview",
+   "soldPrice": 690000,
+   "soldDate": "2025-08-27",
+   "beds": 2,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "875144",
+   "address": "10 Bradish Lane",
+   "town": "Babylon",
+   "soldPrice": 665000,
+   "soldDate": "2025-08-20",
+   "beds": 3,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "865502",
+   "address": "651 Hyman Avenue",
+   "town": "Bay Shore",
+   "soldPrice": 770000,
+   "soldDate": "2025-08-11",
+   "beds": 5,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "861451",
+   "address": "308 Bay Avenue",
+   "town": "Patchogue",
+   "soldPrice": 620000,
+   "soldDate": "2025-08-08",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "867214",
+   "address": "7 Harbor N",
+   "town": "Amityville",
+   "soldPrice": 550000,
+   "soldDate": "2025-08-07",
+   "beds": 1,
+   "baths": 1.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "867959",
+   "address": "1680 Cornelius Avenue",
+   "town": "Wantagh",
+   "soldPrice": 606000,
+   "soldDate": "2025-08-04",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "866397",
+   "address": "1611 George Road",
+   "town": "Wantagh",
+   "soldPrice": 925000,
+   "soldDate": "2025-07-30",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "845617",
+   "address": "3865 New York Avenue",
+   "town": "Seaford",
+   "soldPrice": 875000,
+   "soldDate": "2025-07-02",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "835145",
+   "address": "410 17th Street",
+   "town": "West Babylon",
+   "soldPrice": 690000,
+   "soldDate": "2025-06-24",
+   "beds": 5,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "833157",
+   "address": "2817 Mandalay Beach Road",
+   "town": "Wantagh",
+   "soldPrice": 1150000,
+   "soldDate": "2025-06-10",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "both",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "840445",
+   "address": "2546 Sycamore Avenue",
+   "town": "Wantagh",
+   "soldPrice": 779000,
+   "soldDate": "2025-06-09",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3569217",
+   "address": "231 Tremont Road",
+   "town": "Lindenhurst",
+   "soldPrice": 450000,
+   "soldDate": "2025-05-28",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "both",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3581171",
+   "address": "357 N Niagara Avenue",
+   "town": "Lindenhurst",
+   "soldPrice": 590000,
+   "soldDate": "2025-05-12",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3571075",
+   "address": "2914 Devon Avenue",
+   "town": "Medford",
+   "soldPrice": 552000,
+   "soldDate": "2025-04-21",
+   "beds": 3,
+   "baths": 1.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3543646",
+   "address": "18 W Rugby Drive",
+   "town": "Shirley",
+   "soldPrice": 515000,
+   "soldDate": "2025-04-08",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3590603",
+   "address": "73 Jefferson Place",
+   "town": "Massapequa",
+   "soldPrice": 885000,
+   "soldDate": "2025-03-10",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3592781",
+   "address": "175 Willowood Drive",
+   "town": "Wantagh",
+   "soldPrice": 698000,
+   "soldDate": "2025-03-05",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "804362",
+   "address": "282 Meacham Avenue",
+   "town": "Elmont",
+   "soldPrice": 600000,
+   "soldDate": "2025-02-27",
+   "beds": 2,
+   "baths": 1.0,
+   "side": "both",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3589520",
+   "address": "174 Swan Lane",
+   "town": "Levittown",
+   "soldPrice": 606000,
+   "soldDate": "2025-01-31",
+   "beds": 5,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3572064",
+   "address": "172 Park Avenue",
+   "town": "Bethpage",
+   "soldPrice": 735000,
+   "soldDate": "2025-01-29",
+   "beds": 3,
+   "baths": 1.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3575292",
+   "address": "21 Elderwood Lane",
+   "town": "Melville",
+   "soldPrice": 999999,
+   "soldDate": "2024-12-27",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3558407",
+   "address": "1985 Lowell Lane",
+   "town": "Merrick",
+   "soldPrice": 1185000,
+   "soldDate": "2024-12-16",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3575911",
+   "address": "2700 Bayview Avenue",
+   "town": "Wantagh",
+   "soldPrice": 705000,
+   "soldDate": "2024-11-26",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3575710",
+   "address": "52-30 39th Drive Unit#4N",
+   "town": "Woodside",
+   "soldPrice": 360000,
+   "soldDate": "2024-11-04",
+   "beds": 1,
+   "baths": 1.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3570411",
+   "address": "82-01 133rd Avenue",
+   "town": "Ozone Park",
+   "soldPrice": 675000,
+   "soldDate": "2024-10-31",
+   "beds": 3,
+   "baths": 1.0,
+   "side": "listing",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3574245",
+   "address": "282 Meacham Avenue",
+   "town": "Elmont",
+   "soldPrice": 475000,
+   "soldDate": "2024-10-28",
+   "beds": 2,
+   "baths": 1.0,
+   "side": "both",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3576650",
+   "address": "3 Curlew Place",
+   "town": "Massapequa",
+   "soldPrice": 775000,
+   "soldDate": "2024-10-25",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3564502",
+   "address": "557 Seaford Avenue",
+   "town": "Massapequa",
+   "soldPrice": 880000,
+   "soldDate": "2024-10-23",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3565350",
+   "address": "2300 Pine Neck Road",
+   "town": "Southold",
+   "soldPrice": 915000,
+   "soldDate": "2024-10-11",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3561697",
+   "address": "323 Violet Street",
+   "town": "Massapequa Park",
+   "soldPrice": 1050000,
+   "soldDate": "2024-09-20",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3530161",
+   "address": "45 Clearwater Avenue",
+   "town": "Massapequa",
+   "soldPrice": 2200000,
+   "soldDate": "2024-09-12",
+   "beds": 5,
+   "baths": 4.0,
+   "side": "listing",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3564040",
+   "address": "101 Fairwater Avenue",
+   "town": "Massapequa",
+   "soldPrice": 1900000,
+   "soldDate": "2024-09-11",
+   "beds": 5,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3562461",
+   "address": "105 Francesca Way Unit#105",
+   "town": "Amityville",
+   "soldPrice": 480000,
+   "soldDate": "2024-08-19",
+   "beds": 2,
+   "baths": 1.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3556599",
+   "address": "2403 Oakdale Avenue",
+   "town": "Seaford",
+   "soldPrice": 835000,
+   "soldDate": "2024-08-01",
+   "beds": 3,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3535294",
+   "address": "1285 Holiday Park Drive",
+   "town": "Wantagh",
+   "soldPrice": 999000,
+   "soldDate": "2024-07-26",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3539924",
+   "address": "101 S Bay Drive",
+   "town": "Massapequa",
+   "soldPrice": 845000,
+   "soldDate": "2024-07-19",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3551398",
+   "address": "47 Riverside Avenue",
+   "town": "Massapequa",
+   "soldPrice": 675000,
+   "soldDate": "2024-07-12",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3493787",
+   "address": "194 16th Street",
+   "town": "West Babylon",
+   "soldPrice": 659000,
+   "soldDate": "2024-05-24",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3532729",
+   "address": "3178 Lee Place",
+   "town": "Bellmore",
+   "soldPrice": 1175000,
+   "soldDate": "2024-05-21",
+   "beds": 4,
+   "baths": 4.0,
+   "side": "both",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3533740",
+   "address": "241 Houston Street",
+   "town": "Lindenhurst",
+   "soldPrice": 575000,
+   "soldDate": "2024-04-26",
+   "beds": 3,
+   "baths": 1.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3527454",
+   "address": "1800 Cornelius Avenue",
+   "town": "Wantagh",
+   "soldPrice": 807000,
+   "soldDate": "2024-03-25",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3514718",
+   "address": "233 N Cedar Street",
+   "town": "Massapequa",
+   "soldPrice": 1045000,
+   "soldDate": "2024-02-16",
+   "beds": 5,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3519029",
+   "address": "3043 Hewlett Avenue",
+   "town": "Merrick",
+   "soldPrice": 830000,
+   "soldDate": "2024-02-01",
+   "beds": 5,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3506837",
+   "address": "22 Raider Street",
+   "town": "West Babylon",
+   "soldPrice": 580000,
+   "soldDate": "2024-01-22",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3511089",
+   "address": "3814 Beechwood Place",
+   "town": "Seaford",
+   "soldPrice": 750000,
+   "soldDate": "2024-01-19",
+   "beds": 3,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3509448",
+   "address": "796 Sacco Place",
+   "town": "North Bellmore",
+   "soldPrice": 990000,
+   "soldDate": "2024-01-12",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3511284",
+   "address": "2928 Eaton Road E",
+   "town": "Wantagh",
+   "soldPrice": 750000,
+   "soldDate": "2023-12-15",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3495682",
+   "address": "2617 Henry Street",
+   "town": "Merrick",
+   "soldPrice": 879000,
+   "soldDate": "2023-11-22",
+   "beds": 3,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3496460",
+   "address": "165 Betty Road",
+   "town": "East Meadow",
+   "soldPrice": 650000,
+   "soldDate": "2023-09-27",
+   "beds": 5,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3466280",
+   "address": "3736 Terrapin Place",
+   "town": "Seaford",
+   "soldPrice": 530000,
+   "soldDate": "2023-09-20",
+   "beds": 5,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3483182",
+   "address": "2976 Islip Court",
+   "town": "Wantagh",
+   "soldPrice": 1375000,
+   "soldDate": "2023-09-13",
+   "beds": 5,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3486301",
+   "address": "3877 Elayne Court",
+   "town": "Seaford",
+   "soldPrice": 725000,
+   "soldDate": "2023-08-31",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3476048",
+   "address": "2580 Mariners Avenue",
+   "town": "Wantagh",
+   "soldPrice": 555000,
+   "soldDate": "2023-07-19",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3458132",
+   "address": "76 Shelbourne Lane",
+   "town": "New Hyde Park",
+   "soldPrice": 1080000,
+   "soldDate": "2023-07-10",
+   "beds": 5,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3451428",
+   "address": "16 Red Maple Drive N",
+   "town": "Wantagh",
+   "soldPrice": 615000,
+   "soldDate": "2023-07-07",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3463086",
+   "address": "192 Oak Street",
+   "town": "Amityville",
+   "soldPrice": 495000,
+   "soldDate": "2023-06-21",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3469518",
+   "address": "3022 Post Avenue",
+   "town": "Wantagh",
+   "soldPrice": 815000,
+   "soldDate": "2023-06-09",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3451835",
+   "address": "111 Capitol Avenue",
+   "town": "Williston Park",
+   "soldPrice": 790000,
+   "soldDate": "2023-06-09",
+   "beds": 3,
+   "baths": 1.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3458922",
+   "address": "2914 Sipp Avenue",
+   "town": "Medford",
+   "soldPrice": 435000,
+   "soldDate": "2023-06-02",
+   "beds": 3,
+   "baths": 1.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3458546",
+   "address": "37 Clover Lane",
+   "town": "Levittown",
+   "soldPrice": 860000,
+   "soldDate": "2023-04-25",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3451901",
+   "address": "240 Coronado Street",
+   "town": "Islip Terrace",
+   "soldPrice": 483000,
+   "soldDate": "2023-04-17",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3432601",
+   "address": "433 N Monroe Avenue",
+   "town": "Lindenhurst",
+   "soldPrice": 515000,
+   "soldDate": "2023-03-31",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3458835",
+   "address": "233 N Cedar Street",
+   "town": "Massapequa",
+   "soldPrice": 588000,
+   "soldDate": "2023-03-27",
+   "beds": 6,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3447807",
+   "address": "1508 Kenneth Avenue",
+   "town": "North Baldwin",
+   "soldPrice": 605000,
+   "soldDate": "2023-02-28",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3422812",
+   "address": "246-25 57 Drive Unit#Upper",
+   "town": "Douglaston",
+   "soldPrice": 295000,
+   "soldDate": "2023-02-28",
+   "beds": 2,
+   "baths": 1.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3446684",
+   "address": "65 Jacqueline Way Unit#LOWER",
+   "town": "North Babylon",
+   "soldPrice": 430000,
+   "soldDate": "2023-02-17",
+   "beds": 2,
+   "baths": 2.0,
+   "side": "both",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3438669",
+   "address": "562 Riverside Avenue",
+   "town": "Massapequa",
+   "soldPrice": 565000,
+   "soldDate": "2023-02-10",
+   "beds": 3,
+   "baths": 1.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3442195",
+   "address": "2569 Seminole Avenue",
+   "town": "Seaford",
+   "soldPrice": 750000,
+   "soldDate": "2023-01-27",
+   "beds": 5,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3432144",
+   "address": "1502 Argyle Road",
+   "town": "Wantagh",
+   "soldPrice": 767000,
+   "soldDate": "2023-01-24",
+   "beds": 5,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3411455",
+   "address": "2960 Bluepoint Ct",
+   "town": "Wantagh",
+   "soldPrice": 635000,
+   "soldDate": "2022-11-16",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3407821",
+   "address": "3635 Demott Avenue",
+   "town": "Wantagh",
+   "soldPrice": 685000,
+   "soldDate": "2022-10-27",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3426645",
+   "address": "58 Georgia Street",
+   "town": "Valley Stream",
+   "soldPrice": 540000,
+   "soldDate": "2022-10-20",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3415820",
+   "address": "2218 Spruce Street",
+   "town": "Wantagh",
+   "soldPrice": 675000,
+   "soldDate": "2022-10-04",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3415874",
+   "address": "59 Daffodil Lane",
+   "town": "Wantagh",
+   "soldPrice": 600000,
+   "soldDate": "2022-09-30",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3399915",
+   "address": "362 Latham Road",
+   "town": "Mineola",
+   "soldPrice": 680000,
+   "soldDate": "2022-08-30",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "both",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3409425",
+   "address": "226 Farmers Avenue",
+   "town": "Lindenhurst",
+   "soldPrice": 580000,
+   "soldDate": "2022-08-30",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3361381",
+   "address": "2569 Seminole Avenue",
+   "town": "Seaford",
+   "soldPrice": 425000,
+   "soldDate": "2022-08-01",
+   "beds": 5,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3386989",
+   "address": "1815 Nostrand Avenue",
+   "town": "East Meadow",
+   "soldPrice": 518000,
+   "soldDate": "2022-07-20",
+   "beds": 2,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3397843",
+   "address": "1085 Washington Drive",
+   "town": "Centerport",
+   "soldPrice": 585000,
+   "soldDate": "2022-07-18",
+   "beds": 3,
+   "baths": 3.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3396181",
+   "address": "2898 Saw Mill Road",
+   "town": "Wantagh",
+   "soldPrice": 630000,
+   "soldDate": "2022-07-11",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3371421",
+   "address": "3066 Clovermere Road",
+   "town": "Wantagh",
+   "soldPrice": 800000,
+   "soldDate": "2022-06-28",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3384748",
+   "address": "3558 Kenora Place",
+   "town": "Seaford",
+   "soldPrice": 850000,
+   "soldDate": "2022-06-14",
+   "beds": 5,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3376372",
+   "address": "3825 Park Avenue",
+   "town": "Seaford",
+   "soldPrice": 701000,
+   "soldDate": "2022-05-20",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3380243",
+   "address": "3010 Post Avenue",
+   "town": "Wantagh",
+   "soldPrice": 671000,
+   "soldDate": "2022-05-06",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3376030",
+   "address": "2510 Mermaid Avenue",
+   "town": "Wantagh",
+   "soldPrice": 630000,
+   "soldDate": "2022-04-28",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "listing",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3370742",
+   "address": "1600 Cornelius Avenue",
+   "town": "Wantagh",
+   "soldPrice": 500000,
+   "soldDate": "2022-04-21",
+   "beds": 3,
+   "baths": 1.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3353590",
+   "address": "11 North Drive",
+   "town": "Hicksville",
+   "soldPrice": 530000,
+   "soldDate": "2022-03-14",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3357218",
+   "address": "64 Earl Drive",
+   "town": "Merrick",
+   "soldPrice": 625000,
+   "soldDate": "2022-02-02",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3327173",
+   "address": "8 N Walnut",
+   "town": "Massapequa",
+   "soldPrice": 590000,
+   "soldDate": "2022-01-24",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3329705",
+   "address": "3767 Whitebirch Court",
+   "town": "Wantagh",
+   "soldPrice": 635000,
+   "soldDate": "2021-12-06",
+   "beds": 3,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  },
+  {
+   "mls": "L3334845",
+   "address": "1404 Cayuga Avenue",
+   "town": "North Bellmore",
+   "soldPrice": 345000,
+   "soldDate": "2021-11-12",
+   "beds": 4,
+   "baths": 3.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3320175",
+   "address": "1362 Darby Road W",
+   "town": "Wantagh",
+   "soldPrice": 580000,
+   "soldDate": "2021-11-08",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3309204",
+   "address": "8 Southridge Drive",
+   "town": "Glen Cove",
+   "soldPrice": 515000,
+   "soldDate": "2021-09-24",
+   "beds": 3,
+   "baths": 1.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3321467",
+   "address": "108 Lake Drive",
+   "town": "Copiague",
+   "soldPrice": 486000,
+   "soldDate": "2021-09-17",
+   "beds": 4,
+   "baths": 2.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio",
+    "Jeff Memisha"
+   ]
+  },
+  {
+   "mls": "L3328488",
+   "address": "2357 Woodland Avenue",
+   "town": "Wantagh",
+   "soldPrice": 501000,
+   "soldDate": "2021-08-26",
+   "beds": 3,
+   "baths": 1.0,
+   "side": "buyer",
+   "ourAgents": [
+    "Nick Barberio"
+   ]
+  }
+ ]
+}
