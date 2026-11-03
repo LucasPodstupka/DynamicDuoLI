@@ -4,7 +4,7 @@ import { listingSlug } from "../../lib/listings";
 import { OpenHouseBadge } from "../../components/OpenHouse";
 
 const TABS = [
-  { key: "Active", label: "Active" },
+  { key: "Active", label: "Our Active" },
   { key: "Pending", label: "Pending" },
   { key: "Sold", label: "Sold" },
   { key: "Office", label: "Office Listings" },
@@ -74,8 +74,9 @@ function Badge({ status }) {
 function Card({ l, onOpen, idx }) {
   const cover = l.photos[0];
   return (
-    <article className="lx-card" style={{ "--i": Math.min(idx, 12) }} onClick={() => onOpen(l)} tabIndex={0}
-      onKeyDown={(e) => (e.key === "Enter" ? onOpen(l) : null)} aria-label={`${l.address}, ${l.town}`}>
+    <a className="lx-card" style={{ "--i": Math.min(idx, 12) }} href={l.side === "office" ? undefined : `/listings/${listingSlug(l)}`}
+      onClick={(e) => { if (e.metaKey || e.ctrlKey || e.shiftKey) return; e.preventDefault(); onOpen(l); }}
+      tabIndex={0} onKeyDown={(e) => (e.key === "Enter" && l.side === "office" ? onOpen(l) : null)} aria-label={`${l.address}, ${l.town}`}>
       <div className="lx-card-media">
         <Photo src={cover} alt={`${l.address}, ${l.town}`} sizes="(max-width: 700px) 100vw, 380px" className="lx-card-img" />
         <Badge status={l.status} />
@@ -94,7 +95,7 @@ function Card({ l, onOpen, idx }) {
           )}
         </div>
         <h3 className="lx-addr">{l.address}</h3>
-        <p className="lx-town">{l.town}, NY</p>
+        <p className="lx-town">{l.town}, NY{l.nyc ? " · Queens (NYC)" : ""}</p>
         <div className="lx-facts">
           {l.beds != null && <span><b>{l.beds}</b> Beds</span>}
           {l.baths != null && <span><b>{baths(l.baths)}</b> Baths</span>}
@@ -102,7 +103,7 @@ function Card({ l, onOpen, idx }) {
         </div>
         {l.side === "office" && <p className="lx-credit">{credit(l)}</p>}
       </div>
-    </article>
+    </a>
   );
 }
 
@@ -218,7 +219,7 @@ const compact = (n) =>
 
 function Volume({ listings, all }) {
   const at = useMemo(() => {
-    const sold = all.filter((l) => l.status === "Sold" && l.soldDate);
+    const sold = all.filter((l) => l.status === "Sold" && l.soldDate && !l.nyc);
     return { n: sold.length, v: sold.reduce((a, l) => a + (l.soldPrice || 0), 0), since: Math.min(...sold.map((l) => +l.soldDate.slice(0, 4))) };
   }, [all]);
   const v = useMemo(() => {
@@ -226,7 +227,7 @@ function Volume({ listings, all }) {
     const from = new Date(now); from.setFullYear(now.getFullYear() - 1);
     const out = { Active: [0, 0], Pending: [0, 0], Sold: [0, 0] };
     listings.forEach((l) => {
-      if (!inWindow(l)) return;
+      if (!inWindow(l) || l.nyc) return;
       if (l.status === "Sold") {
         out.Sold[0]++; out.Sold[1] += l.soldPrice ?? l.listPrice ?? 0;
       } else if (out[l.status]) {
@@ -246,11 +247,11 @@ function Volume({ listings, all }) {
       <div className="lx-vol-total lx-vol-all">
         <span className="lbl">All-Time Sold Volume · Since {at.since}</span>
         <b><CountUp value={at.v} format={(x) => money(Math.round(x))} /></b>
-        <span className="sub">{at.n} homes sold</span>
+        <span className="sub">{at.n} Long Island homes sold</span>
       </div>
       {["Active", "Pending", "Sold"].map((k) => (
         <div key={k} className={`lx-vol-cell lx-vol-${k.toLowerCase()}`}>
-          <span className="lbl"><span className="dot" />{k}</span>
+          <span className="lbl"><span className="dot" />{k === "Active" ? "Our Active" : k}</span>
           <b><CountUp value={v.out[k][1]} format={(x) => compact(x)} /></b>
           <span className="sub">{v.out[k][0]} {v.out[k][0] === 1 ? "home" : "homes"} · 12 mo</span>
         </div>

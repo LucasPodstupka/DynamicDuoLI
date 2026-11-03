@@ -3,9 +3,9 @@ import { listingSlug, money, fmtDate, fmtBaths, sideLabel } from "../lib/listing
 
 export default function ListingCard({ l, idx = 0 }) {
   const cover = l.photos && l.photos[0];
-  const Tag = l.history ? "div" : "a";
+  const Tag = "a";
   return (
-    <Tag className="lx-card sp-card" {...(l.history ? {} : { href: `/listings/${listingSlug(l)}` })} style={{ "--i": Math.min(idx, 12) }} aria-label={`${l.address}, ${l.town}`}>
+    <Tag className="lx-card sp-card" href={`/listings/${listingSlug(l)}`} style={{ "--i": Math.min(idx, 12) }} aria-label={`${l.address}, ${l.town}`}>
       <div className="lx-card-media">
         {cover ? (
           <img className="lx-card-img" src={`${cover}-sm.webp`} srcSet={`${cover}-sm.webp 480w, ${cover}.webp 1400w`} sizes="(max-width: 700px) 100vw, 380px" alt={`${l.address}, ${l.town}`} loading="lazy" decoding="async" />
