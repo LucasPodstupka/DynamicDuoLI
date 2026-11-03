@@ -11,7 +11,7 @@
 .sp-prose p{font-size:16.5px;line-height:1.75;color:var(--ink);max-width:780px;margin:0 0 16px}
 .sp-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin:8px 0 0;padding:0;list-style:none;counter-reset:st}
 .sp-steps li{background:var(--bg-3);border:1px solid var(--line);border-top:3px solid var(--brass);border-radius:4px;padding:22px 22px 20px;counter-increment:st;
-  animation:spIn .6s var(--ease) both;animation-delay:calc(var(--i,0) * 70ms)}
+  animation:spIn .6s var(--ease) both;animation-delay:min(calc(var(--i,0) * 70ms), 400ms)}
 .sp-steps li::before{content:counter(st,decimal-leading-zero);display:block;font-family:var(--serif);color:var(--brass);font-size:22px;margin-bottom:8px}
 .sp-steps b{display:block;font-family:var(--serif);text-transform:uppercase;letter-spacing:.05em;font-size:15px;margin-bottom:6px;color:var(--ink-2)}
 .sp-steps span{font-size:15px;line-height:1.6;color:var(--muted)}
@@ -29,7 +29,7 @@
 .sp-card{display:block;color:inherit;text-decoration:none}
 .sp-towns{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
 .sp-town{display:block;background:var(--bg-3);border:1px solid var(--line);border-radius:6px;padding:26px;text-decoration:none;color:inherit;
-  transition:transform .45s var(--ease),border-color .3s,box-shadow .45s var(--ease);animation:spIn .6s var(--ease) both;animation-delay:calc(var(--i,0) * 70ms)}
+  transition:transform .45s var(--ease),border-color .3s,box-shadow .45s var(--ease);animation:spIn .6s var(--ease) both;animation-delay:min(calc(var(--i,0) * 70ms), 400ms)}
 .sp-town:hover{transform:translateY(-4px);border-color:var(--brass);box-shadow:0 18px 40px -24px rgba(20,25,30,.45)}
 .sp-town h2, .sp-town h3{font-family:var(--serif);text-transform:uppercase;letter-spacing:.04em;font-size:22px;margin:0 0 4px;color:var(--ink-2)}
 .sp-town p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.55}
