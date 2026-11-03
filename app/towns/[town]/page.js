@@ -2,8 +2,6 @@ import { notFound } from "next/navigation";
 import { TOWNS, findTown, listingsForTown, townStats } from "../../../lib/towns";
 import { money } from "../../../lib/listings";
 import { SiteHeader, SiteFooter } from "../../../components/SiteChrome";
-import PastSales from "../../../components/PastSales";
-import { pastSalesForTown } from "../../../lib/past-sales";
 import ListingCard from "../../../components/ListingCard";
 import "../../listings/listings.css";
 import "../../site-pages.css";
@@ -47,11 +45,11 @@ export default function TownPage({ params }) {
           <h1 className="sp-title">{t.name} Real Estate</h1>
           <p className="sp-lead">{t.blurb}</p>
           {s.total > 0 && (
-            <div className="sp-stats" aria-label={`Our ${t.name} deals in the last 12 months`}>
-              <div className="sp-stat"><b>{s.total}</b><span>Deals · last 12 mo</span></div>
+            <div className="sp-stats" aria-label={`Our ${t.name} deals`}>
+              <div className="sp-stat"><b>{s.total}</b><span>Deals{s.since ? ` · since ${s.since}` : ""}</span></div>
               {s.sold > 0 && <div className="sp-stat"><b>{s.sold}</b><span>Sold</span></div>}
-              {s.active + s.pending > 0 && <div className="sp-stat"><b>{s.active + s.pending}</b><span>Active &amp; pending</span></div>}
-              {s.soldVolume > 0 && <div className="sp-stat"><b>{money(s.soldVolume)}</b><span>Sold volume</span></div>}
+              {s.active + s.pending > 0 && <div className="sp-stat"><b>{s.active + s.pending}</b><span>Active &amp; pending now</span></div>}
+              {s.soldVolume > 0 && <div className="sp-stat"><b>{money(s.soldVolume)}</b><span>Sold volume{s.since ? ` · since ${s.since}` : ""}</span></div>}
             </div>
           )}
         </section>
@@ -72,12 +70,6 @@ export default function TownPage({ params }) {
             <a className="sp-btn ghost" href="/sell">Sell in {t.name}</a>
           </div>
         </section>
-        {(() => { const ps = pastSalesForTown(t); return ps.length > 0 && (
-          <section className="sp-section wrap">
-            <h2 className="sp-h2">Our past {t.name} sales</h2>
-            <p className="sp-source">{ps.length} closed {ps.length === 1 ? "sale" : "sales"} from OneKey MLS records. <a href="/listings#past-sales">See the full deal history &rarr;</a></p>
-            <PastSales sales={ps} filters={false} initial={6} />
-          </section>); })()}
         <section className="sp-section wrap">
           <h2 className="sp-h2">More in {t.region}</h2>
           <p className="sp-source"><a href={`/towns#${t.county.toLowerCase()}`}>All {t.county} County towns &rarr;</a></p>

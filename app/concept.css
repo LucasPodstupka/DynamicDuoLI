@@ -150,4 +150,4 @@ html body .tab.active .tab-go,html body .tab.active .tab-arr,html body .sp-stat 
 html body .lx-vol-total b,html body .lx-vol-total .tnum,html body .rv-tab.on span,html body .oh-strip .oh-badge b,html body .oh-badge b{color:var(--on-navy)!important}
 html body .sp-stat,html body .office,html body .oh-strip,html body .lx-vol-total{box-shadow:inset 0 2px 0 var(--brass-bright)}
 html body .office-label{border-bottom:1px solid var(--brass-bright);padding-bottom:4px}
-@media(max-width:560px){.hero-meta{display:grid!important;grid-template-columns:repeat(3,1fr)}.hero-meta div{padding:10px 6px!important}.hero-meta b{font-size:24px!important}}
+@media(max-width:560px){.hero-meta{display:grid!important;grid-template-columns:repeat(2,1fr)}.hero-meta div{padding:10px 6px!important}.hero-meta b{font-size:24px!important}}

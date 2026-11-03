@@ -1,5 +1,5 @@
 import ServicePage from "../../components/ServicePage";
-import { teamStats, shortMoney } from "../../lib/listings";
+import { teamStats, shortMoney, dealStats } from "../../lib/listings";
 import "../site-pages.css";
 
 export const revalidate = 86400;
@@ -12,13 +12,14 @@ export const metadata = {
 
 export default function Sell() {
   const s = teamStats();
+  const d = dealStats();
   return (
     <ServicePage
       path="/sell"
       eyebrow="Sellers"
       title="Sell Your Home"
       lead="A pricing plan built from real closed sales, marketing that gets your home seen, and a team that negotiates for you start to finish."
-      stats={[[s.sold, "Homes sold · last 12 mo"], [shortMoney(s.soldVolume), "Sold volume · last 12 mo"], [s.listingSide, "Listing-side deals · last 12 mo"]]}
+      stats={[[d.allTime.count, `Homes sold · since ${d.allTime.since}`], [shortMoney(d.allTime.volume), `Sold volume · since ${d.allTime.since}`], [d.last12.count, "Homes sold · last 12 mo"], [shortMoney(d.last12.volume), "Sold volume · last 12 mo"]]}
       steps={[
         ["Price", "We pull the recent closed sales around you and give you a price range with the reasoning behind it."],
         ["Prepare", "We tell you which fixes are worth it before photos, and which ones aren't."],

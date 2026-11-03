@@ -169,12 +169,12 @@ function Detail({ l, onClose }) {
           </div>
           <h2 className="lx-info-addr">{l.address}</h2>
           <OpenHouseBadge l={l} variant="inline" />
-          <p className="lx-town">{l.town}, NY · {l.county} County</p>
+          <p className="lx-town">{l.town}, NY{l.county ? ` · ${l.county} County` : ""}</p>
           <div className="lx-info-price">
             {l.status === "Sold" ? (
               <>
                 <div><span className="k">Sold Price</span><span className="v">{money(l.soldPrice)}</span></div>
-                <div><span className="k">List Price</span><span className="v sm">{money(l.listPrice)}</span></div>
+                {l.listPrice != null && <div><span className="k">List Price</span><span className="v sm">{money(l.listPrice)}</span></div>}
                 <div><span className="k">Closed</span><span className="v sm">{fmtDate(l.soldDate)}</span></div>
               </>
             ) : (
@@ -196,9 +196,9 @@ function Detail({ l, onClose }) {
             </a>
           )}
           <p className="lx-courtesy">
-            {l.side === "office" ? credit(l) : `Listing courtesy of ${l.listAgent || "listing agent"}`}. Source: OneKey&reg; MLS.
+            {l.side === "office" ? credit(l) : l.history ? "Closed sale" : `Listing courtesy of ${l.listAgent || "listing agent"}`}. Source: OneKey&reg; MLS.
           </p>
-          {l.side !== "office" && (
+          {l.side !== "office" && !l.history && (
             <a className="lx-fullpage" href={`/listings/${listingSlug(l)}`}>View full listing page <span>&rarr;</span></a>
           )}
           {l.status === "Active" && (
@@ -216,7 +216,11 @@ function Detail({ l, onClose }) {
 const compact = (n) =>
   n >= 1e6 ? "$" + (n / 1e6).toFixed(n >= 1e8 ? 0 : 1) + "M" : "$" + Math.round(n / 1e3) + "K";
 
-function Volume({ listings }) {
+function Volume({ listings, all }) {
+  const at = useMemo(() => {
+    const sold = all.filter((l) => l.status === "Sold" && l.soldDate);
+    return { n: sold.length, v: sold.reduce((a, l) => a + (l.soldPrice || 0), 0), since: Math.min(...sold.map((l) => +l.soldDate.slice(0, 4))) };
+  }, [all]);
   const v = useMemo(() => {
     const now = new Date();
     const from = new Date(now); from.setFullYear(now.getFullYear() - 1);
@@ -239,11 +243,16 @@ function Volume({ listings }) {
         <b><CountUp value={v.total[1]} format={(x) => money(Math.round(x))} /></b>
         <span className="sub">{v.total[0]} homes</span>
       </div>
+      <div className="lx-vol-total lx-vol-all">
+        <span className="lbl">All-Time Sold Volume · Since {at.since}</span>
+        <b><CountUp value={at.v} format={(x) => money(Math.round(x))} /></b>
+        <span className="sub">{at.n} homes sold</span>
+      </div>
       {["Active", "Pending", "Sold"].map((k) => (
         <div key={k} className={`lx-vol-cell lx-vol-${k.toLowerCase()}`}>
           <span className="lbl"><span className="dot" />{k}</span>
           <b><CountUp value={v.out[k][1]} format={(x) => compact(x)} /></b>
-          <span className="sub">{v.out[k][0]} {v.out[k][0] === 1 ? "home" : "homes"}</span>
+          <span className="sub">{v.out[k][0]} {v.out[k][0] === 1 ? "home" : "homes"} · 12 mo</span>
         </div>
       ))}
     </div>
@@ -252,9 +261,14 @@ function Volume({ listings }) {
 
 export default function ListingsClient({ listings: all, office = [] }) {
   const listings = useMemo(() => all.filter(inWindow), [all]);
+  const soldAll = useMemo(() => all.filter((l) => l.status === "Sold" && l.soldDate).sort((a, b) => b.soldDate.localeCompare(a.soldDate)), [all]);
+  const years = useMemo(() => [...new Set(soldAll.map((l) => l.soldDate.slice(0, 4)))].sort().reverse(), [soldAll]);
+  const [agent, setAgent] = useState("all");
+  const [year, setYear] = useState("all");
+  const [limit, setLimit] = useState(24);
   const counts = useMemo(() => {
-    const c = { Active: 0, Pending: 0, Sold: 0 };
-    listings.forEach((l) => (c[l.status] = (c[l.status] || 0) + 1));
+    const c = { Active: 0, Pending: 0, Sold: soldAll.length };
+    listings.forEach((l) => { if (l.status !== "Sold") c[l.status] = (c[l.status] || 0) + 1; });
     c.Office = office.length;
     return c;
   }, [listings, office]);
@@ -272,7 +286,12 @@ export default function ListingsClient({ listings: all, office = [] }) {
     history.replaceState(null, "", `#${k.toLowerCase()}`);
   };
 
-  const shown = tab === "Office" ? office : listings.filter((l) => l.status === tab);
+  const byAgent = (l) => agent === "all" || (l.ourAgents || []).includes(agent);
+  const filtered = tab === "Office" ? office : tab === "Sold"
+    ? soldAll.filter((l) => byAgent(l) && (year === "all" || l.soldDate.startsWith(year)))
+    : listings.filter((l) => l.status === tab && byAgent(l));
+  const shown = tab === "Sold" ? filtered.slice(0, limit) : filtered;
+  const pick = (f) => (e) => { f(e.target.value); setLimit(24); };
   const tabsRef = useRef(null);
   const [ind, setInd] = useState(null);
   useEffect(() => {
@@ -286,7 +305,7 @@ export default function ListingsClient({ listings: all, office = [] }) {
 
   return (
     <section className="wrap lx-body">
-      <Volume listings={listings} />
+      <Volume listings={listings} all={all} />
       <div className="lx-tabs" role="tablist" ref={tabsRef}>
         {ind && <span className="lx-ind" style={{ transform: `translateX(${ind.left}px)`, width: ind.width }} aria-hidden="true" />}
         {TABS.map((t) => (
@@ -296,12 +315,22 @@ export default function ListingsClient({ listings: all, office = [] }) {
           </button>
         ))}
       </div>
+      {tab !== "Office" && (
+        <div className="lx-filters">
+          <label>Agent<select value={agent} onChange={pick(setAgent)}><option value="all">Whole team</option>{["Lucas Podstupka", "Nick Barberio", "Jeff Memisha"].map((a) => <option key={a} value={a}>{a}</option>)}</select></label>
+          {tab === "Sold" && <label>Year<select value={year} onChange={pick(setYear)}><option value="all">All years</option>{years.map((y) => <option key={y}>{y}</option>)}</select></label>}
+          <span className="lx-fcount">{filtered.length} {filtered.length === 1 ? "home" : "homes"}</span>
+        </div>
+      )}
       {shown.length ? (
         <div className="lx-grid" key={tab}>
           {shown.map((l, idx) => <Card key={l.mls} l={l} idx={idx} onOpen={setOpen} />)}
         </div>
       ) : (
         <p className="lx-empty">No {tab === "Office" ? "office" : tab.toLowerCase()} listings right now — check back soon.</p>
+      )}
+      {tab === "Sold" && limit < filtered.length && (
+        <button className="lx-more" onClick={() => setLimit(limit + 24)}>Show more ({filtered.length - limit} left)</button>
       )}
       {open && <Detail l={open} onClose={() => setOpen(null)} />}
     </section>

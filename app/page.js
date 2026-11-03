@@ -1,21 +1,15 @@
-"use client";
-import { useEffect } from "react";
-import { teaserHtml } from "../lib/reviews-html";
-import { MARKUP, SCRIPT } from "../lib/home-markup";
-import { fillHomeStrip } from "../components/OpenHouse";
+import HomeClient from "../components/HomeClient";
+import { dealStats } from "../lib/listings";
 
+export const revalidate = 86400;
+
+const vol = (n) => (n >= 1e6 ? `$${(n / 1e6).toFixed(1)}M` : `$${Math.round(n / 1e3)}K`);
+
+// Hero stats computed from data/listings.json + data/past-sales.json (deduped by MLS #).
 export default function Home() {
-  useEffect(() => {
-    fillHomeStrip();
-    const t = setTimeout(() => {
-      try {
-        const s = document.createElement("script");
-        s.textContent = SCRIPT;
-        document.body.appendChild(s);
-      } catch (e) { console.error("Page script error:", e); }
-    }, 0);
-    return () => clearTimeout(t);
-  }, []);
-
-  return <div dangerouslySetInnerHTML={{ __html: MARKUP.replace("<!--REVIEWS-->", teaserHtml()) }} />;
+  const s = dealStats();
+  const meta =
+    `<div><b data-count="${s.allTime.count}" data-suffix="">${s.allTime.count}</b><span>Homes Sold · Since ${s.allTime.since}</span></div>` +
+    `<div><b>${vol(s.allTime.volume)}</b><span>Sold Volume · Since ${s.allTime.since}</span></div>`;
+  return <HomeClient meta={meta} />;
 }
