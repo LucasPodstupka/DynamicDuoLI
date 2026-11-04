@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { teaserHtml } from "../lib/reviews-html";
 import { MARKUP, SCRIPT, HERO_META } from "../lib/home-markup";
+import { FOOTER_FH_HTML, FORM_FH_NOTE } from "../lib/compliance";
 import { fillHomeStrip } from "./OpenHouse";
 
 function initListingsCarousel() {
@@ -49,5 +50,5 @@ export default function HomeClient({ meta, wws = "", team = "", strip = "" }) {
     return () => clearTimeout(t);
   }, []);
 
-  return <div dangerouslySetInnerHTML={{ __html: MARKUP.replace(HERO_META, meta).replace('<div class="hero-copy">', '<div class="hero-copy">' + team).replace('<div class="wrap team-band">', strip + '<div class="wrap team-band">').replace("<!--WHERE-WE-SELL-->", wws).replace("<!--REVIEWS-->", teaserHtml()) }} />;
+  return <div dangerouslySetInnerHTML={{ __html: MARKUP.replace(HERO_META, meta).replace('<div class="hero-copy">', '<div class="hero-copy">' + team).replace('<div class="wrap team-band">', strip + '<div class="wrap team-band">').replace("<!--WHERE-WE-SELL-->", wws).replace("<!--REVIEWS-->", teaserHtml()).replace("<!--FH-FOOT-->", FOOTER_FH_HTML).split("<!--FH-NOTE-->").join(FORM_FH_NOTE) }} />;
 }

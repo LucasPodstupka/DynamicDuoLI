@@ -20,7 +20,7 @@ export default function Rent() {
         ["Tell us what you need", "Budget, move-in date, towns, pets, and anything else that matters to you."],
         ["See the right places", "We line up showings for rentals that actually fit, so you don't waste weekends."],
         ["Apply with confidence", "We help you put together an application landlords take seriously."],
-        ["Landlords", "We market your rental, screen applicants and help you sign a tenant you can count on."],
+        ["Landlords", "We market your rental, show it, and help you choose an applicant using the same lawful criteria for everyone."],
       ]}
       prose={[
         "Dynamic Duo LI is Lucas Podstupka, Nick Barberio and Jeff Memisha at Realty Advisors, based at 3341 Park Avenue in Wantagh. We help renters and landlords across Long Island's South Shore and the rest of Nassau and Suffolk.",

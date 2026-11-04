@@ -236,3 +236,9 @@ fieldset.field>legend.field-label+*{clear:both}
   .oht-item{flex:unset}
 }
 @media(min-width:1000px){.hero .hero-ctas{margin-top:22px}.hero .hero-meta{margin-top:18px;padding-top:12px}.hero .hero-meta div{padding-top:8px!important;padding-bottom:8px!important}.hf-card{width:184px}.hf-card img{height:96px}.hf-card b{padding-top:8px}.hf-card small{padding-bottom:8px}}
+/* Fair housing */
+.fh-foot{display:flex;gap:12px;align-items:flex-start;margin:6px 0 14px;max-width:760px}
+.fh-foot .eho-mark{flex:none;color:currentColor}
+.fh-foot p{margin:0;font-size:12.5px;line-height:1.55}
+.fh-foot a{color:inherit;text-decoration:underline}
+.fh-note{margin:10px 0 0;font-size:12.5px;line-height:1.5;color:var(--muted)}
