@@ -1,5 +1,6 @@
 import HomeClient from "../components/HomeClient";
-import { dealStats } from "../lib/listings";
+import { dealStats, publicListings, listingSlug } from "../lib/listings";
+import { upcomingOpenHouses, fmtOpenHouse } from "../lib/open-houses";
 import { TOWNS, listingsForTown } from "../lib/towns";
 import "./site-pages.css";
 
@@ -28,5 +29,26 @@ export default function Home() {
     `<p class="wws-lead">We work <b>anywhere on Long Island, across Nassau and Suffolk</b>. These are the towns where we've closed the most deals:</p>` +
     `<div class="sp-towns-inline">${top.map(([t, n]) => `<a href="/towns/${t.slug}">${esc(t.name)} <small>(${n})</small></a>`).join("")}</div>` +
     `<a class="wws-all" href="/towns">See every Long Island town &rarr;</a></div></section>`;
-  return <HomeClient meta={meta} wws={wws} />;
+  const team =
+    `<div class="hf-team reveal" aria-label="Lucas, Nick and Jeff">` +
+    [["lucas", "Lucas Podstupka"], ["nick", "Nick Barberio"], ["jeff", "Jeff Memisha"]]
+      .map(([k, n]) => `<img src="/${k}_color.jpg" alt="${n}" width="56" height="56" decoding="async">`).join("") +
+    `<span>Lucas · Nick · Jeff</span></div>`;
+  const live = publicListings().filter((l) => (l.status === "Active" || l.status === "Pending") && l.photos && l.photos.length);
+  const oh = upcomingOpenHouses()[0];
+  const ohL = oh && live.find((l) => String(l.mls) === String(oh.mls));
+  const card = (l) =>
+    `<a class="hf-card" href="/listings/${listingSlug(l)}"><img src="${l.photos[0]}-sm.webp" alt="${esc(l.address)}, ${esc(l.town)}" width="240" height="160" loading="lazy" decoding="async">` +
+    `<span class="hf-badge hf-${l.status.toLowerCase()}">${l.status}</span><b>${esc(l.address)}</b><small>${esc(l.town)}</small></a>`;
+  // Open house card is computed at build/revalidate; the client hides it once `end` passes.
+  const ohCard = oh
+    ? `<a class="hf-card hf-oh" data-oh-end="${oh.end}" href="/listings/${oh.slug || ""}">` +
+      (ohL ? `<img src="${ohL.photos[0]}-sm.webp" alt="${esc(oh.address)}" width="240" height="160" loading="lazy" decoding="async">` : "") +
+      `<span class="hf-badge hf-ohb">Open House</span><b>${esc(oh.address.replace(/, NY$/, ""))}</b><small>${esc(fmtOpenHouse(oh))}</small></a>`
+    : "";
+  const items = ohCard + live.map(card).join("");
+  const strip = live.length
+    ? `<div class="hf-strip reveal" aria-label="Current listings"><div class="hf-track">${items}<span class="hf-dup" aria-hidden="true">${items.replace(/<a /g, '<a tabindex="-1" ')}</span></div></div>`
+    : "";
+  return <HomeClient meta={meta} wws={wws} team={team} strip={strip} />;
 }
