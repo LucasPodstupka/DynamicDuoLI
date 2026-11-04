@@ -35,7 +35,7 @@ export default function Home() {
       .map(([k, n]) => `<img src="/${k}_color.jpg" alt="${n}" width="56" height="56" decoding="async">`).join("") +
     `<span>Lucas · Nick · Jeff</span></div>`;
   const live = publicListings().filter((l) => (l.status === "Active" || l.status === "Pending") && l.photos && l.photos.length);
-    const card = (l) =>
+  const card = (l) =>
     `<a class="hf-card" href="/listings/${listingSlug(l)}"><img src="${l.photos[0]}-sm.webp" alt="${esc(l.address)}, ${esc(l.town)}" width="240" height="160" loading="lazy" decoding="async">` +
     `<span class="hf-badge hf-${l.status.toLowerCase()}">${l.status}</span><b>${esc(l.address)}</b><small>${esc(l.town)}</small></a>`;
   const ohs = upcomingOpenHouses();
@@ -44,19 +44,16 @@ export default function Home() {
     const l = publicListings().find((x) => String(x.mls) === String(o.mls));
     const town = (l && l.town) || parts[1] || "";
     const when = fmtOpenHouse(o).replace(", ", " · ");
-    return `<a class="oht-item" data-oh-end="${o.end}" href="/listings/${o.slug || ""}"><b>Open House</b> · ${esc(when)} · ${esc(parts[0])}${town ? `, ${esc(town)}` : ""}</a>`;
+    return `<a class="oht-item" data-oh-end="${o.end}" href="/listings/${o.slug || ""}"><span class="oht-k">Open House</span><span class="oht-when">${esc(when)}</span><span class="oht-addr">${esc(parts[0])}${town ? `, ${esc(town)}` : ""}</span></a>`;
   };
-  // Two equal halves (translateX -50% loops seamlessly); each half repeats the list so it is wider than the screen.
-  // Only the first copy is exposed to assistive tech / keyboard.
-  const k = ohs.length ? Math.max(1, Math.ceil(6 / ohs.length)) : 0;
-  const one = ohs.map(ohItem).join("");
-  const hid = (n) => n > 0 ? `<span class="oht-run oht-dup" aria-hidden="true">${Array(n).fill(one).join("").replace(/<a /g, '<a tabindex="-1" ')}</span>` : "";
-  const ticker = ohs.length
-    ? `<div class="oht" role="region" aria-label="Upcoming open houses"><div class="oht-track"><span class="oht-run">${one}</span>${hid(k - 1)}${hid(k)}</div></div>`
+  // Static scoreboard — all upcoming open houses visible at once (no marquee).
+  const board = ohs.length
+    ? `<div class="oht" role="region" aria-label="Upcoming open houses"><div class="oht-board"><span class="oht-label">Open Houses</span><div class="oht-items">${ohs.map(ohItem).join("")}</div></div></div>`
     : "";
   const items = live.map(card).join("");
+  // Manual left/right carousel — visitor browses at their own pace.
   const strip = live.length
-    ? `<div class="hf-strip reveal" aria-label="Current listings"><div class="hf-track">${items}<span class="hf-dup" aria-hidden="true">${items.replace(/<a /g, '<a tabindex="-1" ')}</span></div></div>`
+    ? `<div class="hf-rail reveal" aria-label="Current listings"><button type="button" class="hf-nav hf-prev" aria-label="Previous listings"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button><div class="hf-strip"><div class="hf-track">${items}</div></div><button type="button" class="hf-nav hf-next" aria-label="Next listings"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button></div>`
     : "";
-  return <HomeClient meta={meta} wws={wws} team={team} strip={strip + ticker} />;
+  return <HomeClient meta={meta} wws={wws} team={team} strip={strip + board} />;
 }
