@@ -1,3 +1,4 @@
+import { SiteFooter } from "../../components/SiteChrome";
 export const metadata = {
   title: "Privacy Policy — Dynamic Duo LI",
   description: "How Dynamic Duo LI handles the information you send through our website forms.",
@@ -10,6 +11,7 @@ const p = { color: "var(--ink-2)", lineHeight: 1.7, marginTop: 10 };
 
 export default function Privacy() {
   return (
+    <>
     <main className="wrap" style={{ maxWidth: 820, padding: "90px 28px 110px" }}>
       <a href="/" style={{ color: "var(--brass)" }}>&larr; Back to Dynamic Duo LI</a>
       <h1 style={{ fontFamily: "'Oswald',sans-serif", textTransform: "uppercase", fontSize: 42, margin: "20px 0 6px", color: "var(--ink-2)" }}>Privacy Policy</h1>
@@ -39,5 +41,7 @@ export default function Privacy() {
       <h2 style={h2}>Listing data</h2>
       <p style={p}>Listing information is courtesy of OneKey&reg; MLS and is deemed reliable but not guaranteed.</p>
     </main>
+    <SiteFooter />
+    </>
   );
 }

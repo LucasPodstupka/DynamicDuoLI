@@ -1,13 +1,14 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { MARKUP, SCRIPT } from "../lib/home-markup";
+import { FORM_FH_NOTE } from "../lib/compliance";
 
 // Reuses the homepage lead form (same fields, same Web3Forms submit) on other pages.
 function formCard(intent, title, sub) {
   const formAt = MARKUP.indexOf(`<form class="lead-form" data-intent="${intent}"`);
   const card = MARKUP.lastIndexOf(`<div class="form-card">`, formAt);
   const end = MARKUP.indexOf("</form>", formAt) + "</form>".length;
-  let html = MARKUP.slice(card, end) + "</div>";
+  let html = (MARKUP.slice(card, end) + "</div>").split("<!--FH-NOTE-->").join(FORM_FH_NOTE);
   if (title) html = html.replace(/(<h3 class="form-title">)[\s\S]*?(<\/h3>)/, `$1${title}$2`);
   if (sub) html = html.replace(/(<p class="form-sub">)[\s\S]*?(<\/p>)/, `$1${sub}$2`);
   return html;

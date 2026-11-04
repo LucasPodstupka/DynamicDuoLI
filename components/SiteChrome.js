@@ -1,3 +1,4 @@
+import { FOOTER_FH_HTML } from "../lib/compliance";
 const IG = (
   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
 );
@@ -48,7 +49,9 @@ export function SiteFooter() {
         <nav className="footer-links" aria-label="Site">
           {NAV.map(([href, label]) => <a key={href} href={href}>{label}</a>)}
           <a href="/privacy">Privacy</a>
+          <a href="/fair-housing">Fair Housing</a>
         </nav>
+        <div dangerouslySetInnerHTML={{ __html: FOOTER_FH_HTML }} />
         <div className="footer-note">
           Realty Advisors · Licensed Real Estate Professionals · Long Island, NY<br />
           Listing data courtesy of OneKey&reg; MLS. Information deemed reliable but not guaranteed.<br />
