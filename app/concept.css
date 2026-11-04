@@ -242,3 +242,14 @@ fieldset.field>legend.field-label+*{clear:both}
 .fh-foot p{margin:0;font-size:12.5px;line-height:1.55}
 .fh-foot a{color:inherit;text-decoration:underline}
 .fh-note{margin:10px 0 0;font-size:12.5px;line-height:1.5;color:var(--muted)}
+/* Bigger active cards: 1-3 actives usual, up to ~6 */
+.hf-track{min-width:100%;justify-content:center;gap:20px;box-sizing:border-box}
+.hf-card{width:clamp(260px,30vw,380px)!important;border-radius:8px}
+.hf-card img{height:auto!important;aspect-ratio:3/2}
+.hf-card b{font-size:17px;padding:14px 16px 0}
+.hf-card small{font-size:14px;padding:4px 16px 16px}
+.hf-badge{top:12px;left:12px;font-size:12px;padding:5px 10px}
+.hf-n1 .hf-card{width:clamp(280px,46vw,560px)!important}
+.hf-n1 .hf-nav,.hf-n2 .hf-nav{visibility:hidden}
+@media(min-width:900px){.hf-n2 .hf-card{width:clamp(300px,36vw,460px)!important}}
+@media(max-width:560px){.hf-track{justify-content:flex-start;gap:12px}.hf-card,.hf-n1 .hf-card,.hf-n2 .hf-card{width:82vw!important}.hf-card img{height:auto}.hf-n2 .hf-nav{visibility:visible}}
