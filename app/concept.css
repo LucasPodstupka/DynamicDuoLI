@@ -161,3 +161,9 @@ fieldset.field>legend.field-label+*{clear:both}
 .wws-lead b{color:var(--ink-2)}
 .wws .sp-towns-inline{margin-bottom:14px}
 .wws-all{font-family:var(--serif);text-transform:uppercase;letter-spacing:.12em;font-size:13px;color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--brass);padding-bottom:4px}
+/* Fair housing */
+.fh-foot{display:flex;gap:12px;align-items:flex-start;margin:6px 0 14px;max-width:760px}
+.fh-foot .eho-mark{flex:none;color:currentColor}
+.fh-foot p{margin:0;font-size:12.5px;line-height:1.55}
+.fh-foot a{color:inherit;text-decoration:underline}
+.fh-note{margin:10px 0 0;font-size:12.5px;line-height:1.5;color:var(--muted)}

@@ -1,8 +1,6 @@
-import data from "../../data/listings.json";
-import office from "../../data/office-listings.json";
 import ListingsClient from "./ListingsClient";
 import { OpenHouseStrip } from "../../components/OpenHouse";
-import { publicListings, listingSlug, allDeals } from "../../lib/listings";
+import { publicListings, listingSlug, allDeals, officeListings } from "../../lib/listings";
 import "./listings.css";
 import "../site-pages.css";
 
@@ -48,7 +46,7 @@ export default function ListingsPage() {
             Homes we&rsquo;ve listed and buyers we&rsquo;ve represented across Long Island. Active and pending homes are current; Sold goes back through our full closed-sale history.
           </p>
         </section>
-        <ListingsClient listings={allDeals()} office={office.listings} />
+        <ListingsClient listings={allDeals()} office={officeListings()} />
         <section className="wrap sp-section">
           <details className="lx-index">
             <summary>Every home on this page, by address ({allDeals().length})</summary>

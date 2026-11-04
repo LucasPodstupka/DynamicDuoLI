@@ -21,6 +21,7 @@ export default function sitemap() {
     ...towns.map(([t, l]) => ({ url: `${base}/towns/${t.slug}`, ...lm(latest(l)), changeFrequency: "weekly", priority: 0.7 })),
     ...deals.map((l) => ({ url: `${base}/listings/${listingSlug(l)}`, ...lm(l.soldDate), changeFrequency: "weekly", priority: l.status === "Sold" ? 0.5 : 0.7 })),
     { url: `${base}/reviews`, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${base}/fair-housing`, changeFrequency: "yearly", priority: 0.4 },
     { url: `${base}/privacy`, changeFrequency: "yearly", priority: 0.2 },
   ];
 }
