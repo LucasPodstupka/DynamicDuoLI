@@ -8,6 +8,7 @@ export default function HomeClient({ meta, wws = "", team = "", strip = "" }) {
   useEffect(() => {
     fillHomeStrip();
     document.querySelectorAll("[data-oh-end]").forEach((a) => { if (new Date(a.dataset.ohEnd).getTime() <= Date.now()) a.remove(); });
+    document.querySelectorAll(".oht").forEach((t) => { if (!t.querySelector(".oht-run:not(.oht-dup) a")) t.remove(); else t.querySelectorAll(".oht-dup").forEach((d) => { if (!d.querySelector("a")) d.remove(); }); });
     const t = setTimeout(() => {
       try {
         const s = document.createElement("script");

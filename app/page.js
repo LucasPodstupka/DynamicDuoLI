@@ -35,20 +35,28 @@ export default function Home() {
       .map(([k, n]) => `<img src="/${k}_color.jpg" alt="${n}" width="56" height="56" decoding="async">`).join("") +
     `<span>Lucas · Nick · Jeff</span></div>`;
   const live = publicListings().filter((l) => (l.status === "Active" || l.status === "Pending") && l.photos && l.photos.length);
-  const oh = upcomingOpenHouses()[0];
-  const ohL = oh && live.find((l) => String(l.mls) === String(oh.mls));
-  const card = (l) =>
+    const card = (l) =>
     `<a class="hf-card" href="/listings/${listingSlug(l)}"><img src="${l.photos[0]}-sm.webp" alt="${esc(l.address)}, ${esc(l.town)}" width="240" height="160" loading="lazy" decoding="async">` +
     `<span class="hf-badge hf-${l.status.toLowerCase()}">${l.status}</span><b>${esc(l.address)}</b><small>${esc(l.town)}</small></a>`;
-  // Open house card is computed at build/revalidate; the client hides it once `end` passes.
-  const ohCard = oh
-    ? `<a class="hf-card hf-oh" data-oh-end="${oh.end}" href="/listings/${oh.slug || ""}">` +
-      (ohL ? `<img src="${ohL.photos[0]}-sm.webp" alt="${esc(oh.address)}" width="240" height="160" loading="lazy" decoding="async">` : "") +
-      `<span class="hf-badge hf-ohb">Open House</span><b>${esc(oh.address.replace(/, NY$/, ""))}</b><small>${esc(fmtOpenHouse(oh))}</small></a>`
+  const ohs = upcomingOpenHouses();
+  const ohItem = (o) => {
+    const parts = o.address.split(",").map((x) => x.trim());
+    const l = publicListings().find((x) => String(x.mls) === String(o.mls));
+    const town = (l && l.town) || parts[1] || "";
+    const when = fmtOpenHouse(o).replace(", ", " · ");
+    return `<a class="oht-item" data-oh-end="${o.end}" href="/listings/${o.slug || ""}"><b>Open House</b> · ${esc(when)} · ${esc(parts[0])}${town ? `, ${esc(town)}` : ""}</a>`;
+  };
+  // Two equal halves (translateX -50% loops seamlessly); each half repeats the list so it is wider than the screen.
+  // Only the first copy is exposed to assistive tech / keyboard.
+  const k = ohs.length ? Math.max(1, Math.ceil(6 / ohs.length)) : 0;
+  const one = ohs.map(ohItem).join("");
+  const hid = (n) => n > 0 ? `<span class="oht-run oht-dup" aria-hidden="true">${Array(n).fill(one).join("").replace(/<a /g, '<a tabindex="-1" ')}</span>` : "";
+  const ticker = ohs.length
+    ? `<div class="oht" role="region" aria-label="Upcoming open houses"><div class="oht-track"><span class="oht-run">${one}</span>${hid(k - 1)}${hid(k)}</div></div>`
     : "";
-  const items = ohCard + live.map(card).join("");
+  const items = live.map(card).join("");
   const strip = live.length
     ? `<div class="hf-strip reveal" aria-label="Current listings"><div class="hf-track">${items}<span class="hf-dup" aria-hidden="true">${items.replace(/<a /g, '<a tabindex="-1" ')}</span></div></div>`
     : "";
-  return <HomeClient meta={meta} wws={wws} team={team} strip={strip} />;
+  return <HomeClient meta={meta} wws={wws} team={team} strip={strip + ticker} />;
 }

@@ -200,3 +200,24 @@ fieldset.field>legend.field-label+*{clear:both}
 .hero .hero-photo{padding-top:12px!important}
 @media(min-width:1000px){.hero .hero-photo{padding-top:28px!important}}
 @media(max-width:560px){.hero .hero-ctas{display:flex;flex-wrap:nowrap;gap:10px;margin-top:22px}.hero .hero-ctas .btn{padding:14px 16px;font-size:15px;white-space:nowrap}.hero-lead{font-size:16px!important}.hero .hero-meta{margin-top:14px;padding-top:12px}}
+/* v2: no headshots on desktop; open house ticker */
+@media(min-width:1000px){
+  .hero .hero-copy>.hf-team{display:none}
+  .hero .hero-copy{display:block;max-width:1100px;padding:20px 0 8px!important}
+  .hero .hero-photo{padding-top:16px!important}
+  .hero h1{max-width:none;font-size:clamp(44px,5vw,64px)!important}
+  .hero .hero-meta{max-width:880px}
+  .hf-strip{padding-bottom:18px}
+}
+.oht{background:#14213d;color:#f5efe3;overflow:hidden;border-top:1px solid rgba(245,239,227,.15);border-bottom:1px solid rgba(245,239,227,.15);margin-bottom:28px}
+.oht-track{display:flex;width:max-content;animation:oht-slide 40s linear infinite}
+.oht-run{display:flex}
+.oht:hover .oht-track,.oht:focus-within .oht-track{animation-play-state:paused}
+@keyframes oht-slide{to{transform:translateX(-50%)}}
+.oht-item{display:inline-flex;align-items:center;white-space:nowrap;padding:12px 28px;color:#f5efe3;text-decoration:none;font-size:14px;letter-spacing:.06em;text-transform:uppercase;font-variant-numeric:tabular-nums}
+.oht-item b{font-weight:700;letter-spacing:.14em;margin-right:6px}
+.oht-item::after{content:"\25C6";margin-left:28px;font-size:9px;color:#f5efe3;opacity:.5}
+.oht-item:hover,.oht-item:focus-visible{text-decoration:underline;outline-offset:-3px}
+@media(max-width:560px){.oht-item{font-size:12.5px;padding:11px 20px}}
+@media(prefers-reduced-motion:reduce){.oht-track{animation:none;width:auto}.oht-dup{display:none}.oht{overflow-x:auto}}
+@media(min-width:1000px){.hero .hero-ctas{margin-top:22px}.hero .hero-meta{margin-top:18px;padding-top:12px}.hero .hero-meta div{padding-top:8px!important;padding-bottom:8px!important}.hf-card{width:184px}.hf-card img{height:96px}.hf-card b{padding-top:8px}.hf-card small{padding-bottom:8px}.hf-strip{padding-bottom:12px}}
