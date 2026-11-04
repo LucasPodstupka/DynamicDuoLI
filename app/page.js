@@ -36,7 +36,7 @@ export default function Home() {
     `<span>Lucas · Nick · Jeff</span></div>`;
   const live = publicListings().filter((l) => l.status === "Active" && l.photos && l.photos.length);
   const card = (l) =>
-    `<a class="hf-card" href="/listings/${listingSlug(l)}"><img src="${l.photos[0]}-sm.webp" alt="${esc(l.address)}, ${esc(l.town)}" width="240" height="160" loading="lazy" decoding="async">` +
+    `<a class="hf-card" href="/listings/${listingSlug(l)}"><img src="${l.photos[0]}.webp" srcset="${l.photos[0]}-sm.webp 480w, ${l.photos[0]}.webp 1200w" sizes="(max-width:560px) 86vw, 420px" alt="${esc(l.address)}, ${esc(l.town)}" width="420" height="280" loading="lazy" decoding="async">` +
     `<span class="hf-badge hf-${l.status.toLowerCase()}">${l.status}</span><b>${esc(l.address)}</b><small>${esc(l.town)}</small></a>`;
   const ohs = upcomingOpenHouses();
   const ohItem = (o) => {
@@ -53,7 +53,7 @@ export default function Home() {
   const items = live.map(card).join("");
   // Manual left/right carousel — visitor browses at their own pace.
   const strip = live.length
-    ? `<div class="hf-rail reveal" aria-label="Current listings"><button type="button" class="hf-nav hf-prev" aria-label="Previous listings"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button><div class="hf-strip"><div class="hf-track">${items}</div></div><button type="button" class="hf-nav hf-next" aria-label="Next listings"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button></div>`
+    ? `<div class="hf-rail hf-n${Math.min(live.length, 4)} reveal" aria-label="Current listings"><button type="button" class="hf-nav hf-prev" aria-label="Previous listings"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button><div class="hf-strip"><div class="hf-track">${items}</div></div><button type="button" class="hf-nav hf-next" aria-label="Next listings"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button></div>`
     : "";
   return <HomeClient meta={meta} wws={wws} team={team} strip={strip + board} />;
 }
