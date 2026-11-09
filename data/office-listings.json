@@ -1,5 +1,5 @@
 {
-  "source": "OneKey MLS export (Realty Advisors Inc office actives), 2026-10-30",
+  "source": "OneKey MLS export office_active_listings_2026-11-09.csv (Realty Advisors Inc office actives), 2026-11-09; team listings excluded",
   "listings": [
     {
       "mls": "1032257",
@@ -19,6 +19,27 @@
       "description": "Stop the scroll and take a peak...This home on boston is definitely the one that you seek...Brand new 5 bedroom...3 bath custom built approx 3500 square foot colonial in the highly desirable massapequa town...Spacious living room w/gas fireplace/with 9 foot ceilings on the main floor....Stunning eat-in-kitchen w/quartz countertops & island/stainless steel appliances/pot filler....Formal dining room...Gleaming hardwood flooring featuring a herringbone inlay....2 zone central air...Central vac & 2 zone heating/200 amp electric...Chandelier lift included...1st floor guest bedroom suite....Wainscotting molding....Anderson windows...Primary bedroom suite w/full bath & wic...3 additional spacious bedrooms....Laundry room upstairs...Huge basement with separate outside entrance...Sod in front and seeded in back with inground sprinklers...Paver & ashphalt driveway....Exterior lighting...70x100 property with paver patio in the backyard...1.5 detached garage...Come and view this one of a kind custom build on a beautiful tree lined street...Buyer to pay transfer tax/water/sewer fees...",
       "photos": [
         "/listings/office/1032257/00"
+      ]
+    },
+    {
+      "mls": "1070806",
+      "status": "Active",
+      "address": "1837 Dogwood Lane",
+      "town": "Seaford",
+      "county": "Nassau",
+      "listPrice": 1549999,
+      "beds": 5,
+      "baths": 4.0,
+      "side": "office",
+      "listAgent": "Laura Dupkin Memisha SRES RENE",
+      "listAgents": [
+        "Laura Dupkin Memisha",
+        "Jeffrey Memisha"
+      ],
+      "propertyType": "Residential",
+      "description": null,
+      "photos": [
+        "/listings/office/1070806/00"
       ]
     },
     {
@@ -42,25 +63,22 @@
       ]
     },
     {
-      "mls": "1064374",
+      "mls": "1068620",
       "status": "Active",
-      "side": "office",
-      "propertyType": "Residential",
-      "address": "140 Baltimore Avenue",
-      "town": "Massapequa",
+      "address": "1476 Wagner Street",
+      "town": "Wantagh",
       "county": "Nassau",
-      "listPrice": 1199999,
-      "beds": 7,
-      "baths": 5.0,
+      "listPrice": 774999,
+      "beds": 3,
+      "baths": 2.0,
+      "side": "office",
+      "listAgent": "Laura Dupkin Memisha SRES RENE",
       "listAgents": [
-        "Jordan Destefano",
-        "Petar Lazic"
+        "Laura Dupkin Memisha"
       ],
-      "listAgent": "Jordan Destefano & Petar Lazic",
-      "description": "Even jets and giants fans will be raven about this one...A rare legal two family right here on baltimore! Welcome to this spacious legal two family with c/o, set on an 80x100 lot, with a 2 car garage in the massapequa school district! The main unit features a beautifully updated eat-in kitchen with a large center island, 6 bedrooms, including two with private en-suite bathrooms, and 4 full bathrooms in total. The second unit features 1 bedroom and 1 full bathroom with its own living space...A setup with endless possibilities! Enjoy a new roof and 40 owned solar panels that are fully paid off...No lease, no loan, just savings! This home also offers natural gas heat, a whole-house water filtration system, an ev charger hookup, and an automatic generator for total peace of mind! Head outside and you\u2019ll find a brand new gunite pool! Legal two families don\u2019t come around often in massapequa...This is a rare opportunity you won\u2019t want to miss! Per c/o property must be owner occupied",
-      "photos": [
-        "/listings/office/1064374/00"
-      ]
+      "propertyType": "Residential",
+      "description": null,
+      "photos": []
     },
     {
       "mls": "1053264",

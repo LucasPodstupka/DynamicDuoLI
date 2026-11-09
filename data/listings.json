@@ -1,13 +1,36 @@
 {
-  "source": "OneKey MLS export Podstupka_Barberio_listings_12mo_2026-11-02.csv (Matrix), exported 2026-11-02",
+  "source": "OneKey MLS export team-deals-2026-11-09-active-pending.csv + team-deals-2026-11-09-sold-closed.csv (Matrix), exported 2026-11-09",
   "listings": [
+    {
+      "mls": "1071110",
+      "status": "Active",
+      "address": "3603 Lufberry Avenue",
+      "town": "Wantagh",
+      "county": "Nassau",
+      "listPrice": 1799999,
+      "soldPrice": null,
+      "soldDate": null,
+      "beds": 4,
+      "baths": 3.0,
+      "side": "listing",
+      "ourAgents": [
+        "Nick Barberio"
+      ],
+      "listAgent": "Laura Dupkin Memisha SRES RENE",
+      "coListAgent": "Nicolas Barberio",
+      "buyerAgent": null,
+      "coBuyerAgent": null,
+      "description": null,
+      "photos": [],
+      "instagramUrl": null
+    },
     {
       "mls": "1061440",
       "status": "Active",
       "address": "60 Nearwater Avenue",
       "town": "Massapequa",
       "county": "Nassau",
-      "listPrice": 1099000,
+      "listPrice": 999999,
       "soldPrice": null,
       "soldDate": null,
       "beds": 3,
@@ -141,6 +164,29 @@
       "instagramUrl": "https://www.instagram.com/reel/DfCZUIggrw1/"
     },
     {
+      "mls": "1060706",
+      "status": "Pending",
+      "address": "36 Gordon Road",
+      "town": "Valley Stream",
+      "county": "Nassau",
+      "listPrice": 699999,
+      "soldPrice": null,
+      "soldDate": null,
+      "beds": 5,
+      "baths": 3.0,
+      "side": "buyer",
+      "ourAgents": [
+        "Nick Barberio"
+      ],
+      "listAgent": "Tiffanie R. Bailey Romey C2EX",
+      "coListAgent": null,
+      "buyerAgent": "Nicolas Barberio",
+      "coBuyerAgent": null,
+      "description": "Incredible Investment Opportunity: Prime 2-Unit Multifamily Property in Valley Stream, NY, Built in 1929, this classic 2-unit multifamily duplex spans a generous 1,932 square feet of interior livable area, situated beautifully on a well-manicured 4,000 square foot lot. Whether you are a savvy investor looking to add a high-yield asset to your portfolio or an owner-occupant looking to live in one unit while letting the other pay your mortgage, this property represents an unparalleled opportunity in one of Nassau County's most sought-after communities. Two independent rental units offering a combined 5 spacious bedrooms and 3 full bathrooms. Meticulously maintained hardwood and tile flooring throughout, combining timeless style with day-to-day durability. Rare and highly desirable central air conditioning paired with highly efficient gas/central heating to ensure year-round comfort for your tenants. Durable, low-maintenance vinyl siding keeps utilities efficient and curb appeal sharp, complemented by a convenient detached garage providing dedicated storage or secure parking. Both units come turnkey and fully equipped with essential appliances, including refrigerators, ranges/ovens, microwaves, dishwashers, washers, and dryers.",
+      "photos": [],
+      "instagramUrl": null
+    },
+    {
       "mls": "1062275",
       "status": "Pending",
       "address": "234 Division Avenue",
@@ -225,13 +271,13 @@
     },
     {
       "mls": "1026024",
-      "status": "Pending",
+      "status": "Sold",
       "address": "3056 Valentine Place",
       "town": "Wantagh",
       "county": "Nassau",
       "listPrice": 1299000,
-      "soldPrice": null,
-      "soldDate": null,
+      "soldPrice": 1280000,
+      "soldDate": "2026-11-03",
       "beds": 4,
       "baths": 3.0,
       "side": "buyer",
@@ -241,7 +287,7 @@
       "listAgent": "Alexander Iaquinta",
       "coListAgent": null,
       "buyerAgent": "Nicolas Barberio",
-      "coBuyerAgent": null,
+      "coBuyerAgent": "Laura Dupkin Memisha SRES RENE",
       "description": "FALL IN LOVE ON VALENTINE PLACE! Welcome to 3056 Valentine Place, an expanded and impeccably designed 4-bedroom, 2.5-bath Colonial set in the highly sought-after Forest Lake section of Wantagh. Thoughtfully widened by two feet at construction and enriched with exceptional craftsmanship, this residence blends sophistication, comfort, and elegance at every turn. Step inside to a soaring foyer with a stunning custom chandelier\u2014engineered to lower for effortless maintenance\u2014along with a double coat closet, gleaming oak floors, and refined millwork including crown molding and wainscoting. The spacious living room features skylights and luxurious raw silk curtains.  The gourmet eat-in kitchen is a true chef\u2019s delight with extensive solid maple cabinetry, granite countertops, rollout drawers, double bowl sink, and high-end stainless steel appliances, including a five-burner gas cooktop and 30\u201d double wall electric ovens. Entertaining is effortless with a formal dining room, family room, wet bar, and pantry space, as well as the tumbled marble half bath on the first floor and whole-house built-in speaker system. Additional highlights include 9-foot and cathedral ceilings, custom Anderson windows, skylights, and designer window treatments. Four heating zones and a full security system deliver year-round comfort and peace of mind. Upstairs, the ornate staircase leads to a lavish primary suite, offering soaring ceilings and an unmatched array of storage: two walk-in closets, a linen closet, and pull-down attic access that spans the entire home length. The spa-inspired ensuite features tumbled marble finishes, dual sinks with Corian counters and a makeup vanity, a jacuzzi tub, separate shower, a large skylight and glass block windows for enhanced privacy and comfort. Three additional bedrooms\u2014each designed with two double closets\u2014provide exceptional flexibility for guests or a home office. The second full bath with a cathedral ceiling and skylight also features dual sinks, Corian counters, and a shower/tub combo. The full finished basement with walk-out access and a utility room expands the home\u2019s impressive footprint and storage capacity with single and double closets, offering endless possibilities for a playroom, gym, office, or TV media room. Step outside to your private resort! Custom sliding doors open to a wooden deck and beautifully gated yard showcasing a saltwater freeform in-ground pool with a two-seat jacuzzi section, paved patio, mature arborvitae for privacy, and lush professional landscaping including stunning Japanese maple trees. The Weber grill includes a dedicated gas line to ensure seamless outdoor cooking. The attached two-car garage is outfitted with GarageTek wall paneling for additional shelving and has a Tesla charger, while the driveway can accommodate three more vehicles. Expansive, meticulously maintained, and distinguished by luxury finishes and extraordinary storage space throughout every level, this Forest Lake masterpiece truly elevates everyday living. 3056 Valentine Place is a home you simply cannot miss - schedule your private showing today!",
       "photos": [
         "/listings/1026024/00"
@@ -369,13 +415,13 @@
     },
     {
       "mls": "1036766",
-      "status": "Pending",
+      "status": "Sold",
       "address": "344 N Ontario Avenue",
       "town": "Lindenhurst",
       "county": "Suffolk",
       "listPrice": 689803,
-      "soldPrice": null,
-      "soldDate": null,
+      "soldPrice": 760000,
+      "soldDate": "2026-11-03",
       "beds": 5,
       "baths": 2.0,
       "side": "buyer",
@@ -502,13 +548,13 @@
     },
     {
       "mls": "1034887",
-      "status": "Pending",
+      "status": "Sold",
       "address": "24 Peters Drive",
       "town": "Shirley",
       "county": "Suffolk",
       "listPrice": 459999,
-      "soldPrice": null,
-      "soldDate": null,
+      "soldPrice": 450000,
+      "soldDate": "2026-10-31",
       "beds": 3,
       "baths": 2.0,
       "side": "buyer",
@@ -538,12 +584,13 @@
       "baths": 1.0,
       "side": "buyer",
       "ourAgents": [
+        "Lucas Podstupka",
         "Nick Barberio"
       ],
       "listAgent": "Joseph Mendola",
       "coListAgent": "Stephanie B. Calinoff",
       "buyerAgent": "Nicolas Barberio",
-      "coBuyerAgent": null,
+      "coBuyerAgent": "Lucas Podstupka",
       "description": "Don't miss this wonderful opportunity to own a charming first floor 1-bedroom, 1-bath co-op in the highly desirable Spring Meadows community of Hauppauge. This well-maintained unit offers comfortable living and exceptional convenience. Inside, you'll find a spacious living room, a generously sized bedroom, and abundant storage throughout the home, including multiple closets. A rare and highly valuable feature, the unit also includes an in-unit laundry area. Spring Meadows offers amenities that include a saltwater in-ground pool, playground, and electric vehicle charging stations. The community's prime location provides easy access to Hauppauge schools, shopping, restaurants, Long Island Macarthur Airport (and ability to purchase Islip resident parking permit), and major roadways, including the Long Island Expressway and Northern State Parkway, making commuting and everyday errands a breeze. Maintenance fees include taxes, heat, water, sewer, landscaping, snow removal, and exterior maintenance, providing simplified ownership and outstanding value. Minimum credit score of 700 and Minimum Down Payment is 10%",
       "photos": [
         "/listings/1056043/00"
