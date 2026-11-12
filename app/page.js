@@ -32,7 +32,7 @@ export default function Home() {
   const team =
     `<div class="hf-team reveal" aria-label="Lucas, Nick and Jeff">` +
     [["lucas", "Lucas Podstupka"], ["nick", "Nick Barberio"], ["jeff", "Jeff Memisha"]]
-      .map(([k, n]) => `<img src="/${k}_color.jpg" alt="${n}" width="56" height="56" decoding="async">`).join("") +
+      .map(([k, n]) => `<img src="/team/${k}.jpg" alt="${n}" width="56" height="56" decoding="async">`).join("") +
     `<span>Lucas · Nick · Jeff</span></div>`;
   const live = publicListings().filter((l) => l.status === "Active" && l.photos && l.photos.length);
   const card = (l) =>
