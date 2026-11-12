@@ -30,11 +30,12 @@
 .wl-team .agent{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;align-items:center;flex:none!important;max-width:none;
   background:var(--bg-3);border:1px solid var(--line);border-radius:6px;padding:10px}
 .wl-team .agent-photo{aspect-ratio:auto!important;width:96px;height:120px!important;min-height:0!important;max-height:none!important;align-self:center;border-radius:4px}
-.wl-team .agent-photo img{filter:none!important;opacity:1!important}
+.wl-team .agent-photo img{filter:none!important;opacity:1!important;object-position:50% 50%!important;transform:none}
 .wl-team .agent-zillow{display:none!important}
 /* Lucas's photo is not a review link on this page. */
 .wl-team .agent-lucas .agent-photo{cursor:default}
 .wl-team .agent-lucas .agent-photo:hover{transform:none;box-shadow:none}
+.wl-team .agent-photo:hover img{transform:scale(1.04)}
 .wl-team .agent-meta{padding:0}
 .wl-team .agent-name{font-size:17px!important}
 .wl-team .agent-role{font-size:10.5px!important;line-height:1.35}
@@ -67,7 +68,15 @@
 .wl .sp-cta .sp-btn{width:100%;justify-content:center;min-height:48px}
 @media(prefers-reduced-motion:reduce){.wl-track{scroll-behavior:auto}}
 
-.wl-reviews .rv-teaser{padding:6px 0 4px}
+/* Reviews: a real section with short quotes, not a thin skippable bar. */
+.wl-rv-grid{display:grid;gap:12px;margin:0 0 22px}
+.wl-rv-card{margin:0;background:var(--bg-3);border:1px solid var(--line);border-radius:6px;padding:18px 16px 16px}
+.wl-rv-stars{display:block;color:var(--brass,#b08d57);letter-spacing:2px;font-size:15px;line-height:1;margin:0 0 10px}
+.wl-rv-card blockquote{margin:0;font-family:var(--serif);font-size:17px;line-height:1.5;color:var(--ink);font-weight:400}
+.wl-rv-card figcaption{margin-top:12px;font-size:13px;color:var(--muted);letter-spacing:.02em}
+.wl-rv-cta{margin-top:2px}
+.wl-rv-cta .sp-btn{min-height:48px}
+
 
 /* Feedback form */
 .wl-form{max-width:760px}
@@ -139,4 +148,14 @@
   #feedback{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);grid-template-rows:auto auto 1fr;column-gap:56px;align-items:start;align-content:start}
   #feedback>*{grid-column:1}
   #feedback>.wl-form{grid-column:2;grid-row:1/span 3}
+}
+
+@media(min-width:768px){
+  .wl-rv-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:26px}
+  .wl-rv-card{padding:22px 18px 18px}
+}
+@media(min-width:1024px){
+  .wl-rv-grid{gap:20px}
+  .wl-rv-card{padding:26px 22px 20px}
+  .wl-rv-card blockquote{font-size:18px}
 }

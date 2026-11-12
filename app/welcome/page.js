@@ -4,7 +4,6 @@ import DealRail from "../../components/DealRail";
 import ClientFeedback from "../../components/ClientFeedback";
 import { publicListings, allDeals, dealStats, shortMoney } from "../../lib/listings";
 import { MARKUP } from "../../lib/home-markup";
-import { teaserHtml as allTeaserHtml, TOTAL as ALL_ZILLOW_REVIEWS } from "../../lib/reviews-html";
 import REV from "../../data/reviews.json";
 import { WEB3FORMS_KEY, TEAM_EMAILS } from "../../lib/web3forms";
 import "../site-pages.css";
@@ -37,7 +36,34 @@ function divBlock(start) {
 // Combined Zillow total is the sum of each agent's count. On this page only, drop
 // Lucas's 4 reviews (he'll be added back later). Home and /reviews stay unchanged.
 const ZILLOW_REVIEWS = REV.agents.filter((a) => a.key !== "lucas").reduce((n, a) => n + a.count, 0);
-const teaserHtml = () => allTeaserHtml().replace(`<b>${ALL_ZILLOW_REVIEWS}</b>`, `<b>${ZILLOW_REVIEWS}</b>`);
+
+// Even-cropped team photos live in /public/team for an easy later rollout.
+// On this page only: swap the shared homepage files for those crops.
+const TEAM_PHOTO = { nick: "/team/nick.jpg", jeff: "/team/jeff.jpg", lucas: "/team/lucas.jpg" };
+
+// Short quotes, verbatim from data/reviews.json. Nick and Jeff only; trim mid-sentence with an ellipsis.
+const QUOTE_PICKS = [
+  { key: "nick", reviewer: "Maria Randazzo", end: "He is incredible and very knowledgeable!" },
+  { key: "nick", reviewer: "robhert5233", end: "their communication was excellent" },
+  { key: "jeff", reviewer: "William Loughlin", end: "overall homebuying process very easy." },
+];
+function reviewByline(reviewer) {
+  const base = String(reviewer).split(/\s+from\s+/)[0].trim();
+  return /\d/.test(base) || !/\s/.test(base) ? base : base.split(/\s+/)[0];
+}
+function welcomeQuotes() {
+  return QUOTE_PICKS.map((p) => {
+    const a = REV.agents.find((x) => x.key === p.key);
+    const r = a.reviews.find((x) => x.reviewer === p.reviewer || x.reviewer.startsWith(p.reviewer + " "));
+    const i = r.text.indexOf(p.end);
+    if (i < 0) throw new Error("Welcome quote not found in reviews data: " + p.reviewer);
+    let quote = r.text.slice(0, i + p.end.length);
+    if (quote.length < r.text.length && !/[.!?]$/.test(quote)) {
+      quote = quote.replace(/[\s.,;:—–-]+$/, "") + "\u2026";
+    }
+    return { quote, who: reviewByline(r.reviewer), rating: r.rating || a.rating };
+  });
+}
 
 // Drop Lucas's Zillow review link and badge; keep photo, name, bio and contact.
 function withoutLucasReviews(html) {
@@ -53,7 +79,10 @@ const agent = (k) => {
   const html = divBlock(MARKUP.indexOf(`<div class="agent reveal agent-${k}">`));
   return k === "lucas" ? withoutLucasReviews(html) : html;
 };
-const TEAM_HTML = noReveal(`<div class="team">${["nick", "jeff", "lucas"].map(agent).join("")}</div>`);
+const TEAM_HTML = noReveal(`<div class="team">${["nick", "jeff", "lucas"].map(agent).join("")}</div>`)
+  .replace("/nick_color.jpg", TEAM_PHOTO.nick)
+  .replace("/jeff_color.jpg", TEAM_PHOTO.jeff)
+  .replace("/lucas_color.jpg", TEAM_PHOTO.lucas);
 const igAt = MARKUP.indexOf('<section class="igsec"');
 const IG_HTML = noReveal(MARKUP.slice(igAt, MARKUP.indexOf("</section>", igAt) + "</section>".length))
   .replace(/<span class="eyebrow">Follow Along<\/span>/, '<span class="eyebrow">How we market your home</span>')
@@ -120,7 +149,21 @@ export default function Welcome() {
           <div className="sp-cta"><a className="sp-btn ghost" href="/listings">See every listing and sale &rarr;</a></div>
         </section>
 
-        <div className="wl-reviews" dangerouslySetInnerHTML={{ __html: teaserHtml() }} />
+        <section className="sp-section wrap wl-reviews" id="reviews">
+          <span className="eyebrow">Client reviews</span>
+          <h2 className="sp-h2 wl-h2">In their words.</h2>
+          <p className="wl-sub">{ZILLOW_REVIEWS} Zillow reviews. A few recent notes, in their own words.</p>
+          <div className="wl-rv-grid">
+            {welcomeQuotes().map((q) => (
+              <figure className="wl-rv-card" key={q.who}>
+                <span className="wl-rv-stars" aria-label={`${q.rating} out of 5 stars`}>{"\u2605".repeat(Math.round(q.rating))}</span>
+                <blockquote>&ldquo;{q.quote}&rdquo;</blockquote>
+                <figcaption>&mdash; {q.who}</figcaption>
+              </figure>
+            ))}
+          </div>
+          <div className="wl-rv-cta"><a className="sp-btn" href="/reviews">Read full reviews <span aria-hidden="true">&rarr;</span></a></div>
+        </section>
 
         <section className="sp-section wrap" id="feedback">
           <span className="eyebrow">Your feedback</span>
