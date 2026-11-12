@@ -32,6 +32,9 @@
 .wl-team .agent-photo{aspect-ratio:auto!important;width:96px;height:120px!important;min-height:0!important;max-height:none!important;align-self:center;border-radius:4px}
 .wl-team .agent-photo img{filter:none!important;opacity:1!important}
 .wl-team .agent-zillow{display:none!important}
+/* Lucas's photo is not a review link on this page. */
+.wl-team .agent-lucas .agent-photo{cursor:default}
+.wl-team .agent-lucas .agent-photo:hover{transform:none;box-shadow:none}
 .wl-team .agent-meta{padding:0}
 .wl-team .agent-name{font-size:17px!important}
 .wl-team .agent-role{font-size:10.5px!important;line-height:1.35}

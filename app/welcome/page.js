@@ -4,7 +4,8 @@ import DealRail from "../../components/DealRail";
 import ClientFeedback from "../../components/ClientFeedback";
 import { publicListings, allDeals, dealStats, shortMoney } from "../../lib/listings";
 import { MARKUP } from "../../lib/home-markup";
-import { teaserHtml, TOTAL as ZILLOW_REVIEWS } from "../../lib/reviews-html";
+import { teaserHtml as allTeaserHtml, TOTAL as ALL_ZILLOW_REVIEWS } from "../../lib/reviews-html";
+import REV from "../../data/reviews.json";
 import { WEB3FORMS_KEY, TEAM_EMAILS } from "../../lib/web3forms";
 import "../site-pages.css";
 import "../listings/listings.css";
@@ -33,8 +34,25 @@ function divBlock(start) {
   }
   return "";
 }
+// Combined Zillow total is the sum of each agent's count. On this page only, drop
+// Lucas's 4 reviews (he'll be added back later). Home and /reviews stay unchanged.
+const ZILLOW_REVIEWS = REV.agents.filter((a) => a.key !== "lucas").reduce((n, a) => n + a.count, 0);
+const teaserHtml = () => allTeaserHtml().replace(`<b>${ALL_ZILLOW_REVIEWS}</b>`, `<b>${ZILLOW_REVIEWS}</b>`);
+
+// Drop Lucas's Zillow review link and badge; keep photo, name, bio and contact.
+function withoutLucasReviews(html) {
+  return html.replace(/<a class="agent-photo"[^>]*>[\s\S]*?<\/a>/, (m) => {
+    if (!/Lucas Podstupka'?s Zillow reviews|lucas6626/.test(m)) return m;
+    const img = m.match(/<img class="ph-color"[^>]*>/);
+    return `<div class="agent-photo">${img ? img[0] : ""}</div>`;
+  });
+}
+
 // Order on this page: Nick, Jeff, Lucas.
-const agent = (k) => divBlock(MARKUP.indexOf(`<div class="agent reveal agent-${k}">`));
+const agent = (k) => {
+  const html = divBlock(MARKUP.indexOf(`<div class="agent reveal agent-${k}">`));
+  return k === "lucas" ? withoutLucasReviews(html) : html;
+};
 const TEAM_HTML = noReveal(`<div class="team">${["nick", "jeff", "lucas"].map(agent).join("")}</div>`);
 const igAt = MARKUP.indexOf('<section class="igsec"');
 const IG_HTML = noReveal(MARKUP.slice(igAt, MARKUP.indexOf("</section>", igAt) + "</section>".length))
