@@ -15,7 +15,7 @@ import "./welcome.css";
 export const revalidate = 86400;
 export const metadata = {
   title: "Nice to Meet You | Dynamic Duo LI",
-  description: "Who we are, what we do, our current and past deals, and our videos, from Lucas, Nick and Jeff at Dynamic Duo LI.",
+  description: "Who we are, what we do, our current and past deals, and our videos, from Nick, Jeff and Lucas at Dynamic Duo LI.",
   robots: { index: false, follow: false, googleBot: { index: false, follow: false } },
   alternates: { canonical: "/welcome" },
   openGraph: { url: "/welcome", title: "Nice to Meet You | Dynamic Duo LI", description: "Who we are, what we do, and the homes we've sold.", siteName: "Dynamic Duo LI", type: "website", images: ["/og-image.png"] },
@@ -33,7 +33,9 @@ function divBlock(start) {
   }
   return "";
 }
-const TEAM_HTML = noReveal(divBlock(MARKUP.indexOf('<div class="team">')));
+// Order on this page: Nick, Jeff, Lucas.
+const agent = (k) => divBlock(MARKUP.indexOf(`<div class="agent reveal agent-${k}">`));
+const TEAM_HTML = noReveal(`<div class="team">${["nick", "jeff", "lucas"].map(agent).join("")}</div>`);
 const igAt = MARKUP.indexOf('<section class="igsec"');
 const IG_HTML = noReveal(MARKUP.slice(igAt, MARKUP.indexOf("</section>", igAt) + "</section>".length))
   .replace(/<h2 class="ig-title">[\s\S]*?<\/h2>/, '<h2 class="ig-title">Our videos.</h2>');
@@ -60,7 +62,7 @@ export default function Welcome() {
           <span className="eyebrow">Thanks for meeting with us</span>
           <h1 className="sp-title">Nice to meet you.</h1>
           <p className="sp-lead">
-            We&rsquo;re Dynamic Duo LI: Lucas Podstupka, Nick Barberio and Jeff Memisha at Realty Advisors in Wantagh. Here&rsquo;s who we are, what we do and the homes we&rsquo;ve sold, all in one place.
+            We&rsquo;re Dynamic Duo LI: Nick Barberio, Jeff Memisha and Lucas Podstupka at Realty Advisors in Wantagh. Here&rsquo;s who we are, what we do and the homes we&rsquo;ve sold, all in one place.
           </p>
           <div className="sp-stats">
             <div className="sp-stat"><b>{d.allTime.count}</b><span>Homes sold · since {d.allTime.since}</span></div>
@@ -69,8 +71,15 @@ export default function Welcome() {
             <div className="sp-stat"><b>{ZILLOW_REVIEWS}</b><span>Zillow reviews</span></div>
           </div>
           <nav className="wl-jump" aria-label="On this page">
-            <a href="#team">Team</a><a href="#services">What we do</a><a href="#current">Current deals</a><a href="#sold">Past deals</a><a href="#instagram">Videos</a><a href="#feedback">Leave feedback</a>
+            <a href="#feedback">How&rsquo;d we do?</a><a href="#team">Team</a><a href="#services">What we do</a><a href="#current">Current deals</a><a href="#sold">Past deals</a><a href="#instagram">Videos</a>
           </nav>
+        </section>
+
+        <section className="sp-section wrap" id="feedback">
+          <span className="eyebrow">Your feedback</span>
+          <h2 className="sp-h2 wl-h2">How&rsquo;d we do?</h2>
+          <p className="wl-sub">Rate your appointment out of five stars, and leave any questions or comments. It&rsquo;s anonymous unless you add your name.</p>
+          <ClientFeedback accessKey={WEB3FORMS_KEY} teamEmails={TEAM_EMAILS} />
         </section>
 
         <section className="sp-section wrap" id="team">
@@ -106,12 +115,6 @@ export default function Welcome() {
 
         <div className="wl-reviews" dangerouslySetInnerHTML={{ __html: teaserHtml() }} />
 
-        <section className="sp-section wrap" id="feedback">
-          <span className="eyebrow">Your feedback</span>
-          <h2 className="sp-h2 wl-h2">Questions or comments?</h2>
-          <p className="wl-sub">Rate your appointment out of five stars and ask us anything. It&rsquo;s anonymous unless you add your name.</p>
-          <ClientFeedback accessKey={WEB3FORMS_KEY} teamEmails={TEAM_EMAILS} />
-        </section>
       </main>
       <SiteFooter />
     </>

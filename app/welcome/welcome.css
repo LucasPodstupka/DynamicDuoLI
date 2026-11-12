@@ -56,3 +56,4 @@
   .wl .sp-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
   .wl .sp-stat{min-width:0;padding:14px 16px}
 }
+.wl .wl-stars{margin-bottom:24px}

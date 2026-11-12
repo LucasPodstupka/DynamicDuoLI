@@ -18,7 +18,7 @@ export default function ClientFeedback({ accessKey, teamEmails = [] }) {
     const comments = (data.comments || "").trim();
     if (!rating && !comments) return setState({ kind: "err", msg: "Pick a star rating or leave a comment." });
     if (data.email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(data.email)) return setState({ kind: "err", msg: "That email doesn't look right (it's optional)." });
-    const done = () => { form.reset(); setRating(0); setState({ kind: "ok", msg: "Thank you. Your note went straight to Lucas, Nick and Jeff." }); };
+    const done = () => { form.reset(); setRating(0); setState({ kind: "ok", msg: "Thank you. Your note went straight to Nick, Jeff and Lucas." }); };
     if (data.botcheck || data.website) return done(); // honeypot: bots fill hidden fields
     setBusy(true);
     setState({ kind: "", msg: "" });
@@ -61,7 +61,7 @@ export default function ClientFeedback({ accessKey, teamEmails = [] }) {
   return (
     <div className="form-card wl-form">
       <div className="form-card-head">
-        <h3 className="form-title">How did we do?</h3>
+        <h3 className="form-title">Questions or comments?</h3>
         <p className="form-sub wl-form-sub">This goes privately to our team, never on the website. Your name is optional.</p>
       </div>
       <form className="lead-form" onSubmit={onSubmit} noValidate>
@@ -104,7 +104,7 @@ export default function ClientFeedback({ accessKey, teamEmails = [] }) {
           </div>
         </div>
         <button className="submit" type="submit" disabled={busy}>{busy ? "Sending…" : <>Send to the team <span className="arr">&rarr;</span></>}</button>
-        <p className="micro">Sent privately to Lucas, Nick and Jeff. <a className="privacy-link" href="/privacy">Privacy policy</a></p>
+        <p className="micro">Sent privately to Nick, Jeff and Lucas. <a className="privacy-link" href="/privacy">Privacy policy</a></p>
         <p className={`form-status ${state.kind}`} aria-live="polite">{state.msg}</p>
       </form>
     </div>
