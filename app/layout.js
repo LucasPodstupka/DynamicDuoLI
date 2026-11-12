@@ -75,20 +75,20 @@ const LD = {
     },
     {
       "@type": "Person", "@id": "https://www.dynamicduoli.com/#lucas",
-      name: "Lucas Podstupka", jobTitle: "Real Estate Sales Associate",
+      name: "Lucas Podstupka", jobTitle: "Licensed Real Estate Salesperson",
       telephone: "+1-631-310-7488", email: "lucas@therealtyadvisors.com",
       worksFor: { "@id": "https://www.dynamicduoli.com/#team" },
       sameAs: ["https://instagram.com/lucaspods", "https://www.zillow.com/profile/lucas6626"],
     },
     {
       "@type": "Person", "@id": "https://www.dynamicduoli.com/#nick",
-      name: "Nick Barberio", jobTitle: "Associate Broker",
+      name: "Nick Barberio", jobTitle: "Licensed Associate Real Estate Broker",
       telephone: "+1-516-404-9544", email: "nickbarberio@therealtyadvisors.com",
       worksFor: { "@id": "https://www.dynamicduoli.com/#team" },
     },
     {
       "@type": "Person", "@id": "https://www.dynamicduoli.com/#jeff",
-      name: "Jeff Memisha", jobTitle: "Associate Broker · Licensed Loan Officer · NMLS #2042222",
+      name: "Jeff Memisha", jobTitle: "Licensed Associate Real Estate Broker · Licensed Loan Officer · NMLS #2042222",
       telephone: "+1-516-741-3375", email: "jeff@therealtyadvisors.com",
       worksFor: { "@id": "https://www.dynamicduoli.com/#team" },
     },

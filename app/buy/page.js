@@ -28,7 +28,7 @@ export default function Buy() {
       ]}
       prose={[
         "Dynamic Duo LI is Lucas Podstupka, Nick Barberio and Jeff Memisha at Realty Advisors, working out of our office at 3341 Park Avenue in Wantagh. Most of our deals are on Long Island's South Shore, in towns like Wantagh, Massapequa, Seaford and Bellmore-Merrick, and we work across Nassau and Suffolk.",
-        "Jeff is both an associate broker and a licensed loan officer (NMLS #2042222), so you can get answers about pre-approval and monthly cost from the same team that is showing you homes.",
+        "Jeff is both a licensed associate real estate broker and a licensed loan officer (NMLS #2042222), so you can get answers about pre-approval and monthly cost from the same team that is showing you homes.",
       ]}
       forms={[{ id: "start", intent: "buy", heading: "Start your search" }]}
     />
