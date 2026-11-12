@@ -3,7 +3,12 @@ import { useState } from "react";
 
 // Private feedback after an appointment. Sent to the team inboxes through the same Web3Forms
 // path as the site's lead forms. Never shown on the site.
-const APPTS = ["Listing appointment", "CMA", "Buyer consultation"];
+const NEXT = [
+  "Schedule a second meeting",
+  "Update my home evaluation",
+  "Send listing paperwork, we're ready to move forward",
+  "Just leaving feedback",
+];
 const WORDS = ["", "Poor", "Fair", "Good", "Great", "Excellent"];
 
 export default function ClientFeedback({ accessKey, teamEmails = [] }) {
@@ -24,7 +29,7 @@ export default function ClientFeedback({ accessKey, teamEmails = [] }) {
     setState({ kind: "", msg: "" });
     const lines = [
       `Rating: ${rating ? `${rating}/5 (${WORDS[rating]})` : "No rating"}`,
-      `Appointment: ${data.appointment || "Not given"}`,
+      `Next step: ${data.nextStep || "Not given"}`,
       `Name: ${(data.name || "").trim() || "Anonymous"}`,
       `Email: ${(data.email || "").trim() || "Not given"}`,
       "",
@@ -43,7 +48,7 @@ export default function ClientFeedback({ accessKey, teamEmails = [] }) {
           botcheck: false,
           "Lead Type": "Private Client Feedback",
           Rating: rating ? `${rating}/5` : "No rating",
-          Appointment: data.appointment || "",
+          "Next step": data.nextStep || "",
           Name: (data.name || "").trim() || "Anonymous",
           message: `Private feedback from the client welcome page:\n\n${lines}`,
         }),
@@ -79,10 +84,10 @@ export default function ClientFeedback({ accessKey, teamEmails = [] }) {
         </fieldset>
         <div className="fields">
           <fieldset className="field field-full">
-            <legend className="field-label">Which appointment? <span className="wl-opt">(optional)</span></legend>
+            <legend className="field-label">What&rsquo;s next? <span className="wl-opt">(optional)</span></legend>
             <div className="radios">
-              {APPTS.map((a) => (
-                <label className="radio" key={a}><input type="radio" name="appointment" value={a} /><span>{a}</span></label>
+              {NEXT.map((a) => (
+                <label className="radio" key={a}><input type="radio" name="nextStep" value={a} /><span>{a}</span></label>
               ))}
             </div>
           </fieldset>
