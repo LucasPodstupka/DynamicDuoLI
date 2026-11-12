@@ -10,7 +10,7 @@ import "../site-pages.css";
 import "../listings/listings.css";
 import "./welcome.css";
 
-// Hidden client page: sent by link after a listing appointment, CMA or buyer consultation.
+// Hidden client page: sent by link after a listing appointment.
 // Not linked from the nav, footer or sitemap, and kept out of search results.
 export const revalidate = 86400;
 export const metadata = {
