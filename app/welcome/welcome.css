@@ -1,0 +1,58 @@
+/* /welcome: hidden client page. Builds on site-pages.css + listings.css. */
+.wl .sp-hero{padding-bottom:10px}
+.wl .sp-section{padding-top:40px;padding-bottom:40px}
+/* .sp-hero/.sp-section shorthand padding zeroes .wrap's side gutters; restore them here. */
+.wl .wrap{padding-left:28px;padding-right:28px}
+@media(max-width:620px){.wl .wrap{padding-left:20px;padding-right:20px}}
+.wl-h2{margin-top:10px}
+.wl-sub{color:var(--muted);font-size:16px;line-height:1.6;margin:-6px 0 20px;max-width:680px}
+.wl-jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.wl-jump a{padding:8px 14px;border:1px solid var(--line-2);border-radius:999px;text-decoration:none;color:var(--ink-2);font-size:14px;background:var(--bg-3)}
+.wl-jump a:hover{border-color:var(--brass);color:var(--brass)}
+
+/* Team: always in color, photos shown on every screen size here. */
+.wl-team .team{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;overflow:visible}
+.wl-team .agent{flex:none!important;max-width:none}
+.wl-team .agent-photo{aspect-ratio:4/5}
+.wl-team .agent-photo img{filter:none!important;opacity:1!important}
+@media(max-width:560px){.wl-team .team{gap:10px}.wl-team .agent-photo{aspect-ratio:3/4}}
+
+/* Services */
+.wl-services{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+
+/* Deal rails: manual browse, arrows + swipe */
+.wl-rail{position:relative}
+.wl-nav{display:flex;justify-content:flex-end;gap:8px;margin:-8px 0 12px}
+.wl-nav button{appearance:none;width:40px;height:40px;border-radius:999px;border:1px solid var(--line-2);background:#fff;color:var(--ink);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s,opacity .2s}
+.wl-nav button:hover:not(:disabled){border-color:var(--brass)}
+.wl-nav button:disabled{opacity:.35;cursor:default}
+.wl-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:2px 2px 14px;scrollbar-width:thin}
+.wl-track>.lx-card{flex:0 0 min(82vw,340px);scroll-snap-align:start;animation:none}
+@media(prefers-reduced-motion:reduce){.wl-track{scroll-behavior:auto}}
+
+/* Instagram + reviews teaser reuse homepage styles */
+.wl-ig .igsec{padding-top:56px;padding-bottom:40px}
+.wl-reviews .rv-teaser{padding:8px 0 16px}
+
+/* Feedback form */
+.wl-form{max-width:760px}
+.wl-form-sub{display:block!important}
+.wl-opt{text-transform:none;letter-spacing:0;font-weight:400;color:var(--muted)}
+.wl-stars-field{border:0;margin:0;padding-bottom:22px}
+.wl-stars{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.wl-star{position:relative;cursor:pointer;font-size:40px;line-height:1;color:var(--line-2);padding:2px;transition:color .15s,transform .15s}
+.wl-star input{position:absolute;opacity:0;width:1px;height:1px}
+.wl-star.on{color:var(--brass)}
+.wl-star:hover{transform:scale(1.08)}
+.wl-star input:focus-visible+span{outline:2px solid var(--brass);outline-offset:2px;border-radius:4px}
+.wl-star-word{margin-left:10px;font-size:14px;color:var(--muted)}
+.wl-hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+.wl fieldset{border:0;min-width:0}
+@media(max-width:560px){
+  .wl .lead-form{padding:24px 20px 28px}
+  .wl .form-card-head{padding:22px 20px 18px}
+  .wl .fields{grid-template-columns:1fr}
+  .wl-star{font-size:38px}
+  .wl .sp-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .wl .sp-stat{min-width:0;padding:14px 16px}
+}
