@@ -1,59 +1,139 @@
-/* /welcome: hidden client page. Builds on site-pages.css + listings.css. */
-.wl .sp-hero{padding-bottom:10px}
-.wl .sp-section{padding-top:40px;padding-bottom:40px}
+/* /welcome: hidden page sent after listing appointments. Builds on site-pages.css + listings.css.
+   Mobile first (most people open it from a text); tablet at 768px; a separate desktop layout at 1024px. */
+
+/* ---------- base = phone ---------- */
+.wl{overflow-x:clip}
 /* .sp-hero/.sp-section shorthand padding zeroes .wrap's side gutters; restore them here. */
-.wl .wrap{padding-left:28px;padding-right:28px}
-@media(max-width:620px){.wl .wrap{padding-left:20px;padding-right:20px}}
-.wl-h2{margin-top:10px}
-.wl-sub{color:var(--muted);font-size:16px;line-height:1.6;margin:-6px 0 20px;max-width:680px}
-.wl-jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-.wl-jump a{padding:8px 14px;border:1px solid var(--line-2);border-radius:999px;text-decoration:none;color:var(--ink-2);font-size:14px;background:var(--bg-3)}
+.wl .wrap{padding-left:18px;padding-right:18px}
+.wl .sp-hero{padding-top:40px;padding-bottom:6px}
+.wl .sp-section{padding-top:30px;padding-bottom:30px}
+.wl .sp-title{font-size:clamp(34px,9vw,44px)!important;margin:8px 0 12px}
+.wl-lead{font-size:18px!important;line-height:1.55!important;color:var(--ink)!important;margin:0}
+.wl-lead2{font-size:16px;line-height:1.55;color:var(--muted);margin:10px 0 0}
+.wl-h2{margin-top:8px;font-size:clamp(28px,7.5vw,34px)!important}
+.wl-sub{color:var(--muted);font-size:15.5px;line-height:1.55;margin:-6px 0 16px;max-width:680px}
+.wl .eyebrow{font-size:11.5px}
+
+.wl .wl-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:20px 0 0}
+.wl .sp-stat{min-width:0;padding:12px 14px}
+.wl .sp-stat b{font-size:24px}
+.wl .sp-stat span{font-size:11px;letter-spacing:.06em;line-height:1.35;display:block;margin-top:2px}
+
+/* Jump links: one compact swipeable row on phones */
+.wl-jump{display:flex;gap:8px;margin:18px -18px 0;padding:0 18px 4px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.wl-jump::-webkit-scrollbar{display:none}
+.wl-jump a{flex:0 0 auto;padding:10px 14px;min-height:40px;display:inline-flex;align-items:center;border:1px solid var(--line-2);border-radius:999px;text-decoration:none;color:var(--ink-2);font-size:14px;background:var(--bg-3);white-space:nowrap}
 .wl-jump a:hover{border-color:var(--brass);color:var(--brass)}
 
-/* Team: always in color, photos shown on every screen size here. */
-.wl-team .team{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;overflow:visible}
-.wl-team .agent{flex:none!important;max-width:none}
-.wl-team .agent-photo{aspect-ratio:4/5}
+/* Team: phone = one row per person (photo + name + big tap targets). Always in color. */
+.wl-team .team{display:grid!important;grid-template-columns:1fr;gap:12px;overflow:visible;width:auto;min-width:0}
+.wl-team .agent{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;align-items:center;flex:none!important;max-width:none;
+  background:var(--bg-3);border:1px solid var(--line);border-radius:6px;padding:10px}
+.wl-team .agent-photo{aspect-ratio:auto!important;width:96px;height:120px!important;min-height:0!important;max-height:none!important;align-self:center;border-radius:4px}
 .wl-team .agent-photo img{filter:none!important;opacity:1!important}
-@media(max-width:560px){.wl-team .team{gap:10px}.wl-team .agent-photo{aspect-ratio:3/4}}
+.wl-team .agent-zillow{display:none!important}
+.wl-team .agent-meta{padding:0}
+.wl-team .agent-name{font-size:17px!important}
+.wl-team .agent-role{font-size:10.5px!important;line-height:1.35}
+.wl-team .agent-contact{gap:8px;margin-top:10px;flex-wrap:nowrap}
+.wl-team .agent-contact a{width:44px;height:44px}
 
-/* Services */
-.wl-services{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+/* Walkthrough videos + how the keyword automation works */
+.wl-ig .igsec{padding-top:34px;padding-bottom:26px}
+.wl-ig .ig-head{text-align:left;max-width:none;margin:0 0 22px}
+.wl-ig .ig-title{font-size:clamp(28px,7.5vw,34px)!important}
+.wl-how{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:10px;counter-reset:how;text-align:left}
+.wl-how li{counter-increment:how;display:grid;grid-template-columns:32px 1fr;column-gap:12px;background:var(--bg-3);border:1px solid var(--line);border-left:3px solid var(--brass);border-radius:4px;padding:12px 14px}
+.wl-how li::before{content:counter(how);grid-row:1/span 2;width:28px;height:28px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:15px}
+.wl-how b{font-family:var(--serif);text-transform:uppercase;letter-spacing:.05em;font-size:14px;color:var(--ink-2)}
+.wl-how span{font-size:15px;line-height:1.5;color:var(--muted)}
+.wl-ig .ig-follow{justify-content:stretch;margin-top:18px}
+.wl-ig .ig-follow .btn{flex:1 1 100%;justify-content:center;min-height:48px}
+.wl-ig .ig-tabbar label{min-height:44px}
 
-/* Deal rails: manual browse, arrows + swipe */
+/* Deal rails: phone = swipe (arrows hidden), one big card with the next peeking in */
 .wl-rail{position:relative}
-.wl-nav{display:flex;justify-content:flex-end;gap:8px;margin:-8px 0 12px}
-.wl-nav button{appearance:none;width:40px;height:40px;border-radius:999px;border:1px solid var(--line-2);background:#fff;color:var(--ink);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s,opacity .2s}
+.wl-nav{display:none;justify-content:flex-end;gap:8px;margin:-8px 0 12px}
+.wl-nav button{appearance:none;width:44px;height:44px;border-radius:999px;border:1px solid var(--line-2);background:#fff;color:var(--ink);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .2s,opacity .2s}
 .wl-nav button:hover:not(:disabled){border-color:var(--brass)}
 .wl-nav button:disabled{opacity:.35;cursor:default}
-.wl-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:2px 2px 14px;scrollbar-width:thin}
-.wl-track>.lx-card{flex:0 0 min(82vw,340px);scroll-snap-align:start;animation:none}
+.wl-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin:0 -18px;padding:2px 18px 12px;scroll-padding:0 18px;scrollbar-width:none}
+.wl-track::-webkit-scrollbar{display:none}
+.wl-track>.lx-card{flex:0 0 84%;scroll-snap-align:start;animation:none}
+.wl-rail::after{content:"Swipe for more \2192";display:block;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+.wl .sp-cta .sp-btn{width:100%;justify-content:center;min-height:48px}
 @media(prefers-reduced-motion:reduce){.wl-track{scroll-behavior:auto}}
 
-/* Instagram + reviews teaser reuse homepage styles */
-.wl-ig .igsec{padding-top:56px;padding-bottom:40px}
-.wl-reviews .rv-teaser{padding:8px 0 16px}
+.wl-reviews .rv-teaser{padding:6px 0 4px}
 
 /* Feedback form */
 .wl-form{max-width:760px}
 .wl-form-sub{display:block!important}
 .wl-opt{text-transform:none;letter-spacing:0;font-weight:400;color:var(--muted)}
 .wl-stars-field{border:0;margin:0;padding-bottom:22px}
-.wl-stars{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
-.wl-star{position:relative;cursor:pointer;font-size:40px;line-height:1;color:var(--line-2);padding:2px;transition:color .15s,transform .15s}
+.wl .wl-stars{display:flex;align-items:center;gap:2px;flex-wrap:wrap;margin-bottom:20px}
+.wl-star{position:relative;cursor:pointer;font-size:42px;line-height:1;color:var(--line-2);padding:2px 3px;transition:color .15s,transform .15s}
 .wl-star input{position:absolute;opacity:0;width:1px;height:1px}
 .wl-star.on{color:var(--brass)}
 .wl-star:hover{transform:scale(1.08)}
 .wl-star input:focus-visible+span{outline:2px solid var(--brass);outline-offset:2px;border-radius:4px}
-.wl-star-word{margin-left:10px;font-size:14px;color:var(--muted)}
+.wl-star-word{flex-basis:100%;font-size:14px;color:var(--muted);margin-top:4px}
 .wl-hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
 .wl fieldset{border:0;min-width:0}
-@media(max-width:560px){
-  .wl .lead-form{padding:24px 20px 28px}
-  .wl .form-card-head{padding:22px 20px 18px}
-  .wl .fields{grid-template-columns:1fr}
-  .wl-star{font-size:38px}
-  .wl .sp-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .wl .sp-stat{min-width:0;padding:14px 16px}
+.wl .lead-form{padding:22px 18px 26px}
+.wl .form-card-head{padding:20px 18px 16px}
+.wl .fields{grid-template-columns:1fr;gap:18px}
+.wl .radio span{padding:12px 14px;min-height:44px;display:inline-flex;align-items:center}
+.wl .submit{min-height:54px}
+
+/* ---------- tablet ---------- */
+@media(min-width:768px){
+  .wl .wrap{padding-left:28px;padding-right:28px}
+  .wl .sp-hero{padding-top:64px}
+  .wl .sp-section{padding-top:44px;padding-bottom:44px}
+  .wl .wl-stats{grid-template-columns:repeat(4,1fr);gap:12px}
+  .wl-jump{flex-wrap:wrap;overflow:visible;margin:22px 0 0;padding:0}
+  .wl-team .team{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  .wl-team .agent{display:flex;flex-direction:column;align-items:stretch;padding:0;background:none;border:0}
+  .wl-team .agent-photo{width:auto;align-self:stretch;height:auto!important;aspect-ratio:4/5!important}
+  .wl-team .agent-meta{padding:14px 2px 0}
+  .wl-team .agent-contact{flex-wrap:wrap}
+  .wl-how{grid-template-columns:repeat(3,1fr);gap:14px}
+  .wl-how li{display:flex;flex-direction:column;justify-content:flex-start;gap:6px;border-left:1px solid var(--line);border-top:3px solid var(--brass);padding:18px}
+  .wl-how li::before{grid-row:auto;margin-bottom:4px}
+  .wl-ig .ig-follow{justify-content:flex-start}
+  .wl-ig .ig-follow .btn{flex:0 0 auto}
+  .wl-track{margin:0;padding:2px 2px 12px;gap:18px;scroll-padding:0}
+  .wl-track>.lx-card{flex:0 0 calc((100% - 18px) / 2)}
+  .wl-nav{display:flex}
+  .wl-rail::after{display:none}
+  .wl .sp-cta .sp-btn{width:auto}
+  .wl .fields{grid-template-columns:1fr 1fr;gap:22px 24px}
+  .wl .lead-form{padding:30px 34px 36px}
+  .wl .form-card-head{padding:26px 34px 22px}
+  .wl-star-word{flex-basis:auto;margin:0 0 0 10px}
 }
-.wl .wl-stars{margin-bottom:24px}
+
+/* ---------- desktop ---------- */
+@media(min-width:1024px){
+  .wl .sp-hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);column-gap:56px;align-items:center;padding-top:84px;padding-bottom:20px}
+  .wl .sp-hero>*{grid-column:1}
+  .wl .sp-hero>.wl-stats{grid-column:2;grid-row:1/span 5;grid-template-columns:1fr 1fr;gap:14px;margin:0}
+  .wl .sp-stat{padding:22px 24px}
+  .wl .sp-stat b{font-size:34px}
+  .wl .sp-stat span{font-size:12px}
+  .wl .sp-title{font-size:clamp(48px,5vw,64px)!important}
+  .wl-lead{font-size:21px!important}
+  .wl-lead2{font-size:17px}
+  .wl-h2,.wl-ig .ig-title{font-size:clamp(34px,3.4vw,42px)!important}
+  .wl .sp-section{padding-top:56px;padding-bottom:56px}
+  .wl-team .team{gap:28px}
+  .wl-ig .igsec{padding-top:64px;padding-bottom:48px}
+  .wl-ig .ig-head{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);column-gap:48px;align-items:start}
+  .wl-ig .ig-head>*{grid-column:1}
+  .wl-ig .ig-head>.wl-how{grid-column:2;grid-row:1/span 3;margin:0}
+  .wl-track>.lx-card{flex:0 0 calc((100% - 36px) / 3)}
+  #feedback{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);grid-template-rows:auto auto 1fr;column-gap:56px;align-items:start;align-content:start}
+  #feedback>*{grid-column:1}
+  #feedback>.wl-form{grid-column:2;grid-row:1/span 3}
+}
